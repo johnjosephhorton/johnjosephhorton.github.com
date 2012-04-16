@@ -22,9 +22,9 @@
         compatibility mode is within the first 1K bytes
         code.google.com/p/chromium/issues/detail?id=23003 -->
 
-  <title>A basic blog</title>
+  <title></title>
   <meta name="description" content="">
-  <meta name="author" content="John Horton">
+  <meta name="author" content="Lakshmi Vyasarajan">
 
   <!--  Mobile viewport optimized: j.mp/bplateviewport -->
   <meta name="viewport" content="">
@@ -41,12 +41,12 @@
         enables HTML5 elements & feature detects -->
     <script src="/media/js/libs/modernizr-1.7.min.js"></script>
     </head>
-<body id="index">
+<body id="test">
     <div id="container">
             <div id="main" role="main">
           <header class="banner clearfix">
-          <h1>John J. Horton</h1>
-            <h3>Personal Website</h3>                              <nav class=main_nav>
+          <h1>BASIC</h1>
+            <h3>A hyde website</h3>                              <nav class=main_nav>
     <ul>
                 <li>
             <a title="Home Page"
@@ -55,16 +55,16 @@
                 Home
             </a>
         </li>        <li>
-            <a title="Papers"
+            <a title="Portfolio"
                 class="button white portfolio"
-                href="/papers">
-                Papers
+                href="/portfolio">
+                Portfolio
             </a>
         </li>        <li>
             <a title="Blog"
                 class="button white active blog"
                 href="/blog">
-                Online Labor (blog)
+                Blog
             </a>
         </li>        <li>
             <a title="About"
@@ -76,66 +76,49 @@
 </nav>
                     </header>
           <section class="content">
-          <h1 class="title">A basic blog</h1>
-<ul class="listing clear">
-<li>
-    <article >
-<h3><a href="/blog/sad-post.html">A Not So Dad Post</a></h3>
-<a href="/blog/sad-post.html"><p><img alt="A Dark Image" src="/media/images/test.png" /></p></a>
-<p>I went and dressed sadly. It will show you pretty well how pipped I was when I
-tell you that I near as a toucher put on a white tie with a dinner-jacket. I
-sallied out for a bit of food more to pass the time than because I wanted it.
-It seemed brutal to be wading into the bill of fare with poor old Bicky headed
-for the&nbsp;breadline.</p>
-<time datetime="2012-04-15">
-    Posted: Sun, 15 Apr 2012
-</time>
-</article>
+          <article class="post">
+<nav class="post_nav">
+<a class="backlink" href="/blog">Back to list</a>
+<a class="prev disabled"
+    title=""
+    >
+    Previous
+</a>
 
-</li>
-<li>
-    <article >
-<h3><a href="/blog/happy-post2.html">A Happy Post</a></h3>
-<a href="/blog/happy-post2.html"><p><img alt="Airport" src="/media/images/airport.png" /></p></a>
-<p>Lady Malvern was a hearty, happy, healthy, overpowering sort of dashed female,
-not so very tall but making up for it by measuring about six feet from the
-<span class="caps">O.P.</span> to the Prompt&nbsp;Side.</p>
-<time datetime="2011-02-01">
-    Posted: Tue, 01 Feb 2011
-</time>
-</article>
+<a class="next disabled"
+    title=""
+    >
+    Next
+</a>
 
-</li>
-<li>
-    <article >
-<h3><a href="/blog/happy-post.html">A Happy Post</a></h3>
-<a href="/blog/happy-post.html"><p><img alt="Airport" src="/media/images/airport.png" /></p></a>
-<p>Lady Malvern was a hearty, happy, healthy, overpowering sort of dashed female,
-not so very tall but making up for it by measuring about six feet from the
-<span class="caps">O.P.</span> to the Prompt&nbsp;Side.</p>
-<time datetime="2011-02-01">
-    Posted: Tue, 01 Feb 2011
+<br>
+<div id="twitter_share">
+<a href="http://twitter.com/share"
+    class="twitter-share-button"
+    data-count="vertical"
+    data-via="ringce">Tweet</a>
+    <script type="text/javascript"
+        src="http://platform.twitter.com/widgets.js"></script>
+</div>
+<div id="facebook_like">
+<iframe src="http://www.facebook.com/plugins/like.php?href&amp;layout=box_count&amp;show_faces=false&amp;width=450&amp;action=like&amp;font=arial&amp;colorscheme=light&amp;height=65"
+            scrolling="no"
+            frameborder="0"
+            style="border:none; overflow:hidden; width:450px; height:65px;"
+            allowTransparency="true"></iframe>
+</div>
+</nav>
+<h1 class="title">
+    <a href="/blog/test.markdown">
+        
+    </a>
+</h1>
+<time datetime="2010-01-01">
+    Posted: Fri, 01 Jan 2010
 </time>
-</article>
 
-</li>
-<li>
-    <article >
-<h3><a href="/blog/angry-post.html">An Angry Post</a></h3>
-<a href="/blog/angry-post.html"><p><img alt="Airport" src="/media/images/airport.png" /></p></a>
-<p>To complete the character-study of Mr. Worple, he was a man of extremely
-uncertain temper, and his general tendency was to think that Corky was a poor
-chump and that whatever step he took in any direction on his own account, was
-just another proof of his innate idiocy. I should imagine Jeeves feels very
-much the same about&nbsp;me.</p>
-<time datetime="2011-01-01">
-    Posted: Sat, 01 Jan 2011
-</time>
-</article>
-
-</li>
-</ul>
-          </section>
+<h1>Here is some&nbsp;test</h1>
+<p>Point 1. is an important&nbsp;point. </p></article>          </section>
       </div>
       </div> <!--! end of #container -->
   <footer>
