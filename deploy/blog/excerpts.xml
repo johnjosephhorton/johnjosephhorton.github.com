@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>
+        BASIC blog excerpts feed    </title>
+        <link href="blog/excerpts.xml" rel="self" />
+    
+        <link href="/"/>
+    
+        
+    <updated>2012-05-19T21:55:04Z</updated>
+
+    <id>/blog/excerpts.xml/</id>
+
+            <entry>
+            <title type="html">Location of India Based Contractors on oDesk</title>
+            <author><name>Lakshmi Vyasarajan</name></author>
+            <link href="/blog/location_of_india_based_contractors_on_odesk.html"/>
+            <updated>2012-03-06T13:38:00Z</updated>
+            <published>2012-03-06T13:38:00Z</published>
+            <id>/blog/location_of_india_based_contractors_on_odesk.html</id>
+                        <category   scheme="/blog/tags"
+                        term="oDesk"
+                        label="Odesk" />
+                        <category   scheme="/blog/tags"
+                        term="Contractors"
+                        label="Contractors" />
+                        <category   scheme="/blog/tags"
+                        term="India"
+                        label="India" />
+            
+            <content type="html">
+                
+                &lt;p&gt;My favorite R package, &lt;a href=&#34;http://had.co.nz/ggplot2/&#34;&gt;ggplot2&lt;/a&gt;, recently introduced enhanced support for 
+&lt;a href=&#34;http://en.wikipedia.org/wiki/Choropleth_map&#34;&gt;choropleth maps&lt;/a&gt;. 
+I&amp;#8217;d like to make some of these kinds of maps with oDesk data, but as a first step,
+I thought I&amp;#8217;d just plot the locations of all of our India-based contractors by city.
+In the plot below, dots size as log-scaled by # of contractors reporting that city. 
+The massive light blue dot near Delhi is default coordinate when we&amp;#8217;re missing the&amp;nbsp;city.&lt;/p&gt;            </content>
+        </entry>
+            <entry>
+            <title type="html">High-wage skills on oDesk (or why you might want to learn Clojure if you're not a lawyer)</title>
+            <author><name>Lakshmi Vyasarajan</name></author>
+            <link href="/blog/high_wage_skills_on_odesk.html"/>
+            <updated>2012-03-06T13:38:00Z</updated>
+            <published>2012-03-06T13:38:00Z</published>
+            <id>/blog/high_wage_skills_on_odesk.html</id>
+                        <category   scheme="/blog/tags"
+                        term="oDesk"
+                        label="Odesk" />
+                        <category   scheme="/blog/tags"
+                        term="Closure"
+                        label="Closure" />
+            
+            <content type="html">
+                
+                &lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://www.odesk.com/&#34;&gt;oDesk&lt;/a&gt;&lt;/strong&gt; recently introduced a controlled, centralized vocabulary of about 1,400 skills for 
+buyers and contractors to use when posting jobs and creating profiles. 
+The primary motivation for the change was to make it easier for buyers and sellers to find each other: 
+without a standardized vocabulary, would-be traders can fail to match simply because they use different terms for the same&amp;nbsp;skill.&lt;/p&gt;            </content>
+        </entry>
+            <entry>
+            <title type="html">Economics of the Cold Start Problem in Talent Discovery</title>
+            <author><name>Lakshmi Vyasarajan</name></author>
+            <link href="/blog/economics_of_the_cold_start_problem_in_talent_discovery.html"/>
+            <updated>2012-02-21T09:36:00Z</updated>
+            <published>2012-02-21T09:36:00Z</published>
+            <id>/blog/economics_of_the_cold_start_problem_in_talent_discovery.html</id>
+                        <category   scheme="/blog/tags"
+                        term="oDesk"
+                        label="Odesk" />
+                        <category   scheme="/blog/tags"
+                        term="Economics"
+                        label="Economics" />
+            
+            <content type="html">
+                
+                &lt;p&gt;Tyler Cowen &lt;a href=&#34;http://marginalrevolution.com/marginalrevolution/2012/02/why-is-there-a-shortage-of-talent-in-it-sectors-and-the-like.html&#34;&gt;recently&lt;/a&gt;
+ highlighted &lt;a href=&#34;http://marginalrevolution.com/marginalrevolution/2012/02/why-is-there-a-shortage-of-talent-in-it-sectors-and-the-like.html&#34;&gt;this&lt;/a&gt; paper by 
+&lt;a href=&#34;http://hse-econ.fi/tervio/&#34;&gt;Marko Tervio&lt;/a&gt; as an
+ explanation for labor shortages in certain areas of &lt;span class=&#34;caps&#34;&gt;IT&lt;/span&gt;.
+ The gist of the model is that in hiring novices, 
+firms cannot fully recoup their hiring costs if the novices&amp;#8217; 
+true talents will become common knowledge post-hire. 
+It&amp;#8217;s a great paper, but what people might not know is that the theory it 
+proposes has been tested and found to perform very well. 
+For her job market paper, &lt;a href=&#34;http://www.economics.harvard.edu/faculty/pallais&#34;&gt;Mandy Pallais&lt;/a&gt; conducted a large experiment on 
+&lt;a href=&#34;http://www.odesk.com/&#34;&gt;oDesk&lt;/a&gt; 
+where she essentially played the role of the talent-revealing&amp;nbsp;firm.&lt;/p&gt;            </content>
+        </entry>
+            <entry>
+            <title type="html">Solvate joins the deadpool</title>
+            <author><name>Lakshmi Vyasarajan</name></author>
+            <link href="/blog/solvate_joins_the_deadpool.html"/>
+            <updated>2012-02-20T10:34:00Z</updated>
+            <published>2012-02-20T10:34:00Z</published>
+            <id>/blog/solvate_joins_the_deadpool.html</id>
+                        <category   scheme="/blog/tags"
+                        term="oDesk"
+                        label="Odesk" />
+                        <category   scheme="/blog/tags"
+                        term="Solvate"
+                        label="Solvate" />
+            
+            <content type="html">
+                
+                &lt;p&gt;&lt;a href=&#34;http://techcrunch.com/2012/02/19/solvate-shutting-down/&#34;&gt;Techcrunch&lt;/a&gt; and 
+&lt;a href=&#34;http://www.betabeat.com/2012/02/20/freelance-marketplace-solvate-shuts-down-after-four-years-and-6-3-m/&#34;&gt;Betabeat&lt;/a&gt; 
+are reporting that &lt;a href=&#34;http://www.solvate.com/&#34;&gt;Solvate&lt;/a&gt;, 
+a platform for remote work, is shutting down. 
+Unlike oDesk, Elance, Freelancer etc., they were not trying to create a true marketplace: 
+they were trying to do more of a high-touch, human-in-the-loop matching&amp;nbsp;service.&lt;/p&gt;            </content>
+        </entry>
+            <entry>
+            <title type="html">Why aren't we all freelancers?</title>
+            <author><name>Lakshmi Vyasarajan</name></author>
+            <link href="/blog/why_arent_we_all_freelancers.html"/>
+            <updated>2012-02-16T09:35:00Z</updated>
+            <published>2012-02-16T09:35:00Z</published>
+            <id>/blog/why_arent_we_all_freelancers.html</id>
+                        <category   scheme="/blog/tags"
+                        term="oDesk"
+                        label="Odesk" />
+                        <category   scheme="/blog/tags"
+                        term="Freelancers"
+                        label="Freelancers" />
+            
+            <content type="html">
+                
+                &lt;p&gt;Investors typically hold diverse portfolios of assets, with the goal of reducing risk. 
+While diversification is commonplace in investing, most of us have no diversification in our 
+labor income streams: we work at one job at a time, for a single employer. However, the &amp;#8220;returns&amp;#8221; 
+to a job vary like returns on investments, especially on non-financial dimensions 
+(e.g., engagement, learning, co-workers, working conditions). 
+As in investing, there is also a significant amount of direct financial risk in holding one job&amp;#8211;the 
+firm may impose layoffs or go out of business. Given the similarities between jobs and assets, 
+why isn&amp;#8217;t there a similar impetus to diversify, i.e., why don&amp;#8217;t we all hold a portfolio of small jobs 
+at the same time, with many different employers&amp;nbsp;[0]?&lt;/p&gt;            </content>
+        </entry>
+            <entry>
+            <title type="html">Writing Smell Detector (WSD) - a tool for finding problematic writing</title>
+            <author><name>Lakshmi Vyasarajan</name></author>
+            <link href="/blog/word_smell_detector_wsd_tool_for.html"/>
+            <updated>2012-02-07T22:00:00Z</updated>
+            <published>2012-02-07T22:00:00Z</published>
+            <id>/blog/word_smell_detector_wsd_tool_for.html</id>
+                        <category   scheme="/blog/tags"
+                        term="Smell_detector"
+                        label="Smell_Detector" />
+                        <category   scheme="/blog/tags"
+                        term="oDesk"
+                        label="Odesk" />
+            
+            <content type="html">
+                
+                &lt;p&gt;tl;dr version: &lt;span class=&#34;caps&#34;&gt;WSD&lt;/span&gt; is a python tool to help find problems in your writing. 
+Here&amp;#8217;s the &lt;a href=&#34;https://github.com/utapyngo/WritingSmellDetector&#34;&gt;source&lt;/a&gt; and here&amp;#8217;s example&amp;nbsp;output. &lt;/p&gt;
+&lt;p&gt;In grad school, I wrote a program that used a series of regular expressions to detect &amp;#8220;writing smell&amp;#8221; 
+(analogous to &lt;a href=&#34;http://en.wikipedia.org/wiki/Code_smell&#34;&gt;code smell&lt;/a&gt;, i.e., telltale signs of bad writing and mistakes. 
+The rules for smelliness were loosely based on one of my favorite writing how-to&amp;#8217;s: 
+&lt;a href=&#34;http://www.amazon.com/gp/product/0226899152/ref=as_li_tf_tl?ie=UTF8&amp;amp;tag=onlin0c-20&amp;amp;linkCode=as2&amp;amp;camp=1789&amp;amp;creative=9325&amp;amp;creativeASIN=0226899152&#34;&gt;Style: Toward Clarity and Grace&lt;/a&gt; by Joseph&amp;nbsp;Williams.&lt;/p&gt;            </content>
+        </entry>
+            <entry>
+            <title type="html">Minimum Viable Academic Research</title>
+            <author><name>Lakshmi Vyasarajan</name></author>
+            <link href="/blog/minimum_viable_academic_research.html"/>
+            <updated>2012-02-06T08:42:00Z</updated>
+            <published>2012-02-06T08:42:00Z</published>
+            <id>/blog/minimum_viable_academic_research.html</id>
+                        <category   scheme="/blog/tags"
+                        term="Academic_research"
+                        label="Academic_Research" />
+                        <category   scheme="/blog/tags"
+                        term="Start_ups"
+                        label="Start_Ups" />
+            
+            <content type="html">
+                
+                &lt;p&gt;One of the most talked about ideas in the world of start-ups is the notion of the &lt;a href=&#34;http://en.wikipedia.org/wiki/Minimum_viable_product&#34;&gt;minimum viable product&lt;/a&gt; (&lt;span class=&#34;caps&#34;&gt;MVP&lt;/span&gt;).
+ The rationale for &lt;span class=&#34;caps&#34;&gt;MVP&lt;/span&gt; is clear: you don&amp;#8217;t want to build products that customers don’t want, never mind waste 
+time polishing and optimizing those unwanted products. &amp;#8220;Minimally viable&amp;#8221; doesn&amp;#8217;t even require the product 
+to exist yet&amp;#8211;the viability refers to whether it will give you the feedback you need to see if the project 
+has potential. For example, you might do an A/B test where you buy keywords for some new feature, but then just 
+have a landing page where people can enter their email address, thereby gauging interest. 
+The important thing is that it is market feedback, not just opinions of people near&amp;nbsp;you.&lt;/p&gt;            </content>
+        </entry>
+            <entry>
+            <title type="html">Stereotypes about animals (and children) as revealed by Google auto-suggest</title>
+            <author><name>Lakshmi Vyasarajan</name></author>
+            <link href="/blog/stereotypes-about-animals-and-children.html"/>
+            <updated>2012-02-04T13:07:00Z</updated>
+            <published>2012-02-04T13:07:00Z</published>
+            <id>/blog/stereotypes-about-animals-and-children.html</id>
+                        <category   scheme="/blog/tags"
+                        term="Academic_research"
+                        label="Academic_Research" />
+                        <category   scheme="/blog/tags"
+                        term="Start_ups"
+                        label="Start_Ups" />
+            
+            <content type="html">
+                
+                &lt;p&gt;I saw this &lt;a href=&#34;https://twitter.com/#!/m_sendhil/status/165870948015284224/photo/1&#34;&gt;tweet&lt;/a&gt; by @m_sendhil, which had a screenshot of Google&amp;#8217;s auto-suggest for 
+&amp;#8220;why are indians so,&amp;#8221; which contained a collection of (often contradictory) stereotypes (e.g., fat and skinny).&lt;br /&gt;
+I began doing the same exercise for other nationalities and ethnic groups, products, animals&amp;nbsp;etc.&lt;/p&gt;            </content>
+        </entry>
+            <entry>
+            <title type="html">Employer recruiting intensity</title>
+            <author><name>Lakshmi Vyasarajan</name></author>
+            <link href="/blog/employer-recruiting-intensity.html"/>
+            <updated>2012-02-01T08:59:00Z</updated>
+            <published>2012-02-01T08:59:00Z</published>
+            <id>/blog/employer-recruiting-intensity.html</id>
+                        <category   scheme="/blog/tags"
+                        term="Academic_research"
+                        label="Academic_Research" />
+                        <category   scheme="/blog/tags"
+                        term="Start_ups"
+                        label="Start_Ups" />
+            
+            <content type="html">
+                
+                &lt;p&gt;I was reading/skimming &lt;a href=&#34;http://faculty.chicagobooth.edu/steven.davis/pdf/w16265.pdf&#34;&gt;this&lt;/a&gt; paper by Davis et al. and in the abstract, they&amp;nbsp;write:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span class=&#34;dquo&#34;&gt;&amp;#8220;&lt;/span&gt;This paper is the first to study vacancies, hires, and vacancy yields at the 
+  establishment level in the Job Openings and Labor Turnover Survey, a large sample of &lt;span class=&#34;caps&#34;&gt;U.S.&lt;/span&gt;   employers.&lt;br /&gt;
+  We show that&lt;br /&gt;
+ (a) employers rely heavily on other instruments, in addition to vacancy numbers, as they vary hires,&lt;br /&gt;
+ (b) the hiring technology exhibits strong increasing returns to vacancies at the establishment level, or both. &lt;br /&gt;
+&lt;strong&gt;We also develop evidence that effective recruiting intensity per vacancy varies over time, accounting for about 35% of movements in aggregate hires.&lt;/strong&gt;&amp;#8221;&lt;/p&gt;
+&lt;/blockquote&gt;            </content>
+        </entry>
+            <entry>
+            <title type="html">What do contractors in machine learning charge by the hour?</title>
+            <author><name>Lakshmi Vyasarajan</name></author>
+            <link href="/blog/what-do-contractors-in-machine-learning.html"/>
+            <updated>2011-11-26T11:18:00Z</updated>
+            <published>2011-11-26T11:18:00Z</published>
+            <id>/blog/what-do-contractors-in-machine-learning.html</id>
+                        <category   scheme="/blog/tags"
+                        term="Odesk"
+                        label="Odesk" />
+                        <category   scheme="/blog/tags"
+                        term="Contractors"
+                        label="Contractors" />
+            
+            <content type="html">
+                
+                &lt;p&gt;Obviously the answer depends on the skill level, but based on the few machine learning contractors 
+I&amp;#8217;ve worked with on oDesk, I would guess about 30-40/hour is average. 
+However, I wanted to check with some real data. I have access to our full database, but a more useful answer would 
+allow people to see how to do this for other skills by simply scraping our search results 
+(we have an &lt;span class=&#34;caps&#34;&gt;API&lt;/span&gt;, but I don&amp;#8217;t know how to use it yet and I wanted to try the &lt;a href=&#34;http://www.crummy.com/software/BeautifulSoup/&#34;&gt;BeautifulSoup&lt;/a&gt;&amp;nbsp;package).&lt;/p&gt;            </content>
+        </entry>
+            <entry>
+            <title type="html">Should Online Labor Markets Set a Minimum Wage?</title>
+            <author><name>Lakshmi Vyasarajan</name></author>
+            <link href="/blog/should-online-labor-markets-set-minimum.html"/>
+            <updated>2011-10-29T16:08:00Z</updated>
+            <published>2011-10-29T16:08:00Z</published>
+            <id>/blog/should-online-labor-markets-set-minimum.html</id>
+                        <category   scheme="/blog/tags"
+                        term="Labor"
+                        label="Labor" />
+                        <category   scheme="/blog/tags"
+                        term="Markets"
+                        label="Markets" />
+            
+            <content type="html">
+                
+                &lt;p&gt;Some critics of online labor markets mistakenly believe that the platform creators have an 
+incentive to keep wages low. Employers have that incentive, but all else equal, the creators of 
+online labor markets want to see see wages rise, since almost all of them take a percentage of earnings. 
+At least from a revenue standpoint, they should be indifferent between more work at a lower price or less 
+work at a higher price, so long as the wage bill stays the same. It would be a different story if the platforms 
+could somehow tax employers on the value-added by the platform, but so far, that&amp;#8217;s not&amp;nbsp;possible.&lt;/p&gt;            </content>
+        </entry>
+            <entry>
+            <title type="html">Workers-as-Bundled-Goods</title>
+            <author><name>Lakshmi Vyasarajan</name></author>
+            <link href="/blog/workers_as_bundled_goods.html"/>
+            <updated>2011-10-27T20:50:00Z</updated>
+            <published>2011-10-27T20:50:00Z</published>
+            <id>/blog/workers_as_bundled_goods.html</id>
+                        <category   scheme="/blog/tags"
+                        term="Labor"
+                        label="Labor" />
+                        <category   scheme="/blog/tags"
+                        term="Markets"
+                        label="Markets" />
+                        <category   scheme="/blog/tags"
+                        term="Productivity"
+                        label="Productivity" />
+            
+            <content type="html">
+                
+                &lt;p&gt;A standard pricing strategy in many industries is &lt;a href=&#34;http://en.wikipedia.org/wiki/Product_bundling&#34;&gt;bundling goods&lt;/a&gt;, e.g., 
+productivity &amp;#8220;suites&amp;#8221; like Microsoft Office, value meals at fast food restaurants, hotel 
+and flight combos, etc. In the labor market, we also see a kind of bundling, though not 
+by design: each worker is a collection of skills and attributes that can&amp;#8217;t be broken apart and 
+purchased separately by the firm. For example, by hiring me, my company gets my writing, 
+meeting attendance, programming, etc.; they can&amp;#8217;t choose to not buy my low-quality expense-report-filing&amp;nbsp;service.&lt;/p&gt;            </content>
+        </entry>
+            <entry>
+            <title type="html">Some light data munging with R, with an application to ranking NFL Teams</title>
+            <author><name>Lakshmi Vyasarajan</name></author>
+            <link href="/blog/some-light-data-munging-with-r-with.html"/>
+            <updated>2011-10-08T16:08:00Z</updated>
+            <published>2011-10-08T16:08:00Z</published>
+            <id>/blog/some-light-data-munging-with-r-with.html</id>
+                        <category   scheme="/blog/tags"
+                        term="Statistics"
+                        label="Statistics" />
+            
+            <content type="html">
+                
+                &lt;p&gt;I recently submitted this blog to &lt;a href=&#34;http://www.r-bloggers.com/&#34;&gt;R-bloggers&lt;/a&gt;, which aggregates R-related blog posts. 
+It&amp;#8217;s a fantastic site and has been invaluable to me as I&amp;#8217;ve learned R. 
+One of my favorite kinds of articles is the hands-on, &amp;#8220;hello world&amp;#8221;-style weekend project that 
+dips into a topic/technology, so here&amp;#8217;s my first attempt at one in this&amp;nbsp;style.&lt;/p&gt;            </content>
+        </entry>
+            <entry>
+            <title type="html">All public government data should be easily machine readable</title>
+            <author><name>Lakshmi Vyasarajan</name></author>
+            <link href="/blog/all-public-government-data-should-be.html"/>
+            <updated>2011-10-02T10:13:00Z</updated>
+            <published>2011-10-02T10:13:00Z</published>
+            <id>/blog/all-public-government-data-should-be.html</id>
+                        <category   scheme="/blog/tags"
+                        term="Statistics"
+                        label="Statistics" />
+                        <category   scheme="/blog/tags"
+                        term="Python"
+                        label="Python" />
+                        <category   scheme="/blog/tags"
+                        term="Programming"
+                        label="Programming" />
+            
+            <content type="html">
+                
+                &lt;p&gt;The Bureau of Labor Statistics (&lt;span class=&#34;caps&#34;&gt;BLS&lt;/span&gt;) has an annual budget of over $640 million (&lt;span class=&#34;caps&#34;&gt;FY&lt;/span&gt; 2011), 
+a budget  they use to create and then distribute detailed labor market data and analysis to policy makers, 
+researchers, journalists and the general public. I can&amp;#8217;t speak to the &amp;#8220;creation&amp;#8221; part of their mission, 
+but on the &amp;#8220;distribution&amp;#8221; part, the are failing&amp;#8211;organizations with tiny fractions of their resources do a far better&amp;nbsp;job.&lt;/p&gt;            </content>
+        </entry>
+            <entry>
+            <title type="html">We can always get jobs working at the local robot factory</title>
+            <author><name>Lakshmi Vyasarajan</name></author>
+            <link href="/blog/we-can-always-get-jobs-working-at-local.html"/>
+            <updated>2011-10-01T10:52:00Z</updated>
+            <published>2011-10-01T10:52:00Z</published>
+            <id>/blog/we-can-always-get-jobs-working-at-local.html</id>
+                        <category   scheme="/blog/tags"
+                        term="Labor"
+                        label="Labor" />
+            
+            <content type="html">
+                
+                &lt;blockquote&gt;
+&lt;p&gt;&lt;span class=&#34;dquo&#34;&gt;&amp;#8220;&lt;/span&gt;Most economists aren&amp;#8217;t taking these worries very seriously. The idea that computers might significantly disrupt human 
+  labor markets&amp;#8212;and, thus, further weaken the global economy&amp;#8212;so far remains on the&amp;nbsp;fringes.&amp;#8221;&lt;/p&gt;
+&lt;/blockquote&gt;            </content>
+        </entry>
+            <entry>
+            <title type="html">Using oDesk to Satisfy Curiosity</title>
+            <author><name>Lakshmi Vyasarajan</name></author>
+            <link href="/blog/few-days-ago-laszlo-sandor-one-of.html"/>
+            <updated>2011-09-28T09:39:00Z</updated>
+            <published>2011-09-28T09:39:00Z</published>
+            <id>/blog/few-days-ago-laszlo-sandor-one-of.html</id>
+                        <category   scheme="/blog/tags"
+                        term="Labor"
+                        label="Labor" />
+                        <category   scheme="/blog/tags"
+                        term="oDesk"
+                        label="Odesk" />
+                        <category   scheme="/blog/tags"
+                        term="Contractors"
+                        label="Contractors" />
+            
+            <content type="html">
+                
+                &lt;p&gt;A few days ago, Laszlo Sandor, one of the economists in my &amp;#8220;economics&amp;#8221; 
+Google+ circle posted a photograph showing the Hungarian &lt;span class=&#34;caps&#34;&gt;PM&lt;/span&gt;&amp;#8217;s notes for a speech to parliament. 
+As you can see from the picture, the final product was not the result of, uh, careful policy&amp;nbsp;analysis:&lt;/p&gt;            </content>
+        </entry>
+    </feed>

@@ -1,0 +1,1133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>
+        Online Labor Blog Feed. Author: John J. Horton    </title>
+        <link href="blog/atom.xml" rel="self" />
+    
+        <link href="/"/>
+    
+        
+    <updated>2012-05-19T21:55:04Z</updated>
+
+    <id>/blog/atom.xml/</id>
+
+            <entry>
+            <title type="html">Location of India Based Contractors on oDesk</title>
+            <author><name>Lakshmi Vyasarajan</name></author>
+            <link href="/blog/location_of_india_based_contractors_on_odesk.html"/>
+            <updated>2012-03-06T13:38:00Z</updated>
+            <published>2012-03-06T13:38:00Z</published>
+            <id>/blog/location_of_india_based_contractors_on_odesk.html</id>
+                        <category   scheme="/blog/tags"
+                        term="oDesk"
+                        label="Odesk" />
+                        <category   scheme="/blog/tags"
+                        term="Contractors"
+                        label="Contractors" />
+                        <category   scheme="/blog/tags"
+                        term="India"
+                        label="India" />
+            
+            <content type="html">
+                                &lt;p&gt;My favorite R package, &lt;a href=&#34;http://had.co.nz/ggplot2/&#34;&gt;ggplot2&lt;/a&gt;, recently introduced enhanced support for 
+&lt;a href=&#34;http://en.wikipedia.org/wiki/Choropleth_map&#34;&gt;choropleth maps&lt;/a&gt;. 
+I&amp;#8217;d like to make some of these kinds of maps with oDesk data, but as a first step,
+I thought I&amp;#8217;d just plot the locations of all of our India-based contractors by city.
+In the plot below, dots size as log-scaled by # of contractors reporting that city. 
+The massive light blue dot near Delhi is default coordinate when we&amp;#8217;re missing the&amp;nbsp;city.&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;India Map&#34; src=&#34;http://2.bp.blogspot.com/-2swMSov2F0o/T1aB161b4iI/AAAAAAAAO-M/R7msF1KWlLY/s1600/india.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Here&amp;#8217;s the associated R code to make this&amp;nbsp;figure:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;library(ggplot2)
+library(sqldf)
+# using the dataset &#39;raw&#39; wich is a list of contractors by lat, long
+df &amp;lt;- sqldf(&#34;SELECT COUNT(*) AS num, LocLat, LocLong
+FROM raw GROUP BY LocLat, LocLong&#34;)
+g &amp;lt;- qplot(LocLong,LocLat, colour=num, size=log(num), data = df)
+png(&#34;india.png&#34;)
+print(g)
+dev.off()
+&lt;/code&gt;&lt;/pre&gt;            </content>
+        </entry>
+            <entry>
+            <title type="html">High-wage skills on oDesk (or why you might want to learn Clojure if you're not a lawyer)</title>
+            <author><name>Lakshmi Vyasarajan</name></author>
+            <link href="/blog/high_wage_skills_on_odesk.html"/>
+            <updated>2012-03-06T13:38:00Z</updated>
+            <published>2012-03-06T13:38:00Z</published>
+            <id>/blog/high_wage_skills_on_odesk.html</id>
+                        <category   scheme="/blog/tags"
+                        term="oDesk"
+                        label="Odesk" />
+                        <category   scheme="/blog/tags"
+                        term="Closure"
+                        label="Closure" />
+            
+            <content type="html">
+                                &lt;blockquote&gt;
+&lt;p&gt;Update: Hello, HackerNews readers.
+  One thing that I discussed but probably didn&amp;#8217;t emphasize enough is that this data show 
+  the correlation between listed skills and offered wages&amp;#8211;you absolutely cannot infer 
+  a causal relationship (my cheeky title notwithstanding). 
+  Unless I get to create and run a massive skills training program experiment, 
+  it&amp;#8217;s going to be hard to get at causality. But I can do something about the offered/earned distinction. 
+  If you don&amp;#8217;t want to miss my follow-on blog post where I explore the relationship between skills and actual earned 
+  wages from actual projects, follow me on &lt;a href=&#34;https://twitter.com/#!/johnjhorton&#34;&gt;twitter&lt;/a&gt;.&lt;br /&gt;
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://www.odesk.com/&#34;&gt;oDesk&lt;/a&gt;&lt;/strong&gt; recently introduced a controlled, centralized vocabulary of about 1,400 skills for 
+buyers and contractors to use when posting jobs and creating profiles. 
+The primary motivation for the change was to make it easier for buyers and sellers to find each other: 
+without a standardized vocabulary, would-be traders can fail to match simply because they use different terms for the same skill.
+A side effect of this transition is that high quality data on the relationships between skills and wages 
+are now available. I recently built a dataset of contractors&amp;#8217; hourly wages by skill: for each skill, 
+I identified all contractors listing that skill on their profiles and averaged their offered hourly wages. 
+Although contractors are free to offer any hourly wage they like, in my experience, wages offered 
+closely map to actual earnings. However, to reduce the influence of outliers, I restricted the sample to 
+contractors offering between 50 cents and 100 dollars per hour. I also only included skills for which there were 
+30 or more&amp;nbsp;observations.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;In the bar chart below (made using the very cool &lt;a href=&#34;http://cran.r-project.org/web/packages/googleVis/index.html&#34;&gt;googleVis&lt;/a&gt; package for R), 
+I plotted the top 50 skills, ordered by average hourly wage (&lt;a href=&#34;http://dl.dropbox.com/u/420874/skills.html&#34;&gt;here&lt;/a&gt; is a &amp;#8220;live&amp;#8221; version with mouse-over). 
+The top of the list is dominated by high-end consulting areas (e.g., patents and venture capital consulting) 
+or hot newer technologies (e.g., &lt;a href=&#34;http://redis.io/&#34;&gt;redis&lt;/a&gt; and &lt;a href=&#34;http://aws.amazon.com/rds/&#34;&gt;Amazon &lt;span class=&#34;caps&#34;&gt;RDS&lt;/span&gt;&lt;/a&gt;). The programming language that commands 
+the highest wage is &lt;a href=&#34;http://en.wikipedia.org/wiki/Clojure&#34;&gt;Clojure&lt;/a&gt;, which is a rather esoteric skill: it&amp;#8217;s a lisp dialect that compiles to the 
+Java Virtual Machine (&lt;span class=&#34;caps&#34;&gt;JVM&lt;/span&gt;). Perhaps this is the market reflecting Paul Graham&amp;#8217;s &amp;#8220;&lt;a href=&#34;http://paulgraham.com/pypar.html&#34;&gt;Python Paradox&lt;/a&gt;&amp;#8220;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span class=&#34;dquo&#34;&gt;&amp;#8220;&lt;/span&gt;if a company chooses to write its software in a comparatively esoteric language, they&amp;#8217;ll be able to hire better programmers, because they&amp;#8217;ll attract only those who cared enough to learn it. And for programmers the paradox is even more pronounced: the language to learn, if you want to get a good job, is a language that people don&amp;#8217;t learn merely to get a job.&amp;#8221;&lt;br /&gt;
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;At the time Graham wrote this, Python was a far less mainstream language, 
+probably analogous to how Clojure is regarded today. It&amp;#8217;s an interesting pattern, 
+and although they&amp;#8217;d cut up my economist membership card if I made a causal claim between 
+knowing Clojure and being able to command hire wages, I&amp;#8217;m intrigued by the idea of using online 
+labor markets as a bellwether to help guide human capital choices.&lt;br /&gt;
+&lt;/p&gt;
+&lt;hr /&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;img alt=&#34;Average Odesk Profile Rates By Skill&#34; src=&#34;http://4.bp.blogspot.com/-Xe5lrTxrrHU/Tz_lyLmWoxI/AAAAAAAAOqQ/Zo-Q7ta3VVI/s1600/odesk_skills.png&#34; /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;            </content>
+        </entry>
+            <entry>
+            <title type="html">Economics of the Cold Start Problem in Talent Discovery</title>
+            <author><name>Lakshmi Vyasarajan</name></author>
+            <link href="/blog/economics_of_the_cold_start_problem_in_talent_discovery.html"/>
+            <updated>2012-02-21T09:36:00Z</updated>
+            <published>2012-02-21T09:36:00Z</published>
+            <id>/blog/economics_of_the_cold_start_problem_in_talent_discovery.html</id>
+                        <category   scheme="/blog/tags"
+                        term="oDesk"
+                        label="Odesk" />
+                        <category   scheme="/blog/tags"
+                        term="Economics"
+                        label="Economics" />
+            
+            <content type="html">
+                                &lt;p&gt;Tyler Cowen &lt;a href=&#34;http://marginalrevolution.com/marginalrevolution/2012/02/why-is-there-a-shortage-of-talent-in-it-sectors-and-the-like.html&#34;&gt;recently&lt;/a&gt;
+ highlighted &lt;a href=&#34;http://marginalrevolution.com/marginalrevolution/2012/02/why-is-there-a-shortage-of-talent-in-it-sectors-and-the-like.html&#34;&gt;this&lt;/a&gt; paper by 
+&lt;a href=&#34;http://hse-econ.fi/tervio/&#34;&gt;Marko Tervio&lt;/a&gt; as an
+ explanation for labor shortages in certain areas of &lt;span class=&#34;caps&#34;&gt;IT&lt;/span&gt;.
+ The gist of the model is that in hiring novices, 
+firms cannot fully recoup their hiring costs if the novices&amp;#8217; 
+true talents will become common knowledge post-hire. 
+It&amp;#8217;s a great paper, but what people might not know is that the theory it 
+proposes has been tested and found to perform very well. 
+For her job market paper, &lt;a href=&#34;http://www.economics.harvard.edu/faculty/pallais&#34;&gt;Mandy Pallais&lt;/a&gt; conducted a large experiment on 
+&lt;a href=&#34;http://www.odesk.com/&#34;&gt;oDesk&lt;/a&gt; 
+where she essentially played the role of the talent-revealing&amp;nbsp;firm.&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Supply_train_Scotland&#34; src=&#34;http://farm2.staticflickr.com/1283/4700564268_6f453c0204.jpg&#34; /&gt; &lt;/p&gt;
+&lt;p&gt;Here&amp;#8217;s the abstract from her &lt;a href=&#34;http://scholar.harvard.edu/apallais/publications/inefficient-hiring-entry-level-labor-markets&#34;&gt;paper&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;#8230; I formalize this intuition in a model of the labor market in which positive hiring costs and 
+  publicly observable output lead to inefficiently low novice hiring. 
+  I test the models relevance in an online labor market by hiring 952 workers at random from an applicant pool 
+  of 3,767 for a 10-hour data entry job.
+  In this market, worker performance is publicly observable.
+  Consistent with the models prediction, novice workers hired at random obtain significantly more employment and 
+  have higher earnings than the control group, following the initial hiring spell.
+  A second treatment confirms that this causal effect is likely explained by information revelation rather than skills acquisition.
+  Providing the market with more detailed information about the performance of a subset of the randomly-hired workers raised earnings 
+  of high productivity workers and decreased earnings of low-productivity&amp;nbsp;workers.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;In a nutshell, as a worker, you can&amp;#8217;t get hired unless you have feedback, 
+and you can&amp;#8217;t get feedback unless you&amp;#8217;ve been hired. 
+This &amp;#8220;&lt;a href=&#34;http://en.wikipedia.org/wiki/Cold_start&#34;&gt;cold start&lt;/a&gt;&amp;#8221; problem is one of the key challenges of online labor markets, 
+where there are far fewer signals about a worker&amp;#8217;s ability and less common knowledge about 
+what different signals even mean (quick: what&amp;#8217;s the &lt;span class=&#34;caps&#34;&gt;MIT&lt;/span&gt; of Romania?). 
+I would argue that scalable talent discovery and revelation is the most important applied problem in online&amp;nbsp;labor/crowdsourcing.&lt;/p&gt;
+&lt;p&gt;Although acute in online labor markets, the problem of talent discovery and revelation is no cake walk in traditional markets. 
+Not surprisingly, several new start-ups (e.g.,  &lt;a href=&#34;http://smarterer.com/&#34;&gt;smarterer&lt;/a&gt; and &lt;a href=&#34;http://www.gild.com/&#34;&gt;gild&lt;/a&gt; 
+are focusing on scalable skill assessment, and 
+there is excitement in the tech community about using talent revealing sites like &lt;a href=&#34;http://stackoverflow.com/&#34;&gt;StackOverflow&lt;/a&gt; 
+and &lt;a href=&#34;https://github.com/&#34;&gt;Github&lt;/a&gt; as replacements for traditional resumes. It is not hard to imagine these low-cost tools or their future incarnations being paired with scalable tools to 
+create human capital, like the automated training programs and courses offered by &lt;a href=&#34;http://www.udacity.com/&#34;&gt;Udacity&lt;/a&gt;, 
+&lt;a href=&#34;http://www.khanacademy.org/&#34;&gt;Kahn Academy&lt;/a&gt;, &lt;a href=&#34;http://www.codecademy.com/&#34;&gt;codeacademy&lt;/a&gt; and 
+&lt;a href=&#34;http://web.mit.edu/newsoffice/2011/mitx-education-initiative-1219.html&#34;&gt;MITx&lt;/a&gt;. Taken together, 
+they could create a kind of substitute for the combined training/signaling role that traditional higher education plays&amp;nbsp;today.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Like what you read?  
+Why not follow me on twitter or subscribe to this blog via RSS?
+&lt;/code&gt;&lt;/pre&gt;            </content>
+        </entry>
+            <entry>
+            <title type="html">Solvate joins the deadpool</title>
+            <author><name>Lakshmi Vyasarajan</name></author>
+            <link href="/blog/solvate_joins_the_deadpool.html"/>
+            <updated>2012-02-20T10:34:00Z</updated>
+            <published>2012-02-20T10:34:00Z</published>
+            <id>/blog/solvate_joins_the_deadpool.html</id>
+                        <category   scheme="/blog/tags"
+                        term="oDesk"
+                        label="Odesk" />
+                        <category   scheme="/blog/tags"
+                        term="Solvate"
+                        label="Solvate" />
+            
+            <content type="html">
+                                &lt;p&gt;&lt;a href=&#34;http://techcrunch.com/2012/02/19/solvate-shutting-down/&#34;&gt;Techcrunch&lt;/a&gt; and 
+&lt;a href=&#34;http://www.betabeat.com/2012/02/20/freelance-marketplace-solvate-shuts-down-after-four-years-and-6-3-m/&#34;&gt;Betabeat&lt;/a&gt; 
+are reporting that &lt;a href=&#34;http://www.solvate.com/&#34;&gt;Solvate&lt;/a&gt;, 
+a platform for remote work, is shutting down. 
+Unlike oDesk, Elance, Freelancer etc., they were not trying to create a true marketplace: 
+they were trying to do more of a high-touch, human-in-the-loop matching&amp;nbsp;service.&lt;/p&gt;
+&lt;p&gt;In the email Solvate sent to their users about the shutdown, 
+they explicitly cited scalability issues, which I&amp;#8217;m guessing refers to the 
+non-sustainable effort and cost of hand-matching buyers and sellers. 
+I wouldn&amp;#8217;t say this is definitive proof that the high-touch matching business model doesn&amp;#8217;t work 
+(my outsider impression is that &lt;a href=&#34;http://www.glgresearch.com/&#34;&gt;&lt;span class=&#34;caps&#34;&gt;GLG&lt;/span&gt;&lt;/a&gt; is killing it), but it is a reminder that the value-added 
+from your human-in-the-loop matching has to be sufficiency high that you can re-coup your costs: 
+you can&amp;#8217;t take a hit on every unit sold but make it up on volume.&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;I think it&amp;#8217;s too bad they are shutting down&amp;#8211;I would have liked to see how their 
+approach to online labor would have evolved. That being said, I personally found their emphasis 
+(at least in their marketing copy) on &lt;span class=&#34;caps&#34;&gt;US&lt;/span&gt;-based workers off-putting. Solvate&amp;#8217;s &lt;span class=&#34;caps&#34;&gt;CEO&lt;/span&gt; was 
+&lt;a href=&#34;http://gigaom.com/collaboration/solvate-ceo-most-labor-platforms-undermine-american-workers/&#34;&gt;quoted&lt;/a&gt; extensively 
+in a  Gigaom article, in which he claimed that online labor markets were undermining &lt;span class=&#34;caps&#34;&gt;US&lt;/span&gt; workers. 
+He also suggested that by relying only on &lt;span class=&#34;caps&#34;&gt;US&lt;/span&gt;-based workers, 
+Solvate could promise a higher level of talent and expertise. 
+All online labor markets have to find ways to help workers credibly demonstrate their talents, and 
+using crude geography-based proxies for talent is an approach, but not a particularly admirable one. 
+To me, the whole ethical/moral &amp;#8220;so what&amp;#8221; of online work is that geography and nationality doesn&amp;#8217;t have to matter.&lt;br /&gt;
+&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;strong&gt;As a coda, here is my response to the original 
+&lt;a href=&#34;http://gigaom.com/collaboration/are-online-marketplaces-driving-down-web-worker-salaries/&#34;&gt;Gigaom&lt;/a&gt; article:&lt;/strong&gt;&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;Full disclosure: I&amp;#8217;m the staff economist at oDesk and these opinions represent my own views.&lt;br /&gt;
+&lt;strong&gt;A couple of thoughts:&lt;/strong&gt;&lt;br /&gt;
+&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Like any competitive market, the forces of supply and demand are going to determine prices in these online markets. With the opening up of new countries that have large, reasonably well-educated, internet savvy populations, supply increases which will tend to drive down wages. On the other hand, these markets (and the ability to break work up into small, outsourceable bits) also make it possible to outsource more work, increasing demand, and hence&amp;nbsp;prices.&lt;/li&gt;
+&lt;li&gt;At least within oDesk, we haven&amp;#8217;t seen strong trends in wages, though presumably this article is talking about freelancers in general and we obviously don&amp;#8217;t have visibility on their&amp;nbsp;wages.&lt;/li&gt;
+&lt;li&gt;As a practical matter, I don&amp;#8217;t think workers in developed countries like the &lt;span class=&#34;caps&#34;&gt;US&lt;/span&gt; can&amp;#8217;t compete in these markets-they actually have a lot of advantages: perfect english, same time-zone, familiarity with &lt;span class=&#34;caps&#34;&gt;US&lt;/span&gt; business culture/expectations etc. Further, price matters, but it&amp;#8217;s not the only thing. For what it&amp;#8217;s worth, I work with many oDesk contractors and the break-down is 1 x &lt;span class=&#34;caps&#34;&gt;US&lt;/span&gt;, 1 x Italy, 1 x Russia, 1 x Pakistan and 2 x&amp;nbsp;Philippines.&lt;/li&gt;
+&lt;li&gt;The efficiency and distributional effects of information and communications technology are complex and the evidence is ambiguous, so I&amp;#8217;d be skeptical of anyone offering a definite answer to these kinds of questions. There was an interesting Quora thread on this &lt;a href=&#34;http://www.quora.com/Will-oDesk-and-mfg-com-be-the-demise-of-the-American-middle-class&#34;&gt;topic&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;I think focusing on what these markets do for relatively well-paid workers in developed countries misses one of the most important moral facts about these markets, which is that they generate new, relatively well-paid, meaningful work opportunities for people in developing countries. It&amp;#8217;s obviously not a random sample of our workers, but If you spend a few minutes on oDesk&amp;#8217;s Facebook fanpage and look at the comments and stories, it&amp;#8217;s clear that online work is improving lives in a pretty dramatic&amp;nbsp;way.&lt;/li&gt;
+&lt;/ul&gt;            </content>
+        </entry>
+            <entry>
+            <title type="html">Why aren't we all freelancers?</title>
+            <author><name>Lakshmi Vyasarajan</name></author>
+            <link href="/blog/why_arent_we_all_freelancers.html"/>
+            <updated>2012-02-16T09:35:00Z</updated>
+            <published>2012-02-16T09:35:00Z</published>
+            <id>/blog/why_arent_we_all_freelancers.html</id>
+                        <category   scheme="/blog/tags"
+                        term="oDesk"
+                        label="Odesk" />
+                        <category   scheme="/blog/tags"
+                        term="Freelancers"
+                        label="Freelancers" />
+            
+            <content type="html">
+                                &lt;p&gt;&lt;img alt=&#34;Duck Farm by National Archief&#34; src=&#34;http://farm6.staticflickr.com/5301/5897341040_8027094185.jpg&#34; /&gt;&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;Investors typically hold diverse portfolios of assets, with the goal of reducing risk. 
+While diversification is commonplace in investing, most of us have no diversification in our 
+labor income streams: we work at one job at a time, for a single employer. However, the &amp;#8220;returns&amp;#8221; 
+to a job vary like returns on investments, especially on non-financial dimensions 
+(e.g., engagement, learning, co-workers, working conditions). 
+As in investing, there is also a significant amount of direct financial risk in holding one job&amp;#8211;the 
+firm may impose layoffs or go out of business. Given the similarities between jobs and assets, 
+why isn&amp;#8217;t there a similar impetus to diversify, i.e., why don&amp;#8217;t we all hold a portfolio of small jobs 
+at the same time, with many different employers&amp;nbsp;[0]?&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;Some workers&amp;#8211;freelancers and independent consultants&amp;#8211;do follow this diversified model, but it&amp;#8217;s hardly the norm of workers generally. Below, I lay out a laundry list of potential economic explanations for why the portfolio/freelancing approach is not more common. What&amp;#8217;s interesting to me both academically and as someone working at oDesk is that many of these points are not set-in-stone attributes of the productive process but are instead things that smart features or policies might change.&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Non-linearity in costs of searching/vetting/bargaining&lt;/strong&gt;&lt;br /&gt;
+&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Hiring a freelancer for a small project is like picking out a fancy restaurant; hiring a full time employee is more like buying a house. The effort of searching and vetting (and thus the cost) is related to the stakes of the hire. However, there is no guarantee that those costs scale linearly with the stakes. Suppose it takes nearly as much effort to find a small job as it does to find a large job---then a portfolio approach will generate larger search costs per dollar earned in wages [1].
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Non-linearity in job size and productivity&lt;/strong&gt;&lt;br /&gt;
+&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;If you can make X widgets or Y schwidgets in 1 hour, it doesn&#39;t mean you can make X/2 widgets and Y/2 schwidgets in 1 hour. Every job has some fixed set-up costs---getting out the materials, remembering the key details, etc. The larger the costs, the less attractive the small job. On the other hand, productivity eventually wanes from boredom, physical fatigue, etc. (&#34;I&#39;m really getting bored with this TPS report---time for some Facebook&#34;). The optimal size job (from a productivity standpoint) might be near or above the current 40 hours per week, 50 weeks a year paradigm, in which case going smaller means getting less efficient.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Complementarities with team members that grow over time&lt;/strong&gt;&lt;br /&gt;
+&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;One of the advantages of team production is that workers can share knowledge with each other, motivate each other and generally create an environment where everyone is more productive than they would be working alone. There&#39;s no reason teams of freelancers working together cannot achieve the same complementarities with each other, but if these complementarities take time to develop, larger jobs become more attractive.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Firm-specific human capital&lt;/strong&gt;&lt;br /&gt;
+&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;If a job requires lots of firm-specific human capital, the per-job learning requirement is high, which tends to encourage larger jobs [2].
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Monitoring &lt;span class=&#34;amp&#34;&gt;&amp;amp;&lt;/span&gt; policing costs&lt;/strong&gt;&lt;br /&gt;
+&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Once you get a sense of the character and reputation of some trading partner,  you don&#39;t need to constantly monitor that person/firm. After some level of trust has been established, these costs would fall. This again pushes for larger jobs.  This is probably clearer in terms of firms monitoring workers, since the big fear is shirking, but it does go both ways: workers need to make sure their checks don&#39;t bounce, that their employers aren&#39;t skimming from the 401K, using malk for the coffee service instead of milk, etc.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Employer concerns about &lt;span class=&#34;caps&#34;&gt;IP&lt;/span&gt; (broadly defined)&lt;/strong&gt;&lt;br /&gt;
+&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;I do not think it is likely to find workers working simultaneously for direct competitors [3], the interests of most firms are fairly orthogonal to each other.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Existing public policy&lt;/strong&gt;&lt;br /&gt;
+&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;At least in the US, at the present time, certain realities (health insurance, getting financial credit etc.) are full-time employee advantaged.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr /&gt;
+&lt;p&gt;[0] Note that this isn&amp;#8217;t a &lt;a href=&#34;http://en.wikipedia.org/wiki/Theory_of_the_firm#Team_production&#34;&gt;theory of the firm&lt;/a&gt; argument or discussion. I&amp;#8217;m assuming that one can be a full employee and reap all the benefits of firm organization / team production even with fractional employment.&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;[1] One of the reasons mechanical turk is semi-dysfunctional is that when problems arise (about the scope of work, payment terms etc.), all the surplus generated by the relationship is quickly destroyed: one minute thinking, talking and haggling about a task paying pennies is likely to be economically wasteful. This was one motivation for hagglebot.&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;[2] I think this is why ideal use of online labor is not so much a 1 for 1 replacement of some traditional job, but a decomposition of jobs into easily outsource-able pieces and pieces that require deep firm-specific knowledge.&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;[3] McKinsey&amp;nbsp;excepted.&lt;/p&gt;            </content>
+        </entry>
+            <entry>
+            <title type="html">Writing Smell Detector (WSD) - a tool for finding problematic writing</title>
+            <author><name>Lakshmi Vyasarajan</name></author>
+            <link href="/blog/word_smell_detector_wsd_tool_for.html"/>
+            <updated>2012-02-07T22:00:00Z</updated>
+            <published>2012-02-07T22:00:00Z</published>
+            <id>/blog/word_smell_detector_wsd_tool_for.html</id>
+                        <category   scheme="/blog/tags"
+                        term="Smell_detector"
+                        label="Smell_Detector" />
+                        <category   scheme="/blog/tags"
+                        term="oDesk"
+                        label="Odesk" />
+            
+            <content type="html">
+                                &lt;p&gt;tl;dr version: &lt;span class=&#34;caps&#34;&gt;WSD&lt;/span&gt; is a python tool to help find problems in your writing. 
+Here&amp;#8217;s the &lt;a href=&#34;https://github.com/utapyngo/WritingSmellDetector&#34;&gt;source&lt;/a&gt; and here&amp;#8217;s example&amp;nbsp;output. &lt;/p&gt;
+&lt;p&gt;In grad school, I wrote a program that used a series of regular expressions to detect &amp;#8220;writing smell&amp;#8221; 
+(analogous to &lt;a href=&#34;http://en.wikipedia.org/wiki/Code_smell&#34;&gt;code smell&lt;/a&gt;, i.e., telltale signs of bad writing and mistakes. 
+The rules for smelliness were loosely based on one of my favorite writing how-to&amp;#8217;s: 
+&lt;a href=&#34;http://www.amazon.com/gp/product/0226899152/ref=as_li_tf_tl?ie=UTF8&amp;amp;tag=onlin0c-20&amp;amp;linkCode=as2&amp;amp;camp=1789&amp;amp;creative=9325&amp;amp;creativeASIN=0226899152&#34;&gt;Style: Toward Clarity and Grace&lt;/a&gt; by Joseph&amp;nbsp;Williams.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;The program took as input a text file and output was an annotated report with snippets of the offending bits.
+ I used it for all my papers and found it really helpful, but the coding was very, um,  academic 
+(i.e., written for use by the person who wrote it) and it was written in Mathematica [1], which was the language 
+I knew best at the time. &lt;span class=&#34;caps&#34;&gt;FWIW&lt;/span&gt;, &lt;a href=&#34;http://dl.dropbox.com/u/420874/Writing%20Tools%20Based%20on%20Style%20Book.nb&#34;&gt;here&lt;/a&gt; is my original version.&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;For a long time, I&amp;#8217;ve wanted to port it to some other language and make it accessible and capable of receiving 
+new rule contributions and explanations. To this end, I recently commissioned an oDesk contractor (&lt;a href=&#34;https://github.com/utapyngo&#34;&gt;utapyngo&lt;/a&gt;) to 
+make a more polished, modular version in Python. I think he totally outdid himself. It&amp;#8217;s got a nice modular model 
+now that lets you easily incorporate new rules and he greatly improved upon my often-flawed regular expressions. 
+Be forewarned&amp;#8211;the documentation is non-existent and the rules aren&amp;#8217;t explained, but I plan to take fix this over time, 
+while I&amp;#8217;m using&amp;nbsp;it.&lt;/p&gt;
+&lt;p&gt;It&amp;#8217;s open source (courtesy of &lt;a href=&#34;http://www.odesk.com/&#34;&gt;oDesk&lt;/a&gt;, who paid the bills) and available &lt;a href=&#34;https://github.com/utapyngo/WritingSmellDetector&#34;&gt;here&lt;/a&gt; on github (live &lt;a href=&#34;http://dl.dropbox.com/u/420874/test.html&#34;&gt;example output&lt;/a&gt;). 
+To use it, just clone it, install the python package &lt;a href=&#34;http://jinja.pocoo.org/docs/&#34;&gt;jinja2&lt;/a&gt; and then&amp;nbsp;do:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;pre&gt;&lt;code&gt;$ python wsd.py -o output_file.html your_masterpiece.text
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Here&amp;#8217;s a screenshot of what the &lt;span class=&#34;caps&#34;&gt;HTML&lt;/span&gt; output looks like, illustrating the a/an rule (i.e., that it&amp;#8217;s &amp;#8220;an ox&amp;#8221; but &amp;#8220;a&amp;nbsp;cat&amp;#8221;):&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Screenshot&#34; src=&#34;http://4.bp.blogspot.com/-3_Heze-scJI/TzICbL_n0YI/AAAAAAAAOnw/zPMR6yVXnZI/s640/word_smell.png&#34; /&gt;&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;Note the statement of the rule, the patterns that it looks for and the snippets. 
+It also has a hyperlink to the full text, which is available at the bottom of the document.&lt;br /&gt;
+&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;A few thoughts:&lt;br /&gt;
+&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;If you&amp;#8217;re interested in contributing (rules or features), let me&amp;nbsp;know. &lt;/li&gt;
+&lt;li&gt;It might be nice to turn this into a web-service, though my instinct is that someone interested in algorithmically evaluating their LaTeX/structured text isn&amp;#8217;t going to find cloning the repository &lt;span class=&#34;amp&#34;&gt;&amp;amp;&lt;/span&gt; then running a script to be a big obstacle. And they probably don&amp;#8217;t want to make their writing public. &lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;A few weeks ago, I read this usethis profile of &lt;span class=&#34;caps&#34;&gt;CS&lt;/span&gt; professor &lt;a href=&#34;http://matt.might.usesthis.com/&#34;&gt;Matt Might&lt;/a&gt;. In the software section of the interview, he said that he had some &lt;a href=&#34;http://matt.might.net/articles/shell-scripts-for-passive-voice-weasel-words-duplicates/&#34;&gt;shell scripts&lt;/a&gt; that do something similar. I haven&amp;#8217;t really investigated, but maybe there&amp;#8217;s ideas here worth&amp;nbsp;incorporating. &lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;p&gt;[1] When I told the other members of the oDesk Research / Match Team that I had code for doing this writing smell thing, 
+they were impressed and wanted a copy; when I told them it was written in Mathematica, 
+they thought this was hilarious and mocked me for several minutes. 
+I tried to explain that Mathematica actually has great tools for pattern matching, but this fell on deaf&amp;nbsp;ears. &lt;/p&gt;            </content>
+        </entry>
+            <entry>
+            <title type="html">Minimum Viable Academic Research</title>
+            <author><name>Lakshmi Vyasarajan</name></author>
+            <link href="/blog/minimum_viable_academic_research.html"/>
+            <updated>2012-02-06T08:42:00Z</updated>
+            <published>2012-02-06T08:42:00Z</published>
+            <id>/blog/minimum_viable_academic_research.html</id>
+                        <category   scheme="/blog/tags"
+                        term="Academic_research"
+                        label="Academic_Research" />
+                        <category   scheme="/blog/tags"
+                        term="Start_ups"
+                        label="Start_Ups" />
+            
+            <content type="html">
+                                &lt;p&gt;&lt;img alt=&#34;remember clippy by ppj_vanf,on Flick&#34; src=&#34;http://farm8.staticflickr.com/7020/6548427219_2205d37b11.jpg&#34; /&gt;&lt;br /&gt;
+&lt;strong&gt;A non-viable product in minimum form, courtesy of&amp;nbsp;Flickr&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;One of the most talked about ideas in the world of start-ups is the notion of the &lt;a href=&#34;http://en.wikipedia.org/wiki/Minimum_viable_product&#34;&gt;minimum viable product&lt;/a&gt; (&lt;span class=&#34;caps&#34;&gt;MVP&lt;/span&gt;).
+ The rationale for &lt;span class=&#34;caps&#34;&gt;MVP&lt;/span&gt; is clear: you don&amp;#8217;t want to build products that customers don’t want, never mind waste 
+time polishing and optimizing those unwanted products. &amp;#8220;Minimally viable&amp;#8221; doesn&amp;#8217;t even require the product 
+to exist yet&amp;#8211;the viability refers to whether it will give you the feedback you need to see if the project 
+has potential. For example, you might do an A/B test where you buy keywords for some new feature, but then just 
+have a landing page where people can enter their email address, thereby gauging interest. 
+The important thing is that it is market feedback, not just opinions of people near you.&lt;br /&gt;
+In academia, a big part of the the day to day work is getting feedback on ideas. 
+Each new paper or project is like a product you’re thinking of making. 
+So you float ideas with colleagues, your advisers, your spouse, etc., and 
+you might present some preliminary ideas at a workshop or seminar. 
+The problem is that in most workshops and seminars, where you could potentially get something 
+close to a sample of what the research community will think of the final product, 
+the feedback is usually friendly and limited to implementation 
+(e.g., &amp;#8220;How convincing is the answer you are providing to the question you&amp;#8217;ve framed?&amp;#8221;), 
+instead of &amp;#8220;market&amp;#8221; feedback on how much &amp;#8220;value&amp;#8221; your work is&amp;nbsp;creating.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;The academia analogue to market feedback on value will come later, 
+in two forms: (a) journal reviews / editor decisions and (b) citations. 
+By value, I mean something like (importance of question) x (usefulness of your answer). 
+At least in economics, knowing what is important is difficult. 
+There is no Hilbert&amp;#8217;s list of big and obvious open questions. 
+A few such questions do exist, but they tend to be sweeping in nature&amp;#8211;e.g., 
+&amp;#8220;Why are some countries rich and some countries poor?&amp;#8221; and 
+&amp;#8220;Why do vacancies and unemployed workers co-exist?&amp;#8221;&amp;#8211;that no single work can decisively answer. 
+To do real research, you need to pick some important part of a question and work on&amp;nbsp;that. &lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;A fundamental problem is that the institutional framework in some disciplines 
+(economics being one example, though not all&amp;#8211;see &lt;a href=&#34;http://www.nytimes.com/2012/01/29/opinion/sunday/the-perils-of-bite-size-science.html&#34;&gt;this&lt;/a&gt; recent NYTimes op-ed on scientific works being too short; 
+see &lt;a href=&#34;http://chrisblattman.com/2012/01/29/brevity-is-the-soul-of-science/&#34;&gt;here&lt;/a&gt; for an economist&amp;#8217;s take on the topic) requires you to do lots and lots of polishing before 
+you know (via journal rejection/acceptance) whether even the most polished form of your work is going to 
+score high enough on the importance-of-question measure.  At seminars, people are usually too polite to say, 
+&amp;#8220;Why are you working on this?&amp;#8221; or &amp;#8220;Even if I believed your answer, I wouldn&amp;#8217;t care&amp;#8221; or &amp;#8220;So what?&amp;#8221; 
+But that&amp;#8217;s the kind of painful feedback that would be most useful at early stages. 
+There are some academics that will give that kind of &amp;#8220;Why are you doing this?&amp;#8221; critique, and while they are 
+notorious and induce fear in grad students, the world needs more of them. 
+(I once gave a seminar talk where an audience member asked, &amp;#8220;How does this study have any external validity?&amp;#8221; 
+And I had to admit he was right&amp;#8211;it had none. I dropped the project shortly thereafter, after spending the 
+better part of 3 months working on&amp;nbsp;it.)&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;It&amp;#8217;s not that people won&amp;#8217;t be critical in seminars. You&amp;#8217;ll generally get lots of grief about your modeling assumptions, econometrics, framing etc. But those are easy critiques (and they let the critics show off a little). It&amp;#8217;s the more fundamental critiques about importance/significance that are both rare and useful. In academia, you really, really need the importance/significance critique because you can work on basically anything you want, literally for years, without anyone directly questioning your judgment and choices. And while this gives you tons of freedom and flexibility, you might waste significant fractions of your career on marginalia. I also don&amp;#8217;t think it&amp;#8217;s the case that if you&amp;#8217;re good, you&amp;#8217;ll simply know: I&amp;#8217;ve heard from several super-star academics that their most cited paper is one they didn&amp;#8217;t think much of when they wrote it and Their favorite paper has languished in relative obscurity. One interpretation (beyond &lt;a href=&#34;http://blog.american.com/2009/07/summers-law-and-the-stimulus/&#34;&gt;Summer&amp;#8217;s law&lt;/a&gt;) is that you aren&amp;#8217;t the best judge of what&amp;#8217;s&amp;nbsp;important.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;strong&gt;How does one get more importance-of-question feedback?&lt;/strong&gt;&lt;br /&gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;In economics, there&amp;#8217;s a tendency (need?) to write papers that are 60 page behemoths, filled with robustness checks, enormous literature reviews, extensive proofs that formalize somewhat obvious things, etc. This long, polished version really is the minimally viable version of the paper, in that you can&amp;#8217;t safely distribute more preliminary, less polished work (people might think you don&amp;#8217;t know the difference). I think on the whole, this is probably a good thing. But it&amp;#8217;s often not the minimally viable version of an idea. Often the &amp;#8220;so what&amp;#8221; of a paper is summarized by the abstract, a blog post, a single regression,&amp;nbsp;etc. &lt;/p&gt;
+&lt;p&gt;I&amp;#8217;m not sure what the solution is, but one intriguing bit of advice I recently received from a very successful (albeit non-traditional) researcher was to essentially live-blog my research. There&amp;#8217;s actually very little chance of being &amp;#8220;scooped”; if anything, being public about what you&amp;#8217;re doing is likely to deter others. And, because it&amp;#8217;s &amp;#8220;just&amp;#8221; a blog post, you nullify the &amp;#8220;they don&amp;#8217;t know the difference between polished and unpolished work.&amp;#8221; The flip side is that I think there&amp;#8217;s a kind of folk wisdom in academia that blogging pre-tenure is a bad idea (I imagine the advice is even stronger for a grad student pre-job market). But if you were doing it for &lt;span class=&#34;caps&#34;&gt;MVP&lt;/span&gt; reasons / feedback reasons, the slight reputation hit you&amp;#8217;d take might be offset by the superior &amp;#8220;so what&amp;#8221; feedback you might get from doing such a thing. Anyway, still thinking about this&amp;nbsp;strategy.*&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;*Beyond the purely professional strategic concerns, it might actually move science along a little faster and make research a bit more democratic and &lt;a href=&#34;http://en.wikipedia.org/wiki/Open_research&#34;&gt;open&lt;/a&gt;.&lt;/p&gt;            </content>
+        </entry>
+            <entry>
+            <title type="html">Stereotypes about animals (and children) as revealed by Google auto-suggest</title>
+            <author><name>Lakshmi Vyasarajan</name></author>
+            <link href="/blog/stereotypes-about-animals-and-children.html"/>
+            <updated>2012-02-04T13:07:00Z</updated>
+            <published>2012-02-04T13:07:00Z</published>
+            <id>/blog/stereotypes-about-animals-and-children.html</id>
+                        <category   scheme="/blog/tags"
+                        term="Academic_research"
+                        label="Academic_Research" />
+                        <category   scheme="/blog/tags"
+                        term="Start_ups"
+                        label="Start_Ups" />
+            
+            <content type="html">
+                                &lt;p&gt;I saw this &lt;a href=&#34;https://twitter.com/#!/m_sendhil/status/165870948015284224/photo/1&#34;&gt;tweet&lt;/a&gt; by @m_sendhil, which had a screenshot of Google&amp;#8217;s auto-suggest for 
+&amp;#8220;why are indians so,&amp;#8221; which contained a collection of (often contradictory) stereotypes (e.g., fat and skinny).&lt;br /&gt;
+I began doing the same exercise for other nationalities and ethnic groups, products, animals&amp;nbsp;etc.&lt;/p&gt;
+&lt;p&gt;Here is the screenshot for turtles (which apparently have lots of fans):&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Screenshot&#34; src=&#34;http://2.bp.blogspot.com/-hvCcuo9pdb8/Ty2aH6llUKI/AAAAAAAAOnY/M-tOXjcpy9E/s1600/turtles.png&#34; /&gt; &lt;/p&gt;
+&lt;p&gt;It was interesting to me how many of the supposed attributes showed up repeatedly across entities. 
+This gave me an idea: I should turn this procrastination/time-wasting into something more useful, 
+which was to learn how to make graph/network plots with the python package &lt;a href=&#34;http://networkx.lanl.gov/&#34;&gt;networkx&lt;/a&gt; (code below). 
+Here is the result, using the top 4 auto-suggests for cats, children, cows, dogs, frogs, goldfish, 
+hamsters, mice, turtles and pigs.  Entities are in blue, attributes in red. Edges are drawn if that 
+attribute was auto-suggested for that entity. &lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Entities&#34; src=&#34;http://4.bp.blogspot.com/-_Tt5OyNzPMM/Ty2WWBDvGyI/AAAAAAAAOnQ/V6jdDtdyXTk/s640/relationships.png&#34; /&gt; &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Some observations&lt;/strong&gt;&lt;br /&gt;
+I&amp;#8217;m guessing the &amp;#8220;addicting&amp;#8221; and&amp;#8221;good&amp;#8221; attributes of goldfish refers to the cheesy snack cracker and not the actual fish. 
+People seem to be rather ambivalent about children. I&amp;#8217;m kind of surprised that people were not wondering why dogs are smart. 
+Finally, are pigs actually salty (this seems unlikely), or this just how pork is usually&amp;nbsp;prepared? &lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;strong&gt;The&amp;nbsp;code:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;import networkx as nx
+import matplotlib.pyplot as plt
+
+relationships = {
+&#39;cats&#39;:[&#39;cute&#39;, &#39;clean&#39;, &#39;curious&#39;, &#39;lazy&#39;],
+&#39;children&#39;:[&#39;cruel&#39;, &#39;happy&#39;, &#39;mean&#39;, &#39;stupid&#39;],
+&#39;cows&#39;:[&#39;fat&#39;, &#39;sacred to hindus&#39;, &#39;stupid&#39;, &#39;sacred&#39;],
+&#39;dogs&#39;:[&#39;loyal&#39;, &#39;cute&#39;, &#39;loving&#39;, &#39;happy&#39;],
+&#39;frogs&#39;:[&#39;happy&#39;, &#39;slimy&#39;, &#39;important&#39;, &#39;sensitive to pollution&#39;],
+&#39;goldfish&#39;:[&#39;dirty&#39;, &#39;good&#39;, &#39;addicting&#39;, &#39;hard to keep alive&#39;],
+&#39;hamsters&#39;:[&#39;cute&#39;, &#39;stupid&#39;, &#39;little&#39;],
+&#39;mice&#39;:[&#39;cute&#39;, &#39;scary&#39;, &#39;smart&#39;, &#39;small&#39;],
+&#39;turtles&#39;:[&#39;slow&#39;, &#39;awesome&#39;, &#39;cool&#39;, &#39;important&#39;],
+&#39;pigs&#39;:[&#39;smart&#39;, &#39;fat&#39;, &#39;similar to humans&#39;, &#39;salty&#39;],
+}
+
+G = nx.Graph()
+G.type = {}
+
+# add entities
+for r in relationships:
+    G.add_node(r)
+    G.type[r] = &#34;Entity&#34;
+
+# add attributes
+_attributes = []
+for attr in relationships.values():
+    _attributes.extend(attr)
+
+attributes = list(set(_attributes))
+for a in attributes:
+    G.add_node(a)
+    G.type[a] = &#34;Attribute&#34;
+
+# add all the edges
+for key, attrs in relationships.items():
+    for a in attrs:
+        G.add_edge(key, a)
+
+node_color = []
+node_size = []
+for n in G.nodes():
+    node_color.append(.1 if G.type[n] == &#39;Entity&#39; else .8)
+    node_size.append(600 if G.type[n] == &#39;Entity&#39; else 100)
+
+pos = nx.graphviz_layout(G)
+
+nx.draw(G,
+        pos,
+        node_size=node_size,
+        node_color = node_color,
+        edge_color=&#39;black&#39;,
+        font_size=8,
+        alpha = .2)
+plt.savefig(&#34;relationships.png&#34;,dpi=200)
+plt.show()
+&lt;/code&gt;&lt;/pre&gt;            </content>
+        </entry>
+            <entry>
+            <title type="html">Employer recruiting intensity</title>
+            <author><name>Lakshmi Vyasarajan</name></author>
+            <link href="/blog/employer-recruiting-intensity.html"/>
+            <updated>2012-02-01T08:59:00Z</updated>
+            <published>2012-02-01T08:59:00Z</published>
+            <id>/blog/employer-recruiting-intensity.html</id>
+                        <category   scheme="/blog/tags"
+                        term="Academic_research"
+                        label="Academic_Research" />
+                        <category   scheme="/blog/tags"
+                        term="Start_ups"
+                        label="Start_Ups" />
+            
+            <content type="html">
+                                &lt;p&gt;I was reading/skimming &lt;a href=&#34;http://faculty.chicagobooth.edu/steven.davis/pdf/w16265.pdf&#34;&gt;this&lt;/a&gt; paper by Davis et al. and in the abstract, they&amp;nbsp;write:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span class=&#34;dquo&#34;&gt;&amp;#8220;&lt;/span&gt;This paper is the first to study vacancies, hires, and vacancy yields at the 
+  establishment level in the Job Openings and Labor Turnover Survey, a large sample of &lt;span class=&#34;caps&#34;&gt;U.S.&lt;/span&gt;   employers.&lt;br /&gt;
+  We show that&lt;br /&gt;
+ (a) employers rely heavily on other instruments, in addition to vacancy numbers, as they vary hires,&lt;br /&gt;
+ (b) the hiring technology exhibits strong increasing returns to vacancies at the establishment level, or both. &lt;br /&gt;
+&lt;strong&gt;We also develop evidence that effective recruiting intensity per vacancy varies over time, accounting for about 35% of movements in aggregate hires.&lt;/strong&gt;&amp;#8221;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr /&gt;
+&lt;p&gt;In a nutshell, they document that recruiting intensity varies across time and that this variation has a big effect on the number of aggregate hires. What&amp;#8217;s interesting is that the labor literature tends to focus on search intensity by workers, with firm search intensity comparatively understudied, but this paper suggests that ignoring employer efforts is likely to give a (very) incomplete impression. My guess is that this bias in the literature comes from the comparative lack of employer data on matching, though &lt;span class=&#34;caps&#34;&gt;JOLTS&lt;/span&gt;  (which this paper uses) is ameliorating the problem.&lt;br /&gt;
+&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;On oDesk, we&amp;#8217;ve got excellent visibility on employer recruiting. Below is the &amp;#8220;so what&amp;#8221; plot from a recent experiment where we &amp;#8220;recommended&amp;#8221; contractors to employers (based on our analysis of what the job consisted of). The recommendations came immediately after the employer posted the job. We also made it easier for that employer to invite those recommended contractors to apply. The y-axis is the fraction of jobs where the employer made at least one invitation; treatment and control are side-by-side. We can see that regardless of category, the treatment was generally effective in increasing the number of invitations.  But I think the striking thing is how much variation there is in &amp;#8220;levels&amp;#8221; of recruiting by category: in the control admin group, less than 10% of employers recruited, while in sales, it&amp;#8217;s almost 25%.&lt;br /&gt;
+&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;img alt=&#34;Employer Invitation rates by worker category and treatment&#34; src=&#34;https://img.skitch.com/20120201-1gmcjig3acmucgh1b65syxkff9.jpg&#34; /&gt;&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;Presumably the difference depends on a number of factors: how many applicants the job will get organically, how close a substitutes are the different applicants, the value to the firm of filling the vacancy to the firm and so on. It also clearly matters how easy it is to search/recruit, given the effectiveness of our pretty lightweight intervention.  From a welfare standpoint, this last point about the role of search/recruiting cost is potentially interesting, as reducing employer search frictions/costs technologically is, at least in online labor markets, a highly scalable&amp;nbsp;proposition. &lt;/p&gt;            </content>
+        </entry>
+            <entry>
+            <title type="html">What do contractors in machine learning charge by the hour?</title>
+            <author><name>Lakshmi Vyasarajan</name></author>
+            <link href="/blog/what-do-contractors-in-machine-learning.html"/>
+            <updated>2011-11-26T11:18:00Z</updated>
+            <published>2011-11-26T11:18:00Z</published>
+            <id>/blog/what-do-contractors-in-machine-learning.html</id>
+                        <category   scheme="/blog/tags"
+                        term="Odesk"
+                        label="Odesk" />
+                        <category   scheme="/blog/tags"
+                        term="Contractors"
+                        label="Contractors" />
+            
+            <content type="html">
+                                &lt;p&gt;I saw &lt;a href=&#34;http://www.quora.com/Machine-Learning/What-do-contractors-in-machine-learning-charge-by-the-hour&#34;&gt;this&lt;/a&gt; question on Quora this morning: &amp;#8220;What do contractors in machine learning charge by the hour?&amp;#8221; &lt;br /&gt;
+Obviously the answer depends on the skill level, but based on the few machine learning contractors 
+I&amp;#8217;ve worked with on oDesk, I would guess about 30-40/hour is average. 
+However, I wanted to check with some real data. I have access to our full database, but a more useful answer would 
+allow people to see how to do this for other skills by simply scraping our search results 
+(we have an &lt;span class=&#34;caps&#34;&gt;API&lt;/span&gt;, but I don&amp;#8217;t know how to use it yet and I wanted to try the &lt;a href=&#34;http://www.crummy.com/software/BeautifulSoup/&#34;&gt;BeautifulSoup&lt;/a&gt;&amp;nbsp;package).&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;First step was to reverse-engineer our search syntax and the &lt;span class=&#34;caps&#34;&gt;HTML&lt;/span&gt; for profile rates. 
+A contractor search of &amp;#8220;machine learning&amp;#8221; gives this:&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;dquo&#34;&gt;&amp;#8220;&lt;/span&gt;&lt;a href=&#34;https://www.odesk.com/contractors?nbs=1#q=machine+learning&#34;&gt;https://www.odesk.com/contractors?nbs=1#q=machine+learning&lt;/a&gt;&amp;#8221;&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;and if I click on the next 10 results, the url is:&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;dquo&#34;&gt;&amp;#8220;&lt;/span&gt;&lt;a href=&#34;https://www.odesk.com/contractors?nbs=1#q=machine+learning&amp;amp;skip=10&#34;&gt;https://www.odesk.com/contractors?nbs=1#q=machine+learning&amp;amp;skip=10&lt;/a&gt;&amp;#8221;&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;I then checked to see what happens if I set &amp;#8220;skip=0&amp;#8221;&amp;#8211;it returns that same thing as the first search &lt;span class=&#34;caps&#34;&gt;URL&lt;/span&gt;, 
+so now know that I can just write one function that returns the query &lt;span class=&#34;caps&#34;&gt;URL&lt;/span&gt;, with parameters of &amp;#8220;q&amp;#8221; and &amp;#8220;skip.&amp;#8221;&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;Next, I needed to find out how the rates are stored. Using Chrome&amp;#8217;s awesome &amp;#8220;Inspect element&amp;#8221; feature, 
+I found that the rates for the 10 returned results as listed as &amp;#8220;rate_1&amp;#8221;, &amp;#8220;rate_2&amp;#8221;, and so on:&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Image&#34; src=&#34;https://img.skitch.com/20111126-nhx4fa3scy5gpdq818u268b2.jpg&#34; /&gt;&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;The rest was pretty easy&amp;#8211;I just wrote two loops to collect up wages. 
+I saw that we had some clear false positives, which I filtered out. 
+This actually brings up a big problem on oDesk that we&amp;#8217;ve been working on&amp;#8211;namely that until recently, 
+we had no standardization of skills, which made it hard to match people or do really good, 
+highly specific queries. We&amp;#8217;ve now moved to a closed (but expandable) vocabulary of skills, 
+ala StackOverflow which in the long run will make it much easier to do matching and recommendations 
+(and little data projects like this). That&amp;#8217;s a topic for another blog post. 
+So, returning to the original question, my answer based on a pretty tiny sample:&lt;br /&gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Min: 16.67&lt;br /&gt;
+  Max: 100.0&lt;br /&gt;
+  Mean: 39.6983333333&lt;/strong&gt;&lt;br /&gt;
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr /&gt;
+&lt;p&gt;And here&amp;#8217;s my pretty crappy but for-the-moment-functional code on GitHub:&lt;br /&gt;
+&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;# John Horton
+# www.john-joseph-horton.com
+
+# Description: Answer to Quora question about machine learning hourly rates
+# &#34;http://www.quora.com/Machine-Learning/What-do-contractors-in-machine-learning-charge-by-the-hour&#34;
+
+from BeautifulSoup import BeautifulSoup
+import urllib2
+
+def contractors(skill, offset):
+    &#34;&#34;&#34;gets search results for skills; offset should be a multiple of 10&#34;&#34;&#34;
+    base_url = &#34;https://www.odesk.com/contractors?nbs=1&amp;amp;q=%s&amp;amp;skip=%s&#34;
+    return  base_url % (skill, offset)
+
+def get_wage(x):
+    &#34;&#34;&#34;extracts the hourly wage from the returned HTML;
+    verbose because John sucks at regular expressions &#34;&#34;&#34;
+    return float(x.split(&#34;&amp;gt;&#34;)[1].split(&#34;&amp;lt;&#34;)[0].replace(&#34;$&#34;,&#34;&#34;).replace(&#34;/hr&#34;,&#34;&#34;))
+
+def wages(skill, n):
+    &#34;&#34;&#34;gets at least n contractors (if they are available) who have that skill,
+    returning a list&#34;&#34;&#34;
+    pages = n / 10 + 1
+    wages = [] 
+    for i in range(pages):
+        url = contractors(skill, 10*i)
+        f = urllib2.urlopen(url)
+        soup = BeautifulSoup(f)
+        for r in range(1,10):
+            x = soup.findAll(attrs={&#34;name&#34; : &#34;rate_%s&#34; % r})
+            wages.append(get_wage(str(x[0])))
+    return wages
+
+# there were a couple of false positives (we&#39;re working on this)
+# so I excluded everyone listing less than $15/hour
+cleaned_wages = [w for w in wages(&#34;machine-learning&#34;, 30) if w &amp;gt; 15]
+
+print &#34;&#34;&#34;
+Min: %s
+Max: %s
+Mean: %s&#34;&#34;&#34; % (min(cleaned_wages),
+         max(cleaned_wages),
+         round(sum(cleaned_wages)/float(len(cleaned_wages),2)
+         ))
+&lt;/code&gt;&lt;/pre&gt;            </content>
+        </entry>
+            <entry>
+            <title type="html">Should Online Labor Markets Set a Minimum Wage?</title>
+            <author><name>Lakshmi Vyasarajan</name></author>
+            <link href="/blog/should-online-labor-markets-set-minimum.html"/>
+            <updated>2011-10-29T16:08:00Z</updated>
+            <published>2011-10-29T16:08:00Z</published>
+            <id>/blog/should-online-labor-markets-set-minimum.html</id>
+                        <category   scheme="/blog/tags"
+                        term="Labor"
+                        label="Labor" />
+                        <category   scheme="/blog/tags"
+                        term="Markets"
+                        label="Markets" />
+            
+            <content type="html">
+                                &lt;p&gt;Some critics of online labor markets mistakenly believe that the platform creators have an 
+incentive to keep wages low. Employers have that incentive, but all else equal, the creators of 
+online labor markets want to see see wages rise, since almost all of them take a percentage of earnings. 
+At least from a revenue standpoint, they should be indifferent between more work at a lower price or less 
+work at a higher price, so long as the wage bill stays the same. It would be a different story if the platforms 
+could somehow tax employers on the value-added by the platform, but so far, that&amp;#8217;s not possible.
+One tool for raising wages might be for the platform to impose a minium wage. 
+It&amp;#8217;s certainly possible that imposing a binding minimum wage would increase platform revenue&amp;#8211;it 
+depends on the relative labor supply and demand elasticities, as well as the marginal cost of intermediating work. 
+A platform&amp;#8217;s costs of good sold (i.e., intermediation service) is not precisely zero&amp;#8211;there are server costs, 
+customer service costs, fraud risks etc, so there is some wage at which the platform would be better off not 
+allowing parties to contract.&lt;br /&gt;
+&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;Moving from generalities, let&amp;#8217;s look at workers from the Philippines, who (a) make a big chunk of 
+the workforce on oDesk and (b) generally do relatively low-paid work (e.g., data entry, customer service, writing etc.) 
+and thus would be most affected by a minimum wage imposition. If we look from about 2009 on (when the Philippines first 
+started to become important), we can see that wages are basically flat, perhaps with a slight rise in some&amp;nbsp;categories.&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Image&#34; src=&#34;https://img.skitch.com/20111029-q66wn3fikckjryyxs4xpssa968.jpg&#34; /&gt;&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;We can see that mean hourly wages range from 
+&lt;em&gt;3 for low skilled at a entry work to about 8/hour&lt;/em&gt; for software development. 
+By &lt;span class=&#34;caps&#34;&gt;US&lt;/span&gt; standards, &lt;em&gt;3/hour is quite low, it&amp;#8217;s less than half the &lt;span class=&#34;caps&#34;&gt;US&lt;/span&gt; federal minimum wage&lt;/em&gt;. 
+However,let&amp;#8217;slook at where &lt;em&gt;3/hour wage&lt;/em&gt; puts someone in the the Philippine household income distribution, 
+assuming they work 40 hours a week, 50 weeks a year:&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Image&#34; src=&#34;https://img.skitch.com/20111029-s322de6pcpnbm5a8w1qk78gu8.jpg&#34; /&gt;&lt;br /&gt;
+&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;Unfortunately the I couldn&amp;#8217;t get a more refined measure of income, but my eye-ball estimate is that 
+&lt;em&gt;3.00/hour is at about the 50th percentile of the distribution.&lt;/em&gt; &lt;em&gt;The equivalent hourly wage formed in house-hold income&lt;/em&gt; in the &lt;span class=&#34;caps&#34;&gt;US&lt;/span&gt; is about 31/hour 
+(&lt;a href=&#34;http://en.wikipedia.org/wiki/Household_income_in_the_United_States&#34;&gt;using 2006 measure from Wikipedia&lt;/a&gt;) using the same 50 weeks a year, 40 hours a week formulation. 
+It&amp;#8217;s important to note that this is household income, meaning that in many cases it is the combined income of a husband, 
+wife and working-age children. And although online work does require a computer and a good internet connection, 
+it does not require spending money on transportation, work clothes, food prepared outside the home etc. 
+It also probably lets workers economize on child care e.g., I might be willing to let a 10 year old watch a 3 year old 
+if I&amp;#8217;m in the next room, but not if I&amp;#8217;m across town.&lt;br /&gt;
+&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;So, what&amp;#8217;s the conclusion?&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;From a platform perspective, I can concede that imposing a minimum wage could be revenue-increasing, but it depends on some pretty hard to estimate factors: how well do we know the elasticities? Are the long and short-term elasticities the same? What happens if we can get our intermediation costs down? Implementation-wise, enforcement might be very hard&amp;#8211;I could easily imagine workers giving under-the-table rebates.&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;From a worker/welfare perspective, a minmum wage would clearly help some but hurt others. Any binding minimum wage is going to price some workers out of the market. How do we weigh their lost opportunities against the increased wages paid to those that see a bump? This starkly highlights one of the real drawbacks of a minimum wage as social policy, which is that it might be globally progressive and yet highly locally regressive for workers on the bad side of the cut-off.  &lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;I&amp;#8217;d love to hear both employer and worker perspectives on this&amp;#8211;feel free to comment here &lt;span class=&#34;amp&#34;&gt;&amp;amp;&lt;/span&gt; I&amp;#8217;ll respond.&lt;br /&gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Like this? Follow me on &lt;a href=&#34;https://twitter.com/#!/johnjhorton&#34;&gt;twitter&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;            </content>
+        </entry>
+            <entry>
+            <title type="html">Workers-as-Bundled-Goods</title>
+            <author><name>Lakshmi Vyasarajan</name></author>
+            <link href="/blog/workers_as_bundled_goods.html"/>
+            <updated>2011-10-27T20:50:00Z</updated>
+            <published>2011-10-27T20:50:00Z</published>
+            <id>/blog/workers_as_bundled_goods.html</id>
+                        <category   scheme="/blog/tags"
+                        term="Labor"
+                        label="Labor" />
+                        <category   scheme="/blog/tags"
+                        term="Markets"
+                        label="Markets" />
+                        <category   scheme="/blog/tags"
+                        term="Productivity"
+                        label="Productivity" />
+            
+            <content type="html">
+                                &lt;p&gt;&lt;img alt=&#34;Bigger Big Mac by Simon Miller, on Flickr&#34; src=&#34;http://farm1.static.flickr.com/55/169060848_f73e2fa85e_m.jpg&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;A standard pricing strategy in many industries is &lt;a href=&#34;http://en.wikipedia.org/wiki/Product_bundling&#34;&gt;bundling goods&lt;/a&gt;, e.g., 
+productivity &amp;#8220;suites&amp;#8221; like Microsoft Office, value meals at fast food restaurants, hotel 
+and flight combos, etc. In the labor market, we also see a kind of bundling, though not 
+by design: each worker is a collection of skills and attributes that can&amp;#8217;t be broken apart and 
+purchased separately by the firm. For example, by hiring me, my company gets my writing, 
+meeting attendance, programming, etc.; they can&amp;#8217;t choose to not buy my low-quality expense-report-filing&amp;nbsp;service.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;Good mangers deal with this bundling by keeping workers engaged at their highest value activity. However, every activity has decreasing marginal returns, so even activities that start out as high-value eventually reach the &amp;#8220;flat of the curve&amp;#8221; where the marginal benefit of more of X gets pretty small. This phenomena gives large firms an advantage, in that their (generally) larger problems give workers more runway to ply their best skills (by the same token, small firms have to worry much more about &amp;#8220;fit&amp;#8221; within their existing&amp;nbsp;team).&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;While pervasive, this flat-of-the curve dynamic and the resulting small-firm handicap is not a fundamental feature of organizations or labor markets&amp;#8212;it springs from the binary nature of employment. It goes away or it least is diminished if a worker can instead being partly employed (i.e., freelance) at a number of firms, each paying the worker to do what they do best. To date, the stated value proposition of most freelancing sites has been that they allow for global wage arbitrage. Obviously that&amp;#8217;s important, but I suspect this &amp;#8220;unbundling&amp;#8221; efficiency gain will, in the long term, have a more profound effect on how firms organize and how labor markets&amp;nbsp;function. &lt;/p&gt;            </content>
+        </entry>
+            <entry>
+            <title type="html">Some light data munging with R, with an application to ranking NFL Teams</title>
+            <author><name>Lakshmi Vyasarajan</name></author>
+            <link href="/blog/some-light-data-munging-with-r-with.html"/>
+            <updated>2011-10-08T16:08:00Z</updated>
+            <published>2011-10-08T16:08:00Z</published>
+            <id>/blog/some-light-data-munging-with-r-with.html</id>
+                        <category   scheme="/blog/tags"
+                        term="Statistics"
+                        label="Statistics" />
+            
+            <content type="html">
+                                &lt;p&gt;I recently submitted this blog to &lt;a href=&#34;http://www.r-bloggers.com/&#34;&gt;R-bloggers&lt;/a&gt;, which aggregates R-related blog posts. 
+It&amp;#8217;s a fantastic site and has been invaluable to me as I&amp;#8217;ve learned R. 
+One of my favorite kinds of articles is the hands-on, &amp;#8220;hello world&amp;#8221;-style weekend project that 
+dips into a topic/technology, so here&amp;#8217;s my first attempt at one in this style.
+First, some background: I&amp;#8217;ve been working with &lt;a href=&#34;http://glittle.org/&#34;&gt;Greg&lt;/a&gt; on a project that analyzes the results 
+of two-person contests. An important part of the problem is comparing different ranking systems 
+that can adjust for the strength of the opponent (e.g., &lt;a href=&#34;http://en.wikipedia.org/wiki/Elo_rating_system&#34;&gt;Elo rating system&lt;/a&gt;, 
+&lt;a href=&#34;http://research.microsoft.com/en-us/projects/trueskill/&#34;&gt;TrueSkill&lt;/a&gt;, &lt;a href=&#34;http://en.wikipedia.org/wiki/Glicko_rating_system&#34;&gt;Glicko&lt;/a&gt;, etc.). 
+As I understand it, all of these systems are working around the intractability of treating this as a 
+purely Bayesian solution and try to deal with things like trends in ability, the distribution of the 
+unobserved component, etc.&lt;br /&gt;
+&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;We&amp;#8217;re still collecting data from a pilot, but in the interim, 
+I wanted to start getting my feet wet with some real competition data. 
+Sports statistics provide a readily available source of competition data, so my plan was:&lt;br /&gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;Pull some data on &lt;span class=&#34;caps&#34;&gt;NFL&lt;/span&gt; games on the 2011 season to&amp;nbsp;date.&lt;/li&gt;
+&lt;li&gt;Fit a simple model that produces a rank ordering of&amp;nbsp;teams.&lt;/li&gt;
+&lt;li&gt;Pull data on &lt;span class=&#34;caps&#34;&gt;ESPN&lt;/span&gt;&amp;#8217;s PowerRanking of &lt;span class=&#34;caps&#34;&gt;NFL&lt;/span&gt; teams (based on votes by their columnists), using the &lt;span class=&#34;caps&#34;&gt;XML&lt;/span&gt;&amp;nbsp;package. &lt;/li&gt;
+&lt;li&gt;Make a comparison plot, showing how the two ranks compare, using ggplot2.&lt;br /&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;For the model, I wanted something really simple (hoping no one from FootballOutsiders is reading this). In my model, 
+the difference in scores between the two teams is simply the difference in their &amp;#8220;abilities,&amp;#8221; plus an error term:&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Error term&#34; src=&#34;http://www.texify.com/img/%5CLARGE%5C%21%5CDelta%20S_%7Bij%7D%20%3D%20%5Calpha%5EH_i%20%20-%20%5Calpha%5EA_j%20%2B%20%5Cepsilon.gif&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;where the alpha&amp;#8217;s are team-and-venue (e.g., home or away) specific random effects. 
+For our actual rating, we can order teams based on the sum of their estimate home and away effects, i.e.:&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Image&#34; src=&#34;http://www.texify.com/img/%5CLARGE%5C%21%5Chat%7B%5Calpha%7D_i%5EH%20%2B%20%5Chat%7B%5Calpha%7D_i%5EA.gif&#34; /&gt;&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;Estimating the 32 x 2 parameters&amp;#8211;given how little data we actually have&amp;#8211;would probably lead to poor results. 
+Instead, I used the excellent &lt;a href=&#34;http://cran.r-project.org/web/packages/lme4/index.html&#34;&gt;lme4&lt;/a&gt; package which approximates a Bayesian estimation where we start with a prior 
+that the alpha parameters are normally distributed.&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;Putting the last thing first, here&amp;#8217;s the result of 4), 
+comparing my &amp;#8220;homebrew&amp;#8221; ranking to the &lt;span class=&#34;caps&#34;&gt;ESPN&lt;/span&gt; ranking, as of Week 5 (before the October 9th&amp;nbsp;games):&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Image&#34; src=&#34;http://dl.dropbox.com/u/420874/rank_comparisons.png&#34; /&gt;&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;No real comment on my model other than it thinks (a) that &lt;span class=&#34;caps&#34;&gt;ESPN&lt;/span&gt; vastly overrates the Chargers and (b) more highly of the Ravens.&lt;br /&gt;
+&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;The code for all the steps is posted below, with explanatory comments:&lt;br /&gt;
+&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;library(lme4)
+library(ggplot2)
+library(XML)
+
+# grab the NFL data &lt;span class=&#34;amp&#34;&gt;&amp;amp;&lt;/span&gt; compute the score difference (Home - Away)
+nfl.raw &amp;lt;- read.csv(&#34;http://www.repole.com/sun4cast/stats/nfl2011stats.csv&#34;)
+nfl.raw$delta &amp;lt;- with(nfl.raw, (ScoreOff - ScoreDef))
+
+# fit the model
+m &amp;lt;- lmer(delta ~ (1 | TeamName) + (1|Opponent), data = nfl.raw)
+
+# extract the model estimates &lt;span class=&#34;amp&#34;&gt;&amp;amp;&lt;/span&gt; put into a data frame
+df &amp;lt;- data.frame(team = rownames(ranef(m)$Opponent),
+                 score = ranef(m)$TeamName - ranef(m)$Opponent)
+colnames(df) &amp;lt;- c(&#34;team&#34;, &#34;score&#34;)
+rownames(df) &amp;lt;- 1:(dim(df)[1])
+
+# reorder the dataframe by score &lt;span class=&#34;amp&#34;&gt;&amp;amp;&lt;/span&gt; add a &#34;rank&#34; variable
+df$team &amp;lt;- with(df, reorder(team, -score, mean))
+df &amp;lt;- df[with(df, order(-score)),]
+df$rank &amp;lt;- 1:32
+
+# need to extract the team name w/o the city, to be able to match up
+# with the &lt;span class=&#34;caps&#34;&gt;ESPN&lt;/span&gt; format
+get.short.name &amp;lt;- function(ln)
+  tail(strsplit(as.character(ln), &#34; &#34;)/1,1)
+
+df$short_name &amp;lt;- sapply(df$team, get.short.name)
+
+# grab the data from &lt;span class=&#34;caps&#34;&gt;ESPN&lt;/span&gt;, using modified code from: http://goo.gl/mElLS
+theurl &amp;lt;- &#34;http://espn.go.com/nfl/powerrankings&#34;
+tables &amp;lt;- readHTMLTable(theurl)
+espn.ranks &amp;lt;- tables/1[3:34,3]
+
+# teams are listed in rank order, so position in the table is their rank
+df$espn_rank &amp;lt;- sapply(df$short_name, function(x) which(x==espn.ranks))
+
+# plot comparing the two ranking systems
+g &amp;lt;- ggplot(df) +
+  geom_text(aes(x=&#34;Homebrew Rank&#34;, y = 32-rank, label=short_name), size=8, hjust=1) +
+  geom_text(aes(x=&#34;&lt;span class=&#34;caps&#34;&gt;ESPN&lt;/span&gt; Ranking&#34;, y = 32-espn_rank, label=short_name), size=8, hjust=0) +
+  geom_segment(aes(x=&#34;Homebrew Rank&#34;, y=32-rank, xend=&#34;&lt;span class=&#34;caps&#34;&gt;ESPN&lt;/span&gt; Ranking&#34;, yend=32-espn_rank,
+                   colour=I(rank - espn_rank)), alpha=.5) + theme_bw() +
+  opts(axis.ticks=theme_blank()) + xlab(&#34;&#34;) + ylab(&#34;&#34;) +
+  scale_y_continuous(breaks=c(-1,32), labels=c(&#34;&#34;,&#34;&#34;))
+&lt;/code&gt;&lt;/pre&gt;            </content>
+        </entry>
+            <entry>
+            <title type="html">All public government data should be easily machine readable</title>
+            <author><name>Lakshmi Vyasarajan</name></author>
+            <link href="/blog/all-public-government-data-should-be.html"/>
+            <updated>2011-10-02T10:13:00Z</updated>
+            <published>2011-10-02T10:13:00Z</published>
+            <id>/blog/all-public-government-data-should-be.html</id>
+                        <category   scheme="/blog/tags"
+                        term="Statistics"
+                        label="Statistics" />
+                        <category   scheme="/blog/tags"
+                        term="Python"
+                        label="Python" />
+                        <category   scheme="/blog/tags"
+                        term="Programming"
+                        label="Programming" />
+            
+            <content type="html">
+                                &lt;p&gt;The Bureau of Labor Statistics (&lt;span class=&#34;caps&#34;&gt;BLS&lt;/span&gt;) has an annual budget of over $640 million (&lt;span class=&#34;caps&#34;&gt;FY&lt;/span&gt; 2011), 
+a budget  they use to create and then distribute detailed labor market data and analysis to policy makers, 
+researchers, journalists and the general public. I can&amp;#8217;t speak to the &amp;#8220;creation&amp;#8221; part of their mission, 
+but on the &amp;#8220;distribution&amp;#8221; part, the are failing&amp;#8211;organizations with tiny fractions of their resources do a far better job.
+It&amp;#8217;s not the case that government &lt;span class=&#34;caps&#34;&gt;IT&lt;/span&gt; is invariably bad&amp;#8211;the Federal Reserve Bank of St. Louis has an amazing 
+interface (&lt;span class=&#34;caps&#34;&gt;FRED&lt;/span&gt;) and &lt;a href=&#34;http://api.stlouisfed.org/docs/fred/&#34;&gt;&lt;span class=&#34;caps&#34;&gt;API&lt;/span&gt;&lt;/a&gt; for working with their data. 
+Unfortunately, not all government statistics are available here, especially some of the more interesting &lt;span class=&#34;caps&#34;&gt;BLS&lt;/span&gt; series.&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;The essential problem with &lt;span class=&#34;caps&#34;&gt;BLS&lt;/span&gt; is that all of their work products&amp;#8211;reports, tables etc.&amp;#8211;are 
+designed to be printed out, not accessed electronically. Many &lt;span class=&#34;caps&#34;&gt;BLS&lt;/span&gt; tables are embedded in PDFs, 
+which makes the data they contain essentially impossible to extract; non-&lt;span class=&#34;caps&#34;&gt;PDF&lt;/span&gt;, text-based tables, 
+which are better, are difficult to parse electronically: structure is conveyed by tabs and white space, 
+column headings are split over multiple lines with no separators; heading lengths vary etc.&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;Why does it matter? For one, when users can access data electronically, via an &lt;span class=&#34;caps&#34;&gt;API&lt;/span&gt;, 
+they can combine it with other sources, look for patterns, test hypotheses, find bugs / 
+measurement errors, create visualization and do all sorts of other things that make the data more useful.&lt;br /&gt;
+&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;span class=&#34;caps&#34;&gt;BLS&lt;/span&gt; does offer a &lt;span class=&#34;caps&#34;&gt;GUI&lt;/span&gt; tool for downloading data, but it&amp;#8217;s kludgy, requires a Java Applet, 
+requires series to be hand-selected and then returns an Excel(!) spreadsheet w/ extraneous headers 
+and formatting. Furthermore, it&amp;#8217;s not clear what series and what transformations are needed from &lt;span class=&#34;caps&#34;&gt;GUI&lt;/span&gt;-data to 
+make the more refined, aggregated tables.&lt;br /&gt;
+&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;To illustrate how hard it is to get the data out, I wrote a python script to extract the results this table 
+(which shows the expected and estimated changes in employment for a number of industries). 
+What I wanted to do was make this, which I think is far easier to understand than the table alone:&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Image&#34; src=&#34;https://img.skitch.com/20111002-t9f89cdsp7cnewqcmf63wd1s3y.jpg&#34; /&gt;&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;To actually create this figure, I needed to get data into in R by way of a &lt;span class=&#34;caps&#34;&gt;CSV&lt;/span&gt; file.  The code required to get table data into a useful &lt;span class=&#34;caps&#34;&gt;CSV&lt;/span&gt; file, while not rocket science, isn&amp;#8217;t trivial&amp;#8211;there&amp;#8217;s lots of one-off/hacky things to work around the limitations of the table. Getting the nested structure of the industries e.g., (&amp;#8220;Durable Goods&amp;#8221; is a subset of &amp;#8220;Manufacturing&amp;#8221; and &amp;#8220;Durable Goods&amp;#8221; has 4 sub-classifications) required recursion (see the &amp;#8220;bread_crumb&amp;#8221; function). &lt;span class=&#34;caps&#34;&gt;FWIW&lt;/span&gt;, here&amp;#8217;s the code:&lt;br /&gt;
+&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;import urllib2
+import csv
+
+FIRST_LINE = 11
+LAST_LINE = 38
+
+def get_level(l):
+    for i, char in enumerate(l):
+        if char != &#34; &#34;:
+            break
+    return i
+
+def clean_line(l):
+    l = l.replace(&#34;\r&#34;,&#34;&#34;)
+    l = l.replace(&#34;\n&#34;,&#34;&#34;)
+    l = l.split(&#34; &#34;)
+    return [y.strip() for y in l if y!=&#34;&#34;]
+
+f = urllib2.urlopen(&#34;ftp://ftp.bls.gov/pub/suppl/empsit.tab1.txt&#34;)
+lines = [line for line in f][FIRST_LINE:LAST_LINE]
+levels = map(get_level, lines)
+data_rows = map(clean_line, lines)
+headings = [y[0] for y in data_rows]
+
+d_order = dict(zip(headings, range(len(headings))))
+d_level = dict(zip(headings, levels))
+
+def one_up(heading):
+    candidates = headings[:d_order[heading]]
+    heading_level = d_level[heading]
+    candidates.reverse()
+    for c in candidates:
+        if d_level[c] &amp;lt; heading_level:
+            return c
+    else:
+        return None
+
+def crumb_trail(heading):
+    if one_up(heading) is None:
+        return [heading]
+    else:
+        return crumb_trail(one_up(heading)) + [heading]
+
+crumb_trails = map(crumb_trail, headings)
+max_depth = max(map(len, crumb_trails))
+
+g = open(&#34;bls.csv&#34;, &#34;w&#34;)
+header = [&#34;level_%s&#34; % i for i in range(max_depth)] + [
+    &#34;depth&#34;, &#34;level&#34;, &#34;normal_seasonal_movement&#34;, &#34;estimated_over_month_change&#34;,
+ &#34;sa_adjusted_over_month_change&#34;]
+
+hier = dict(zip(set(levels), range(len(set(levels)))))
+def get_hier(heading): return hier[d_level[heading]]
+
+out = csv.writer(g)
+out.writerow(header)
+for trail, data_row in zip(crumb_trails, data_rows):
+    industry = [None for i in range(max_depth)]
+    indices = map(get_hier, trail)
+    depth = max(indices)
+    for name, i in zip(trail, indices):
+        industry[i] = name
+    out.writerow(industry + [depth] + data_row[:3])
+g.close()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Most of the code is dealing with the problems shows in this sketch:&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Image&#34; src=&#34;https://img.skitch.com/20111002-r81md92f22sqcfp15m6kdisai9.jpg&#34; /&gt;&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;My suggestion: &lt;span class=&#34;caps&#34;&gt;BLS&lt;/span&gt; should borrow someone from &lt;span class=&#34;caps&#34;&gt;FRED&lt;/span&gt; and help them create a proper &lt;span class=&#34;caps&#34;&gt;API&lt;/span&gt;.&lt;br /&gt;
+&lt;/p&gt;            </content>
+        </entry>
+            <entry>
+            <title type="html">We can always get jobs working at the local robot factory</title>
+            <author><name>Lakshmi Vyasarajan</name></author>
+            <link href="/blog/we-can-always-get-jobs-working-at-local.html"/>
+            <updated>2011-10-01T10:52:00Z</updated>
+            <published>2011-10-01T10:52:00Z</published>
+            <id>/blog/we-can-always-get-jobs-working-at-local.html</id>
+                        <category   scheme="/blog/tags"
+                        term="Labor"
+                        label="Labor" />
+            
+            <content type="html">
+                                &lt;p&gt;&lt;img alt=&#34;Image&#34; src=&#34;http://s3.amazonaws.com/memebox/uploads/2914/irobot-glance.jpg&#34; /&gt;&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;The key quote from Slate&amp;#8217;s recent &amp;#8220;robots-will-take-our-jobs&amp;#8221; &lt;a href=&#34;http://www.slate.com/articles/technology/robot_invasion/2011/09/will_robots_steal_your_job.html&#34;&gt;article&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span class=&#34;dquo&#34;&gt;&amp;#8220;&lt;/span&gt;Most economists aren&amp;#8217;t taking these worries very seriously. The idea that computers might significantly disrupt human 
+  labor markets&amp;#8212;and, thus, further weaken the global economy&amp;#8212;so far remains on the fringes.&amp;#8221;&lt;br /&gt;
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;And rightly so. Obviously predicting the future is a fool&amp;#8217;s errand, and perhaps advances in &lt;span class=&#34;caps&#34;&gt;AI&lt;/span&gt; and 
+robotics will ultimately radically reduce the demand for human labor, but a recent article highlights how 
+technological advances can just as easily increase labor demand: &lt;span class=&#34;caps&#34;&gt;NPR&lt;/span&gt; reports on an &lt;a href=&#34;http://www.npr.org/2011/09/25/140784004/new-boom-reshapes-oil-world-rocks-north-dakota&#34;&gt;oil-related boom in North Dakota&lt;/a&gt; 
+that&amp;#8217;s driven unemployment close to zero and brought thousands into the state. The cause of the boom is not high oil 
+prices per se&amp;#8211;it&amp;#8217;s technological developments like fraking &lt;span class=&#34;amp&#34;&gt;&amp;amp;&lt;/span&gt; horizontal drilling that make formerly non-viable deposits 
+economical to extract. &lt;br /&gt;
+&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;Obviously technological can displace human laborers and have large effects on the composition of jobs and the returns to 
+different skills, but history and economics both suggest that technology-driven fears about labor markets are overblown.&lt;br /&gt;
+&lt;/p&gt;            </content>
+        </entry>
+            <entry>
+            <title type="html">Using oDesk to Satisfy Curiosity</title>
+            <author><name>Lakshmi Vyasarajan</name></author>
+            <link href="/blog/few-days-ago-laszlo-sandor-one-of.html"/>
+            <updated>2011-09-28T09:39:00Z</updated>
+            <published>2011-09-28T09:39:00Z</published>
+            <id>/blog/few-days-ago-laszlo-sandor-one-of.html</id>
+                        <category   scheme="/blog/tags"
+                        term="Labor"
+                        label="Labor" />
+                        <category   scheme="/blog/tags"
+                        term="oDesk"
+                        label="Odesk" />
+                        <category   scheme="/blog/tags"
+                        term="Contractors"
+                        label="Contractors" />
+            
+            <content type="html">
+                                &lt;blockquote&gt;
+&lt;p&gt;Note: This is a re-posting of a Quora post a wrote a few days&amp;nbsp;ago. &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;A few days ago, Laszlo Sandor, one of the economists in my &amp;#8220;economics&amp;#8221; 
+Google+ circle posted a photograph showing the Hungarian &lt;span class=&#34;caps&#34;&gt;PM&lt;/span&gt;&amp;#8217;s notes for a speech to parliament. 
+As you can see from the picture, the final product was not the result of, uh, careful policy analysis:&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Image&#34; src=&#34;http://d2o7bfz2il9cb7.cloudfront.net/main-qimg-61b228887867940aad48e657b0448bce&#34; /&gt;&lt;br /&gt;
+Linke on Google+:&amp;nbsp;https://plus.google.com/104111354079417095932/posts/UdLvwbMXtL1&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;Like most non-Hungarians, I can&amp;#8217;t read what was crossed out nor what was added. Normally when I find something in a language 
+that I can&amp;#8217;t read but want to understand, I try Google Translate, 
+but that would not work here since the text is an image and the handwritten notes are probably the more interesting part anyway.&lt;br /&gt;
+&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;In response to the post, Markus Mobius asked &amp;#8220;Is there a site that translates this stuff?&amp;#8221; and the answer is yes, 
+in the sense that there is a site where you can (try) to get anything done, so long as the work can be sent down a wire. 
+That site is run by my employer, &lt;a href=&#34;http://www.quora.com/John-Horton/Using-oDesk-to-Satisfy-Curiosity-with-some-economics-along-the-way#&#34;&gt;oDesk&lt;/a&gt;. I often post small jobs on the site , partly for fun and partly because I want to see 
+what I can get done at what level of&amp;nbsp;quality. &lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;I decided to try getting the speech translated. I like posting translation jobs as demonstrations, because they nicely illustrate one important aspect of online labor markets, which is that you can quickly find workers that can do very specialized tasks. I tend to think that the real efficiency gain of these markets comes not from arbitraging wages (though that&amp;#8217;s a real component and a very powerful one&amp;#8211;see Samasource), but in terms of the gains from specialization. &lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;When I taught my &amp;#8220;online work&amp;#8221; sophomore economics seminar at Harvard, I started the class by posting a job looking to translate the Wikipedia article on the &lt;span class=&#34;caps&#34;&gt;TV&lt;/span&gt; show Madmen into Tagalog (chosen because I knew lots of Filipino contractors would be online at that time). By the end of the hour, we had (1) posted a job (2) hired a contractor (her first job) (3) taken delivery of the translation and (3) paid for the work and (3) given feedback to the contractor. &lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;Anyway, so here&amp;#8217;s what I did:&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Writing a job description&lt;/strong&gt;&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;Here&amp;#8217;s what my job post looked like to potential contractors&amp;#8211;not much detail, but then again, this is a pretty well-defined task: &lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Image&#34; src=&#34;http://d2o7bfz2il9cb7.cloudfront.net/main-qimg-3955880134f91d655ee6e168c23daf06&#34; /&gt;&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;I was thinking that Hungarian is a fairly uncommon language on oDesk, so I suspected that I would have to go recruit a translator. 
+I did this &lt;span class=&#34;amp&#34;&gt;&amp;amp;&lt;/span&gt; hired the first person who had a reasonable profile. However, in retrospect, I could have posted &lt;span class=&#34;amp&#34;&gt;&amp;amp;&lt;/span&gt; waited: 
+I got 12 applicants in less than 24&amp;nbsp;hours. &lt;/p&gt;
+&lt;p&gt;How did my non-invited applicants look? &lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Image&#34; src=&#34;http://d2o7bfz2il9cb7.cloudfront.net/main-qimg-395b61fda573cca9ebae63ee4265ff76&#34; /&gt; &lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;So we have some very promising candidates (from Romania or Hungary &lt;span class=&#34;amp&#34;&gt;&amp;amp;&lt;/span&gt; focus on writing/translation). 
+There are also a handful of candidates from elsewhere that don&amp;#8217;t seem relevant&amp;#8211;they don&amp;#8217;t focus on 
+translation and their country makes me doubt they could do a good hungarian-to-english translation.&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;This brings up a point about one the challenges of our marketplace. Many oDesk employers complain about application &amp;#8220;spam&amp;#8221; which they regard as applications from workers that are inappropriate for a job or who haven&amp;#8217;t read the job&amp;#8217;s instructions. We try to reduce this problem by giving contractors a &amp;#8220;job application quota&amp;#8221; (so that they will be more choosy in the jobs they apply to &lt;span class=&#34;amp&#34;&gt;&amp;amp;&lt;/span&gt; invest more in their applications) but it&amp;#8217;s far from perfect and getting the &amp;#8220;supply&amp;#8221; of applications to match the demand is tricky since applications are an externality (and whether they are positive or negative depends on the job &lt;span class=&#34;amp&#34;&gt;&amp;amp;&lt;/span&gt; the worker&amp;#8211;one man&amp;#8217;s spam is another man&amp;#8217;s treasure).&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;The data definitely reflects what employer&amp;#8217;s say: here is a plot showing the relationship between 
+cover letter novelty (defined as the fraction of words in a current cover letter that are common with 
+that contractor&amp;#8217;s most previous application) and the probability of that worker getting an interview:&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Image&#34; src=&#34;http://d2o7bfz2il9cb7.cloudfront.net/main-qimg-2a29f21d9c3023e5c426b1161537cfe2&#34; /&gt;&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;Obviously this isn&amp;#8217;t causal evidence, but the pattern is pretty clear. 
+Customized, job-specific applications are much more likely to lead to interviews (and then hires).&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;Ok, getting back to the translation job. I hired the first applicant and had a few back and forth messages 
+with her about whether to translate the whole thing &lt;span class=&#34;amp&#34;&gt;&amp;amp;&lt;/span&gt; how to treat the handwritten stuff. Once she had the details, 
+she started working (in fact, she&amp;#8217;s working right now, as I write this&amp;#8211;note the green &amp;#8220;Working Now&amp;#8221; in the image below:&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Image&#34; src=&#34;http://d2o7bfz2il9cb7.cloudfront.net/main-qimg-d938cfde1a89b380f8377df378bea050&#34; /&gt;&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;You can see her screen (!)?&amp;#8221;&lt;/strong&gt;&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;So this is the part of oDesk that often wigs people out&amp;#8211;I can actually look at screenshots from her computer, 
+taken approximately every 10 minutes at random intervals (so long as she&amp;#8217;s using the team room client, 
+which she needs to do to bill hours). This strikes people as incredibly big-brotherish at first. 
+But this is actually what makes oDesk work for hourly contracts. If employers cannot monitor what their workers are doing, 
+they will not hire workers on an hourly basis because it is too easy to pad hours. (An aside: I once hired an offline editor 
+that billed me for 3 hours when the largest time delta in the edits (which I can see from the time-stamped tracked changes) 
+was about 45 minutes). &lt;br /&gt;
+&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;The lack of trust in online relationships (at least at first) is what drives many people to use fixed price contracts 
+(e.g., see &lt;a href=&#34;http://www.quora.com/John-Horton/Using-oDesk-to-Satisfy-Curiosity-with-some-economics-along-the-way#&#34;&gt;Amazon Mechanical Turk&lt;/a&gt;), since it deals with the padding issue, but using fixed price contracts creates 
+other strategic issues, one of which is quality&amp;#8211;workers have an incentive to cut corners. More importantly, 
+with a fixed-price contract, the parties have to over-invest in writing nearly complete contracts 
+(see &lt;a href=&#34;http://www.quora.com/John-Horton/Using-oDesk-to-Satisfy-Curiosity-with-some-economics-along-the-way#&#34;&gt;Steven Tadelis&amp;#8217;s paper&lt;/a&gt; with Patrick Bajari on this fixed-price vs. cost contract issue&amp;#8211;this paper really 
+influenced my thinking about contracting). Mechanical Turk &amp;#8220;solves&amp;#8221; the fixed price hold-up problem by just letting 
+the employer decide whether or not to pay, with no recourse for the worker. This clearly doesn&amp;#8217;t work as the stakes 
+get beyond the penny range. &lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;Practically speaking, once you get comfortable with a contractor, you rarely check the screen-shot work diary in a 
+monitoring sort of way&amp;#8211;more in just a &amp;#8220;what&amp;#8217;s everyone up to?&amp;#8221; sort of way. &lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Unscrupulous Employers and Online Work&lt;/strong&gt;&lt;br /&gt;
+One thing that is obvious with a translation job is that the screenshot work diary would let an unscrupulous 
+employer steal a worker&amp;#8217;s output. Note that I can zoom in and actually see the in-progress translation: &lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Image&#34; src=&#34;http://d2o7bfz2il9cb7.cloudfront.net/main-qimg-b442617186139ae2289317bd6cca2726&#34; /&gt;&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;The fact that the screen shots are images limits this problem to an extent, 
+but for something like programming where you are asking coders to commit their work to a repository daily, 
+stealing becomes far easier if employers can decide later not to pay. 
+For this reason, oDesk guarantees that contractors will get paid for hourly&amp;nbsp;work.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Getting the Translation&lt;/strong&gt;&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;So as I write this, she&amp;#8217;s still working, but let&amp;#8217;s check out the first paragraph: &lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Image&#34; src=&#34;http://d2o7bfz2il9cb7.cloudfront.net/main-qimg-ebab5623abe0d9fb05ef3bdf38183022&#34; /&gt;&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;That&amp;#8217;s a pretty interesting idea, though I wonder if the government running special shops (if that&amp;#8217;s what this network of shops idea actually implies) is a good idea. Surprisingly, the prime minister is from the conservative party(?):
+&lt;a href=&#34;http://en.wikipedia.org/wiki/Viktor_Orb%C3%A1n&#34;&gt;http://en.wikipedia.org/wiki/Viktor_Orb%C3%A1n&lt;/a&gt;&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;Anyway, perhaps I could have gotten all of this information from &lt;a href=&#34;http://www.quora.com/John-Horton/Using-oDesk-to-Satisfy-Curiosity-with-some-economics-along-the-way#&#34;&gt;Laszlo Sandor&lt;/a&gt; if I had asked him nicely, 
+but at some point he&amp;#8217;d get tired of satisfying my idle curiosity and I&amp;#8217;d rather wait until I have some request or question that 
+I couldn&amp;#8217;t get answered for about $10 and 10 minutes of my time. When I get the full translation, I&amp;#8217;ll post a&amp;nbsp;link.&lt;/p&gt;
+&lt;p&gt;Update: Here are the results&amp;#8211; &lt;a href=&#34;http://dl.dropbox.com/u/420874/Overhead%20maximal.docx&#34;&gt;http://dl.dropbox.com/u/420874/Overhead%20maximal.docx&lt;/a&gt;&lt;/p&gt;            </content>
+        </entry>
+    </feed>
