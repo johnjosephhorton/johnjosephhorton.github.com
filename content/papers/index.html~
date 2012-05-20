@@ -1,0 +1,7 @@
+---
+extends: paper_listing.j2
+default_block: test
+title: Papers
+description: Portfolio page in the BASIC hyde template
+listable: false
+---

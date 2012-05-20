@@ -1,0 +1,57 @@
+---
+title: High-wage skills on oDesk (or why you might want to learn Clojure if you're not a lawyer)
+description: >
+    John J. Horton
+created: !!timestamp '2012-03-06 13:38:00'
+tags:
+    - Odesk
+    - Closure
+---
+>
+  Update: Hello, HackerNews readers.
+  One thing that I discussed but probably didn't emphasize enough is that this data show 
+  the correlation between listed skills and offered wages---you absolutely cannot infer 
+  a causal relationship (my cheeky title notwithstanding). 
+  Unless I get to create and run a massive skills training program experiment, 
+  it's going to be hard to get at causality. But I can do something about the offered/earned distinction. 
+  If you don't want to miss my follow-on blog post where I explore the relationship between skills and actual earned 
+  wages from actual projects, follow me on [twitter](https://twitter.com/#!/johnjhorton).  
+---
+{% mark excerpt -%}
+
+**[oDesk](https://www.odesk.com/)** recently introduced a controlled, centralized vocabulary of about 1,400 skills for 
+buyers and contractors to use when posting jobs and creating profiles. 
+The primary motivation for the change was to make it easier for buyers and sellers to find each other: 
+without a standardized vocabulary, would-be traders can fail to match simply because they use different terms for the same skill.
+
+{%- endmark %}
+
+A side effect of this transition is that high quality data on the relationships between skills and wages 
+are now available. I recently built a dataset of contractors' hourly wages by skill: for each skill, 
+I identified all contractors listing that skill on their profiles and averaged their offered hourly wages. 
+Although contractors are free to offer any hourly wage they like, in my experience, wages offered 
+closely map to actual earnings. However, to reduce the influence of outliers, I restricted the sample to 
+contractors offering between 50 cents and 100 dollars per hour. I also only included skills for which there were 
+30 or more observations.
+
+---
+In the bar chart below (made using the very cool [googleVis](http://cran.r-project.org/web/packages/googleVis/index.html) package for R), 
+I plotted the top 50 skills, ordered by average hourly wage ([here](http://dl.dropbox.com/u/420874/skills.html) is a "live" version with mouse-over). 
+The top of the list is dominated by high-end consulting areas (e.g., patents and venture capital consulting) 
+or hot newer technologies (e.g., [redis](http://redis.io/) and [Amazon RDS](http://aws.amazon.com/rds/)). The programming language that commands 
+the highest wage is [Clojure](http://en.wikipedia.org/wiki/Clojure), which is a rather esoteric skill: it's a lisp dialect that compiles to the 
+Java Virtual Machine (JVM). Perhaps this is the market reflecting Paul Graham's "[Python Paradox](http://paulgraham.com/pypar.html)":
+
+>
+  "if a company chooses to write its software in a comparatively esoteric language, they'll be able to hire better programmers, because they'll attract only those who cared enough to learn it. And for programmers the paradox is even more pronounced: the language to learn, if you want to get a good job, is a language that people don't learn merely to get a job."  
+
+At the time Graham wrote this, Python was a far less mainstream language, 
+probably analogous to how Clojure is regarded today. It's an interesting pattern, 
+and although they'd cut up my economist membership card if I made a causal claim between 
+knowing Clojure and being able to command hire wages, I'm intrigued by the idea of using online 
+labor markets as a bellwether to help guide human capital choices.  
+---
+>
+  ![Average Odesk Profile Rates By Skill](http://4.bp.blogspot.com/-Xe5lrTxrrHU/Tz_lyLmWoxI/AAAAAAAAOqQ/Zo-Q7ta3VVI/s1600/odesk_skills.png)
+
+

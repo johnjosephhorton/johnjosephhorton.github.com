@@ -1,0 +1,73 @@
+{% extends "base.j2" %}
+
+{% block main -%}
+<div class='float_right'>
+<a href="https://twitter.com/johnjhorton" class="twitter-follow-button" data-show-count="false">Follow @johnjhorton</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</div>
+<article class="post">
+<nav class="post_nav">
+<a class="backlink" href="{{ content_url(resource.node.url) }}">Back to list</a>
+<a class="prev{{' disabled' if not resource.prev_by_time }}"
+    title="{{ resource.prev_by_time.meta.title }}"
+    {% if resource.prev_by_time %}
+    href="{{ content_url(resource.prev_by_time.url) }}"{% endif %}>
+    Previous
+</a>
+
+<a class="next{{' disabled' if not resource.next_by_time }}"
+    title="{{ resource.next_by_time.meta.title }}"
+    {% if resource.next_by_time %}
+    href="{{ content_url(resource.next_by_time.url) }}"{% endif %}>
+    Next
+</a>
+
+<br>
+<div id="twitter_share">
+<a href="http://twitter.com/share"
+    class="twitter-share-button"
+    data-count="vertical"
+    data-via="{{ tweet_via }}">Tweet</a>
+    <script type="text/javascript"
+        src="http://platform.twitter.com/widgets.js"></script>
+</div>
+<div id="facebook_like">
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=119613764798457";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div class="fb-like" data-send="false" data-layout="box_count" data-width="150" data-show-faces="false"></div>
+</div>
+</nav>
+<h1 class="title">
+    <a href="{{ content_url(resource.url) }}">
+        {{ resource.meta.title }}
+    </a>
+</h1>
+<time datetime="{{ resource.meta.created.strftime('%Y-%m-%d') }}">
+    Posted: {{ resource.meta.created.strftime('%a, %d %b %Y') }}
+</time>
+
+{% if resource.meta.tags %}
+<ul class="tags clear">
+{% for tag in resource.meta.tags %}
+<li>
+    <a class="small" href="{{ content_url('blog/tags/'~tag~'.html') }}">
+        {{ tag }}
+    </a>
+</li>
+{% endfor %}
+</ul>
+{% endif %}
+{% filter markdown|typogrify -%}
+{% mark post -%}
+{% block post -%}{%- endblock %}
+{%- endmark %}
+{%- endfilter %}
+</article>
+ <center><a href="{{content_url('blog/atom.xml')}}"><< Subscribe via RSS Feed >></a></center>
+{%- endblock %}

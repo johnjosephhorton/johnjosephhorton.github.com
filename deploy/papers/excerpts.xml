@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>
+        BASIC blog excerpts feed    </title>
+        <link href="papers/excerpts.xml" rel="self" />
+    
+        <link href="/"/>
+    
+        
+    <updated>2012-05-14T12:24:55Z</updated>
+
+    <id>/papers/excerpts.xml/</id>
+
+            <entry>
+            <title type="html">Designing Incentives for Inexpert Human Raters</title>
+            <author><name>Lakshmi Vyasarajan</name></author>
+            <link href="/papers/paper-4.html"/>
+            <updated>2011-03-01T10:00:00Z</updated>
+            <published>2011-03-01T10:00:00Z</published>
+            <id>/papers/paper-4.html</id>
+            
+            <content type="html">
+                
+                            </content>
+        </entry>
+            <entry>
+            <title type="html">Online Labor Markets</title>
+            <author><name>Lakshmi Vyasarajan</name></author>
+            <link href="/papers/paper-2.html"/>
+            <updated>2010-10-01T10:00:00Z</updated>
+            <published>2010-10-01T10:00:00Z</published>
+            <id>/papers/paper-2.html</id>
+            
+            <content type="html">
+                
+                            </content>
+        </entry>
+            <entry>
+            <title type="html">Employer Expectations, Peer Effects and Productivity: Evidence From a Series of Field Experiments</title>
+            <author><name>Lakshmi Vyasarajan</name></author>
+            <link href="/papers/paper-1.html"/>
+            <updated>2010-08-01T10:00:00Z</updated>
+            <published>2010-08-01T10:00:00Z</published>
+            <id>/papers/paper-1.html</id>
+            
+            <content type="html">
+                
+                            </content>
+        </entry>
+            <entry>
+            <title type="html">Task Search in a Human Computation Market</title>
+            <author><name>Lakshmi Vyasarajan</name></author>
+            <link href="/papers/paper-3.html"/>
+            <updated>2010-07-01T10:00:00Z</updated>
+            <published>2010-07-01T10:00:00Z</published>
+            <id>/papers/paper-3.html</id>
+            
+            <content type="html">
+                
+                            </content>
+        </entry>
+            <entry>
+            <title type="html">The Dot-Guessing Game: A 'Fruit Fly' For Human Computation</title>
+            <author><name>Lakshmi Vyasarajan</name></author>
+            <link href="/papers/paper-5.html"/>
+            <updated>2010-05-01T10:00:00Z</updated>
+            <published>2010-05-01T10:00:00Z</published>
+            <id>/papers/paper-5.html</id>
+            
+            <content type="html">
+                
+                            </content>
+        </entry>
+            <entry>
+            <title type="html">The Labor Economics of Paid Crowdsourcing</title>
+            <author><name>Lakshmi Vyasarajan</name></author>
+            <link href="/papers/paper-7.html"/>
+            <updated>2010-04-01T10:00:00Z</updated>
+            <published>2010-04-01T10:00:00Z</published>
+            <id>/papers/paper-7.html</id>
+            
+            <content type="html">
+                
+                            </content>
+        </entry>
+            <entry>
+            <title type="html">The Online Laboratory: Conducting Experiments in a Real Labor Market</title>
+            <author><name>Lakshmi Vyasarajan</name></author>
+            <link href="/papers/paper-6.html"/>
+            <updated>2010-04-01T10:00:00Z</updated>
+            <published>2010-04-01T10:00:00Z</published>
+            <id>/papers/paper-6.html</id>
+            
+            <content type="html">
+                
+                            </content>
+        </entry>
+            <entry>
+            <title type="html">The Condition of the Turking Class: Are Online Employers Fair and Honest?</title>
+            <author><name>Lakshmi Vyasarajan</name></author>
+            <link href="/papers/paper-8.html"/>
+            <updated>2010-01-01T10:00:00Z</updated>
+            <published>2010-01-01T10:00:00Z</published>
+            <id>/papers/paper-8.html</id>
+            
+            <content type="html">
+                
+                            </content>
+        </entry>
+            <entry>
+            <title type="html">The Wages of Pay Cuts: Evidence from a Field Experiment</title>
+            <author><name>Lakshmi Vyasarajan</name></author>
+            <link href="/papers/paper-9.html"/>
+            <updated>2009-04-01T10:00:00Z</updated>
+            <published>2009-04-01T10:00:00Z</published>
+            <id>/papers/paper-9.html</id>
+            
+            <content type="html">
+                
+                            </content>
+        </entry>
+    </feed>

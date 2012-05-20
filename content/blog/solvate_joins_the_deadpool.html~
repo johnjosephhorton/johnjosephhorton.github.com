@@ -1,0 +1,56 @@
+---
+title: Solvate joins the deadpool
+description: >
+    John J. Horton
+created: !!timestamp '2012-02-20 10:34:00'
+tags:
+    - Odesk
+    - Solvate
+---
+
+
+
+{% mark excerpt -%}
+[Techcrunch](http://techcrunch.com/2012/02/19/solvate-shutting-down/) and 
+[Betabeat](http://www.betabeat.com/2012/02/20/freelance-marketplace-solvate-shuts-down-after-four-years-and-6-3-m/) 
+are reporting that [Solvate](http://www.solvate.com/), 
+a platform for remote work, is shutting down. 
+Unlike oDesk, Elance, Freelancer etc., they were not trying to create a true marketplace: 
+they were trying to do more of a high-touch, human-in-the-loop matching service. 
+
+{%- endmark %}
+
+
+
+
+In the email Solvate sent to their users about the shutdown, 
+they explicitly cited scalability issues, which I'm guessing refers to the 
+non-sustainable effort and cost of hand-matching buyers and sellers. 
+I wouldn't say this is definitive proof that the high-touch matching business model doesn't work 
+(my outsider impression is that [GLG](http://www.glgresearch.com/) is killing it), but it is a reminder that the value-added 
+from your human-in-the-loop matching has to be sufficiency high that you can re-coup your costs: 
+you can't take a hit on every unit sold but make it up on volume.  
+
+
+I think it's too bad they are shutting down---I would have liked to see how their 
+approach to online labor would have evolved. That being said, I personally found their emphasis 
+(at least in their marketing copy) on US-based workers off-putting. Solvate's CEO was 
+[quoted](http://gigaom.com/collaboration/solvate-ceo-most-labor-platforms-undermine-american-workers/) extensively 
+in a  Gigaom article, in which he claimed that online labor markets were undermining US workers. 
+He also suggested that by relying only on US-based workers, 
+Solvate could promise a higher level of talent and expertise. 
+All online labor markets have to find ways to help workers credibly demonstrate their talents, and 
+using crude geography-based proxies for talent is an approach, but not a particularly admirable one. 
+To me, the whole ethical/moral "so what" of online work is that geography and nationality doesn't have to matter.  
+---
+__As a coda, here is my response to the original 
+[Gigaom](http://gigaom.com/collaboration/are-online-marketplaces-driving-down-web-worker-salaries/) article:__  
+
+  Full disclosure: I'm the staff economist at oDesk and these opinions represent my own views.  
+    __A couple of thoughts:__  
+
+   *  Like any competitive market, the forces of supply and demand are going to determine prices in these online markets. With the opening up of new countries that have large, reasonably well-educated, internet savvy populations, supply increases which will tend to drive down wages. On the other hand, these markets (and the ability to break work up into small, outsourceable bits) also make it possible to outsource more work, increasing demand, and hence prices.
+   *  At least within oDesk, we haven't seen strong trends in wages, though presumably this article is talking about freelancers in general and we obviously don't have visibility on their wages.
+   *  As a practical matter, I don't think workers in developed countries like the US can't compete in these markets-they actually have a lot of advantages: perfect english, same time-zone, familiarity with US business culture/expectations etc. Further, price matters, but it's not the only thing. For what it's worth, I work with many oDesk contractors and the break-down is 1 x US, 1 x Italy, 1 x Russia, 1 x Pakistan and 2 x Philippines.
+   *  The efficiency and distributional effects of information and communications technology are complex and the evidence is ambiguous, so I'd be skeptical of anyone offering a definite answer to these kinds of questions. There was an interesting Quora thread on this [topic](http://www.quora.com/Will-oDesk-and-mfg-com-be-the-demise-of-the-American-middle-class).
+   *  I think focusing on what these markets do for relatively well-paid workers in developed countries misses one of the most important moral facts about these markets, which is that they generate new, relatively well-paid, meaningful work opportunities for people in developing countries. It's obviously not a random sample of our workers, but If you spend a few minutes on oDesk's Facebook fanpage and look at the comments and stories, it's clear that online work is improving lives in a pretty dramatic way.

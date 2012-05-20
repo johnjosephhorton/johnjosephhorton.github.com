@@ -1,0 +1,140 @@
+---
+title: Using oDesk to Satisfy Curiosity 
+description: >
+    John J. Horton
+created: !!timestamp '2011-09-28 09:39:00'
+tags:
+    - Labor
+    - Odesk
+    - Contractors
+
+
+---
+>
+  Note: This is a re-posting of a Quora post a wrote a few days ago. 
+
+{% mark excerpt -%}
+A few days ago, Laszlo Sandor, one of the economists in my "economics" 
+Google+ circle posted a photograph showing the Hungarian PM's notes for a speech to parliament. 
+As you can see from the picture, the final product was not the result of, uh, careful policy analysis:   
+{%- endmark %}  
+
+![Image](http://d2o7bfz2il9cb7.cloudfront.net/main-qimg-61b228887867940aad48e657b0448bce)  
+Linke on Google+: https://plus.google.com/104111354079417095932/posts/UdLvwbMXtL1
+  
+---
+
+Like most non-Hungarians, I can't read what was crossed out nor what was added. Normally when I find something in a language 
+that I can't read but want to understand, I try Google Translate, 
+but that would not work here since the text is an image and the handwritten notes are probably the more interesting part anyway.  
+
+  
+---
+
+In response to the post, Markus Mobius asked "Is there a site that translates this stuff?" and the answer is yes, 
+in the sense that there is a site where you can (try) to get anything done, so long as the work can be sent down a wire. 
+That site is run by my employer, [oDesk](http://www.quora.com/John-Horton/Using-oDesk-to-Satisfy-Curiosity-with-some-economics-along-the-way#). I often post small jobs on the site , partly for fun and partly because I want to see 
+what I can get done at what level of quality. 
+
+  
+---
+
+I decided to try getting the speech translated. I like posting translation jobs as demonstrations, because they nicely illustrate one important aspect of online labor markets, which is that you can quickly find workers that can do very specialized tasks. I tend to think that the real efficiency gain of these markets comes not from arbitraging wages (though that's a real component and a very powerful one---see Samasource), but in terms of the gains from specialization.   
+
+When I taught my "online work" sophomore economics seminar at Harvard, I started the class by posting a job looking to translate the Wikipedia article on the TV show Madmen into Tagalog (chosen because I knew lots of Filipino contractors would be online at that time). By the end of the hour, we had (1) posted a job (2) hired a contractor (her first job) (3) taken delivery of the translation and (3) paid for the work and (3) given feedback to the contractor.   
+
+ 
+Anyway, so here's what I did:  
+ 
+
+**Writing a job description**  
+
+Here's what my job post looked like to potential contractors---not much detail, but then again, this is a pretty well-defined task:   
+
+![Image](http://d2o7bfz2il9cb7.cloudfront.net/main-qimg-3955880134f91d655ee6e168c23daf06)  
+
+I was thinking that Hungarian is a fairly uncommon language on oDesk, so I suspected that I would have to go recruit a translator. 
+I did this & hired the first person who had a reasonable profile. However, in retrospect, I could have posted & waited: 
+I got 12 applicants in less than 24 hours. 
+
+  
+How did my non-invited applicants look?   
+
+![Image](http://d2o7bfz2il9cb7.cloudfront.net/main-qimg-395b61fda573cca9ebae63ee4265ff76)   
+
+
+So we have some very promising candidates (from Romania or Hungary & focus on writing/translation). 
+There are also a handful of candidates from elsewhere that don't seem relevant---they don't focus on 
+translation and their country makes me doubt they could do a good hungarian-to-english translation.  
+
+This brings up a point about one the challenges of our marketplace. Many oDesk employers complain about application "spam" which they regard as applications from workers that are inappropriate for a job or who haven't read the job's instructions. We try to reduce this problem by giving contractors a "job application quota" (so that they will be more choosy in the jobs they apply to & invest more in their applications) but it's far from perfect and getting the "supply" of applications to match the demand is tricky since applications are an externality (and whether they are positive or negative depends on the job & the worker---one man's spam is another man's treasure).  
+
+The data definitely reflects what employer's say: here is a plot showing the relationship between 
+cover letter novelty (defined as the fraction of words in a current cover letter that are common with 
+that contractor's most previous application) and the probability of that worker getting an interview:  
+
+
+![Image](http://d2o7bfz2il9cb7.cloudfront.net/main-qimg-2a29f21d9c3023e5c426b1161537cfe2)  
+
+Obviously this isn't causal evidence, but the pattern is pretty clear. 
+Customized, job-specific applications are much more likely to lead to interviews (and then hires).  
+
+
+Ok, getting back to the translation job. I hired the first applicant and had a few back and forth messages 
+with her about whether to translate the whole thing & how to treat the handwritten stuff. Once she had the details, 
+she started working (in fact, she's working right now, as I write this---note the green "Working Now" in the image below:  
+
+
+![Image](http://d2o7bfz2il9cb7.cloudfront.net/main-qimg-d938cfde1a89b380f8377df378bea050)  
+
+ **You can see her screen (!)?"**  
+
+So this is the part of oDesk that often wigs people out---I can actually look at screenshots from her computer, 
+taken approximately every 10 minutes at random intervals (so long as she's using the team room client, 
+which she needs to do to bill hours). This strikes people as incredibly big-brotherish at first. 
+But this is actually what makes oDesk work for hourly contracts. If employers cannot monitor what their workers are doing, 
+they will not hire workers on an hourly basis because it is too easy to pad hours. (An aside: I once hired an offline editor 
+that billed me for 3 hours when the largest time delta in the edits (which I can see from the time-stamped tracked changes) 
+was about 45 minutes).   
+
+---
+
+The lack of trust in online relationships (at least at first) is what drives many people to use fixed price contracts 
+(e.g., see [Amazon Mechanical Turk](http://www.quora.com/John-Horton/Using-oDesk-to-Satisfy-Curiosity-with-some-economics-along-the-way#)), since it deals with the padding issue, but using fixed price contracts creates 
+other strategic issues, one of which is quality---workers have an incentive to cut corners. More importantly, 
+with a fixed-price contract, the parties have to over-invest in writing nearly complete contracts 
+(see [Steven Tadelis's paper](http://www.quora.com/John-Horton/Using-oDesk-to-Satisfy-Curiosity-with-some-economics-along-the-way#) with Patrick Bajari on this fixed-price vs. cost contract issue---this paper really 
+influenced my thinking about contracting). Mechanical Turk "solves" the fixed price hold-up problem by just letting 
+the employer decide whether or not to pay, with no recourse for the worker. This clearly doesn't work as the stakes 
+get beyond the penny range.   
+
+
+Practically speaking, once you get comfortable with a contractor, you rarely check the screen-shot work diary in a 
+monitoring sort of way---more in just a "what's everyone up to?" sort of way.   
+
+**Unscrupulous Employers and Online Work**  
+One thing that is obvious with a translation job is that the screenshot work diary would let an unscrupulous 
+employer steal a worker's output. Note that I can zoom in and actually see the in-progress translation:   
+
+![Image](http://d2o7bfz2il9cb7.cloudfront.net/main-qimg-b442617186139ae2289317bd6cca2726)  
+
+The fact that the screen shots are images limits this problem to an extent, 
+but for something like programming where you are asking coders to commit their work to a repository daily, 
+stealing becomes far easier if employers can decide later not to pay. 
+For this reason, oDesk guarantees that contractors will get paid for hourly work.
+
+  
+**Getting the Translation**  
+
+So as I write this, she's still working, but let's check out the first paragraph:   
+
+![Image](http://d2o7bfz2il9cb7.cloudfront.net/main-qimg-ebab5623abe0d9fb05ef3bdf38183022)  
+
+That's a pretty interesting idea, though I wonder if the government running special shops (if that's what this network of shops idea actually implies) is a good idea. Surprisingly, the prime minister is from the conservative party(?):
+<http://en.wikipedia.org/wiki/Viktor_Orb%C3%A1n>  
+
+Anyway, perhaps I could have gotten all of this information from [Laszlo Sandor](http://www.quora.com/John-Horton/Using-oDesk-to-Satisfy-Curiosity-with-some-economics-along-the-way#) if I had asked him nicely, 
+but at some point he'd get tired of satisfying my idle curiosity and I'd rather wait until I have some request or question that 
+I couldn't get answered for about $10 and 10 minutes of my time. When I get the full translation, I'll post a link.
+
+Update: Here are the results--- <http://dl.dropbox.com/u/420874/Overhead%20maximal.docx>

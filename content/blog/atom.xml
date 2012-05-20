@@ -1,0 +1,5 @@
+===
+title: "Online Labor Blog Feed. Author: John J. Horton"
+extends: atom.j2
+listable: false
+===

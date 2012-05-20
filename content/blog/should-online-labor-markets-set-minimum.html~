@@ -1,0 +1,74 @@
+---
+title: Should Online Labor Markets Set a Minimum Wage? 
+description: >
+    John J. Horton
+created: !!timestamp '2011-10-29 16:08:00'
+tags:
+    - Labor
+    - Markets
+
+---
+
+
+{% mark excerpt -%}
+
+Some critics of online labor markets mistakenly believe that the platform creators have an 
+incentive to keep wages low. Employers have that incentive, but all else equal, the creators of 
+online labor markets want to see see wages rise, since almost all of them take a percentage of earnings. 
+At least from a revenue standpoint, they should be indifferent between more work at a lower price or less 
+work at a higher price, so long as the wage bill stays the same. It would be a different story if the platforms 
+could somehow tax employers on the value-added by the platform, but so far, that's not possible.  
+
+{%- endmark %}
+
+One tool for raising wages might be for the platform to impose a minium wage. 
+It's certainly possible that imposing a binding minimum wage would increase platform revenue---it 
+depends on the relative labor supply and demand elasticities, as well as the marginal cost of intermediating work. 
+A platform's costs of good sold (i.e., intermediation service) is not precisely zero---there are server costs, 
+customer service costs, fraud risks etc, so there is some wage at which the platform would be better off not 
+allowing parties to contract.  
+
+---
+  
+Moving from generalities, let's look at workers from the Philippines, who (a) make a big chunk of 
+the workforce on oDesk and (b) generally do relatively low-paid work (e.g., data entry, customer service, writing etc.) 
+and thus would be most affected by a minimum wage imposition. If we look from about 2009 on (when the Philippines first 
+started to become important), we can see that wages are basically flat, perhaps with a slight rise in some categories.
+  
+![Image](https://img.skitch.com/20111029-q66wn3fikckjryyxs4xpssa968.jpg)  
+
+
+We can see that mean hourly wages range from 
+*3 for low skilled at a entry work to about 8/hour* for software development. 
+By US standards, *3/hour is quite low, it's less than half the US federal minimum wage*. 
+However,let′slook at where *3/hour wage* puts someone in the the Philippine household income distribution, 
+assuming they work 40 hours a week, 50 weeks a year:  
+
+![Image](https://img.skitch.com/20111029-s322de6pcpnbm5a8w1qk78gu8.jpg)  
+
+---
+
+  
+Unfortunately the I couldn't get a more refined measure of income, but my eye-ball estimate is that 
+*3.00/hour is at about the 50th percentile of the distribution.* *The equivalent hourly wage formed in house-hold income* in the US is about 31/hour 
+([using 2006 measure from Wikipedia](http://en.wikipedia.org/wiki/Household_income_in_the_United_States)) using the same 50 weeks a year, 40 hours a week formulation. 
+It's important to note that this is household income, meaning that in many cases it is the combined income of a husband, 
+wife and working-age children. And although online work does require a computer and a good internet connection, 
+it does not require spending money on transportation, work clothes, food prepared outside the home etc. 
+It also probably lets workers economize on child care e.g., I might be willing to let a 10 year old watch a 3 year old 
+if I'm in the next room, but not if I'm across town.  
+
+---
+  
+So, what's the conclusion?  
+
+
+From a platform perspective, I can concede that imposing a minimum wage could be revenue-increasing, but it depends on some pretty hard to estimate factors: how well do we know the elasticities? Are the long and short-term elasticities the same? What happens if we can get our intermediation costs down? Implementation-wise, enforcement might be very hard---I could easily imagine workers giving under-the-table rebates.  
+
+From a worker/welfare perspective, a minmum wage would clearly help some but hurt others. Any binding minimum wage is going to price some workers out of the market. How do we weigh their lost opportunities against the increased wages paid to those that see a bump? This starkly highlights one of the real drawbacks of a minimum wage as social policy, which is that it might be globally progressive and yet highly locally regressive for workers on the bad side of the cut-off.    
+
+I'd love to hear both employer and worker perspectives on this---feel free to comment here & I'll respond.  
+
+>
+  Like this? Follow me on [twitter](https://twitter.com/#!/johnjhorton).
+
