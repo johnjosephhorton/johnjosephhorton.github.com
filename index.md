@@ -15,7 +15,8 @@ marketplace.
 My academic research is primarily focused on issues in labor
 economics, organizational economics and market design, particularly in
 the context of online labor markets. I received my PhD from Harvard in
-2011 and will be going on the academic job market in the fall of 2012.
+2011 and I am currently on the academic job market. 
+
 
 Contact
 -------
