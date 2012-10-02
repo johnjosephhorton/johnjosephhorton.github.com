@@ -43,6 +43,7 @@ Contact
 
 Links
 -----
+* [Research Papers](papers.html)
 * [CV](cv.html) [(pdf)](cv.pdf)
 * [Online Labor Blog](http://www.onlinelabor.blogspot.com)
 
