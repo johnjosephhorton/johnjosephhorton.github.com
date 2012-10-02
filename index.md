@@ -30,7 +30,5 @@ Contact
 Links
 -----
 * [CV](cv.html) [(pdf)](cv.pdf)
-* [Papers](papers.html) 
-* [Research Statement](research_statement.html) [(pdf)](research_statement.html)
 * [Online Labor Blog](http://www.onlinelabor.blogspot.com)
 
