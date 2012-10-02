@@ -29,21 +29,20 @@ marketplace.
 My academic research is primarily focused on issues in labor
 economics, organizational economics and market design, particularly in
 the context of online labor markets. I received my PhD from Harvard in
-2011 and I am currently on the academic job market. 
-
+2011 and I am currently on the academic job market. I will be
+available for interviews at the January 2013 AEA meeting in San Diego.
 
 Contact
 -------
-
-* phone: (617) 595-2437
-* website: [www.john-joseph-horton.com](http://www.john-joseph-horton.com/)
 * email: john.joseph.horton@gmail.com
 * twitter: [@johnjhorton](https://twitter.com/johnjhorton)
-* google scholar profile: [http://goo.gl/buQYm](http://goo.gl/buQYm)
+* website: [www.john-joseph-horton.com](http://www.john-joseph-horton.com/)
+* phone: (617) 595-2437
 
 Links
 -----
 * [Research Papers](papers.html)
 * [CV](cv.html) [(pdf)](cv.pdf)
+* [Google Scholar Profile](http://scholar.google.com/citations?user=L_O2kH0AAAAJ&hl=en)
 * [Online Labor Blog](http://www.onlinelabor.blogspot.com)
 
