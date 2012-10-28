@@ -36,7 +36,7 @@ Contact
 Links
 -----
 * [Research Papers](papers.html)
-* [CV](cv.html) [(pdf)](cv.pdf)
+* [CV](cv.html) [(pdf)](cv.pdf) [(Harvard Econonomics Department-Style CV)](econ_cv.pdf)
 * [Google Scholar Profile](http://scholar.google.com/citations?user=L_O2kH0AAAAJ&hl=en)
 * [Online Labor Blog](http://www.onlinelabor.blogspot.com)
 

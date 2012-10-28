@@ -14,8 +14,8 @@ google scholar profile: [http://goo.gl/buQYm](http://goo.gl/buQYm)
 
 Graduate Studies
 ----------------
-Ph.D. Public Policy, Harvard University, 2011 
-Thesis: "Online Labor Markets"  
+Ph.D. Public Policy, Harvard University, 2011  
+Thesis: "Online Labor Markets"   
 Committee: [Richard Zeckhauser](http://www.hks.harvard.edu/fs/rzeckhau/) (chair), [Lawrence Katz](http://scholar.harvard.edu/lkatz) and [Jeffrey Liebman](http://www.hks.harvard.edu/jeffreyliebman/)
     
 Undergraduate Studies
@@ -111,13 +111,13 @@ Non-refereed Publications
 1. ["The Need for Standardization in Crowdsourcing"](http://john-joseph-horton/papers/the_need_for_standardization_in_crowdsourcing.pdf) (with Panagiotis Ipeirotis), presented at the Crowdsourcing Workshop, ACM-CHI 2011 (Vancouver, BC), May 2011.
 1. ["Heads in the Cloud: Challenges and Opportunities in Human Computation"](http://john-joseph-horton/papers/head_in_the_clouds.pdf) (with Robert C. Miller, Greg Little, Michael Bernstein, Jeffrey P. Bigham, Lydia B. Chilton, Max Goldman and Rajeev Nayak), *XRDS: Crossroads, the ACM Magazine for Students*, December 2010.
 
-Researh Papers in Progress
---------------------------
+Research Papers in Progress
+---------------------------
 
-1. “Overcoming Congestion in a Matching Market by Making Applications Costly” (with R. Johari and D. Chandler).
-1. “Virtual Migration: the Effect of Outsourcing through Online Platforms on Workers in Developing Countries” (with D. Pomeranz).
-1. “Digitization of Information and the Market for Contract Labor” (with A. Agrawal, N. Lacetera and E. Lyons). To appear in the NBER Economics of Digitization volume.
-1. “Helping Workers Make Human Capital Decisions via Algorithmic Recommendations” (with P. Coles).
+1. "Overcoming Congestion in a Matching Market by Making Applications Costly" (with R. Johari and D. Chandler).
+1. "Virtual Migration: the Effect of Outsourcing through Online Platforms on Workers in Developing Countries" (with D. Pomeranz).
+1. "Digitization of Information and the Market for Contract Labor" (with A. Agrawal, N. Lacetera and E. Lyons). To appear in the NBER Economics of Digitization volume.
+1. "Helping Workers Make Human Capital Decisions via Algorithmic Recommendations" (with P. Coles).
 
 Select Invited Academic Presentations & Panels
 ----------------------------------------------
