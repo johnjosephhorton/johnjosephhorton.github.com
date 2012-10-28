@@ -16,8 +16,7 @@
 
 John J. Horton 
 ==============
-<!-- [<img src="headshot.jpg">](Me) --> 
-![Picture](headshot.jpg "Me")
+[<img src="headshot.jpg">](index.html)
 
 About
 -----
