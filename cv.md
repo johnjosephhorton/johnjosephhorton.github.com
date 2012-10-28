@@ -66,28 +66,28 @@ Grants
 Working Papers
 --------------
 1. JOB MARKET PAPER: "Employer Search and Screening in an Online Labor Market," 2012. 
-1. ["Employer Expectations, Peer Effects and Productivity: Evidence from a Series of Field Experiments"](https://dl.dropbox.com/u/420874/papers/peer_effects.pdf) 2010. Status: Draft available.
-1. ["The Wages of Pay Cuts: Evidence from a Field Experiment"](https://dl.dropbox.com/u/420874/papers/wages_of_paycuts.pdf) (with Daniel Chen) 2012. Status: Draft available.
-1. ["Procurement, Incentives and Bargaining Friction: Evidence from Government Contracts"](https://dl.dropbox.com/u/420874/papers/procurement_incentives_and_bargaining_friction.pdf) 2009. Status: R&R at The Journal of Law & Economics
+1. ["Employer Expectations, Peer Effects and Productivity: Evidence from a Series of Field Experiments"](./papers/peer_effects.pdf) 2010. Status: Draft available.
+1. ["The Wages of Pay Cuts: Evidence from a Field Experiment"](./papers/wages_of_paycuts.pdf) (with Daniel Chen) 2012. Status: Draft available.
+1. ["Procurement, Incentives and Bargaining Friction: Evidence from Government Contracts"](./papers/procurement_incentives_and_bargaining_friction.pdf) 2009. Status: R&R at The Journal of Law & Economics
 
 Publications in Economics 
 -------------------------
 
-1. ["The Online Laboratory: Conducting Experiments in a Real Labor Market"](https://dl.dropbox.com/u/420874/papers/the_online_laboratory.pdf) (with David Rand and Richard Zeckhauser) 
+1. ["The Online Laboratory: Conducting Experiments in a Real Labor Market"](./papers/the_online_laboratory.pdf) (with David Rand and Richard Zeckhauser) 
 Experimental Economics, 14:3 (2011), 399-425. 
-1. ["The Condition of the Turking Class: Are Online Employers Fair and Honest?"](https://dl.dropbox.com/u/420874/papers/condition_of_the_turking_class.pdf)
+1. ["The Condition of the Turking Class: Are Online Employers Fair and Honest?"](./papers/condition_of_the_turking_class.pdf)
 Economics Letters, 111:1 (April 2011), 10-12.
 
 
 Publications in Computer Science 
 --------------------------------
 
-1. ["Labor Allocation in Paid Crowdsourcing: Experimental Evidence on Positioning, Nudges and Prices"](https://dl.dropbox.com/u/420874/papers/labor_allocation_in_paid_crowdsourcing_nudges_prices.pdf) (with Dana Chandler) Proceedings of the 25th Conference on Artificial Intelligence (AAAI), Human Computation Workshop (HCOMP), August 2011
-1. ["Designing Incentives for Inexpert Human Raters"](https://dl.dropbox.com/u/420874/papers/designing_incentives_for_inexpert_human_raters.pdf)  (with Aaron Shaw and Daniel Chen) Proceedings of the ACM Conference of Computer Supported Cooperative Work (ACM-CSCW), Best Paper Nominee, March 2011
-1. ["Online Labor Markets"](https://dl.dropbox.com/u/420874/papers/online_labor_markets.pdf) Proceedings of the 6th Workshop on Internet and Network Economics (WINE), December 2010
-1. ["Algorithmic Wage Negotiations: Applications to Paid Crowdsourcing"](https://dl.dropbox.com/u/420874/papers/algorithmic_wage_negotiations.pdf) (with Richard Zeckhauser) Proceedings of CrowdConf, 2010
-1. ["Task Search in a Human Computation Market"](https://dl.dropbox.com/u/420874/papers/task_search_in_a_human_computation_market.pdf) (with Lydia Chilton, Rob Miller and Shiri Azenkot) Proceedings of the ACM Conference on Knowledge Discovery and Data Mining/Human Computation (ACM-KDD/HCOMP), 2010
-1. ["The Labor Economics of Paid Crowdsourcing"](https://dl.dropbox.com/u/420874/papers/labor_economics_of_paid_crowdsourcing.pdf) (with Lydia Chilton) Proceedings of the 11th ACM Conference on Electronic Commerce (ACM-EC), 2010
+1. ["Labor Allocation in Paid Crowdsourcing: Experimental Evidence on Positioning, Nudges and Prices"](./papers/labor_allocation_in_paid_crowdsourcing_nudges_prices.pdf) (with Dana Chandler) Proceedings of the 25th Conference on Artificial Intelligence (AAAI), Human Computation Workshop (HCOMP), August 2011
+1. ["Designing Incentives for Inexpert Human Raters"](./papers/designing_incentives_for_inexpert_human_raters.pdf)  (with Aaron Shaw and Daniel Chen) Proceedings of the ACM Conference of Computer Supported Cooperative Work (ACM-CSCW), Best Paper Nominee, March 2011
+1. ["Online Labor Markets"](./papers/online_labor_markets.pdf) Proceedings of the 6th Workshop on Internet and Network Economics (WINE), December 2010
+1. ["Algorithmic Wage Negotiations: Applications to Paid Crowdsourcing"](./papers/algorithmic_wage_negotiations.pdf) (with Richard Zeckhauser) Proceedings of CrowdConf, 2010
+1. ["Task Search in a Human Computation Market"](./papers/task_search_in_a_human_computation_market.pdf) (with Lydia Chilton, Rob Miller and Shiri Azenkot) Proceedings of the ACM Conference on Knowledge Discovery and Data Mining/Human Computation (ACM-KDD/HCOMP), 2010
+1. ["The Labor Economics of Paid Crowdsourcing"](./papers/labor_economics_of_paid_crowdsourcing.pdf) (with Lydia Chilton) Proceedings of the 11th ACM Conference on Electronic Commerce (ACM-EC), 2010
 
 <!-- Work in Progress -->
 <!-- ---------------- -->
@@ -102,13 +102,13 @@ Publications in Computer Science
 
 Resting Papers
 --------------
-1. ["The Dot Guessing Game: A Fruit Fly For Human Computation"](https://dl.dropbox.com/u/420874/papers/dot_guessing_game.pdf) 2010. Status: Draft available. 
+1. ["The Dot Guessing Game: A Fruit Fly For Human Computation"](./papers/dot_guessing_game.pdf) 2010. Status: Draft available. 
 
 Non-refereed Publications 
 -------------------------
 
-1. ["The Need for Standardization in Crowdsourcing"](https://dl.dropbox.com/u/420874/papers/the_need_for_standardization_in_crowdsourcing.pdf) (with Panagiotis Ipeirotis) Presented at the Crowdsourcing Workshop, ACM-CHI 2011 (Vancouver, BC), May 2011
-1. ["Heads in the Cloud: Challenges and Opportunities in Human Computation"](https://dl.dropbox.com/u/420874/papers/head_in_the_clouds.pdf) (with Robert C. Miller, Greg Little, Michael Bernstein, Jeffrey P. Bigham, Lydia B. Chilton, Max Goldman and Rajeev Nayak) XRDS: Crossroads, the ACM Magazine for Students, December 2010
+1. ["The Need for Standardization in Crowdsourcing"](./papers/the_need_for_standardization_in_crowdsourcing.pdf) (with Panagiotis Ipeirotis) Presented at the Crowdsourcing Workshop, ACM-CHI 2011 (Vancouver, BC), May 2011
+1. ["Heads in the Cloud: Challenges and Opportunities in Human Computation"](./papers/head_in_the_clouds.pdf) (with Robert C. Miller, Greg Little, Michael Bernstein, Jeffrey P. Bigham, Lydia B. Chilton, Max Goldman and Rajeev Nayak) XRDS: Crossroads, the ACM Magazine for Students, December 2010
 
 Select Invited Academic Presentations & Panels
 ----------------------------------------------
