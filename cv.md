@@ -71,8 +71,8 @@ Working Papers
 1. ["The Wages of Pay Cuts: Evidence from a Field Experiment"](http://john-joseph-horton/papers/wages_of_paycuts.pdf) (with Daniel Chen), 2012. Status: Draft available.
 1. ["Procurement, Incentives and Bargaining Friction: Evidence from Government Contracts,"](http://john-joseph-horton/papers/procurement_incentives_and_bargaining_friction.pdf) 2009. Status: R&R at *The Journal of Law & Economics*
 
-Publications in Economics 
--------------------------
+Publications in Economics Journals 
+----------------------------------
 
 1. ["The Online Laboratory: Conducting Experiments in a Real Labor Market"](http://john-joseph-horton/papers/the_online_laboratory.pdf) (with David Rand and Richard Zeckhauser) 
 *Experimental Economics*, 14:3 (2011), 399-425. 
@@ -80,8 +80,8 @@ Publications in Economics
 *Economics Letters*, 111:1 (April 2011), 10-12.
 
 
-Publications in Computer Science 
---------------------------------
+Publications in Computer Science Journals / Published Proceedings
+-----------------------------------------------------------------
 
 1. ["Labor Allocation in Paid Crowdsourcing: Experimental Evidence on Positioning, Nudges and Prices"](http://john-joseph-horton/papers/labor_allocation_in_paid_crowdsourcing_nudges_prices.pdf) (with Dana Chandler), *Proceedings of the 25th Conference on Artificial Intelligence (AAAI), Human Computation Workshop (HCOMP)*, August 2011.
 1. ["Designing Incentives for Inexpert Human Raters"](http://john-joseph-horton/papers/designing_incentives_for_inexpert_human_raters.pdf)  (with Aaron Shaw and Daniel Chen), *Proceedings of the ACM Conference of Computer Supported Cooperative Work (ACM-CSCW)*, Best Paper Nominee, March 2011.
@@ -110,6 +110,14 @@ Non-refereed Publications
 
 1. ["The Need for Standardization in Crowdsourcing"](http://john-joseph-horton/papers/the_need_for_standardization_in_crowdsourcing.pdf) (with Panagiotis Ipeirotis), presented at the Crowdsourcing Workshop, ACM-CHI 2011 (Vancouver, BC), May 2011.
 1. ["Heads in the Cloud: Challenges and Opportunities in Human Computation"](http://john-joseph-horton/papers/head_in_the_clouds.pdf) (with Robert C. Miller, Greg Little, Michael Bernstein, Jeffrey P. Bigham, Lydia B. Chilton, Max Goldman and Rajeev Nayak), *XRDS: Crossroads, the ACM Magazine for Students*, December 2010.
+
+Researh Papers in Progress
+--------------------------
+
+1. “Overcoming Congestion in a Matching Market by Making Applications Costly” (with R. Johari and D. Chandler).
+1. “Virtual Migration: the Effect of Outsourcing through Online Platforms on Workers in Developing Countries” (with D. Pomeranz).
+1. “Digitization of Information and the Market for Contract Labor” (with A. Agrawal, N. Lacetera and E. Lyons). To appear in the NBER Economics of Digitization volume.
+1. “Helping Workers Make Human Capital Decisions via Algorithmic Recommendations” (with P. Coles).
 
 Select Invited Academic Presentations & Panels
 ----------------------------------------------

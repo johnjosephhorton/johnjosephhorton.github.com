@@ -20,18 +20,11 @@ John J. Horton
 
 About
 -----
-I'm a labor economist and the staff economist at oDesk, an online
-labor market. My practical work at oDesk centers on analyzing data and
-conducting experiments with the goal of creating features and
-formulating policies that promote efficient matching in the
-marketplace.
+I'm a labor economist and the staff economist at oDesk, an online labor market.
+My practical work at oDesk centers on analyzing data and conducting experiments with the goal of creating features and formulating policies that promote efficient matching in the marketplace.
 
-My academic research is primarily focused on issues in labor
-economics, organizational economics and market design, particularly in
-the context of online labor markets. I received my PhD from Harvard in
-2011 and I am currently on the academic job market. I will be
-available for interviews at the January 2013 AEA meeting in San Diego,
-CA.
+My academic research is primarily focused on issues in labor economics, organizational economics and market design, particularly in the context of online labor markets.
+I received my PhD from Harvard in 2011 and I am currently on the academic job market. I will be available for interviews at the January 2013 AEA meeting in San Diego, CA.
 
 Contact
 -------
