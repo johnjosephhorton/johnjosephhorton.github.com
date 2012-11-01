@@ -20,11 +20,13 @@ John J. Horton
 
 About
 -----
-I'm a labor economist and the staff economist at oDesk, an online labor market.
+I'm a labor economist and the staff economist at [oDesk](https://www.odesk.com/info/l/research/), an online labor market.
 My practical work at oDesk centers on analyzing data and conducting experiments with the goal of creating features and formulating policies that promote efficient matching in the marketplace.
 
 My academic research is primarily focused on issues in labor economics, organizational economics and market design, particularly in the context of online labor markets.
-I received my PhD from Harvard in 2011 and I am currently on the academic job market. I will be available for interviews at the January 2013 AEA meeting in San Diego, CA.
+I received my PhD from Harvard in 2011 and I am currently on the academic job market. 
+You can download my [CV](HORTON_CV.pdf), [job market paper](http://john-joseph-horton.com/papers/employer_search.pdf)) and a complete packet of my research [papers](http://john-joseph-horton.com/papers/combined_paper_packet.pdf). 
+I will be available for interviews at the January 2013 AEA meeting in San Diego, CA.
 
 Contact
 -------
@@ -36,8 +38,8 @@ Contact
 Links
 -----
 * [Research Papers](papers.html)
+* Harvard Economics Department Formatted CV [(pdf)](HORTON_CV.pdf) [(ms-word)](HORTON_CV.docx)
 * [CV](cv.html) [(pdf)](cv.pdf) 
-  * Harvard Econonomics Department-Style CV [(pdf)](HORTON_CV.pdf) [(ms-word)](HORTON_CV.docx)
 * [Google Scholar Profile](http://scholar.google.com/citations?user=L_O2kH0AAAAJ&hl=en)
 * [Online Labor Blog](http://www.onlinelabor.blogspot.com)
 
