@@ -33,13 +33,13 @@ Contact
 -------
 * email: john.joseph.horton@gmail.com
 * twitter: [@johnjhorton](https://twitter.com/johnjhorton)
-* website: [www.john-joseph-horton.com](http://www.john-joseph-horton.com/)
+* website: [john-joseph-horton.com](http://www.john-joseph-horton.com/)
 * phone: (617) 595-2437
 
 Links
 -----
 * [Research Papers](papers.html)
-* Harvard Economics Department Formatted CV [(pdf)](HORTON_CV.pdf) [(ms-word)](HORTON_CV.docx)
+* CV in Harvard Economics Department Format [(pdf)](HORTON_CV.pdf) [(ms-word)](HORTON_CV.docx)
 * [CV](cv.html) [(pdf)](cv.pdf) 
 * [Google Scholar Profile](http://scholar.google.com/citations?user=L_O2kH0AAAAJ&hl=en)
 * [Online Labor Blog](http://www.onlinelabor.blogspot.com)
