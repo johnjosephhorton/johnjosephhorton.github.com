@@ -64,9 +64,13 @@ Grants
 1. Amazon Research Grant, Web Services, 2010
 1. Berkman Center for Internet and Society, Harvard Law School, Research Grant, 2009
 
+Job Market Paper
+----------------
+1. ["Computer-mediated Matchmaking: Facilitating Employer Search and Screening,"](http://john-joseph-horton/papers/employer_search.pdf) 2012. Status: Draft available.  
+
 Working Papers
 --------------
-1. JOB MARKET PAPER: "Computer-mediated Matchmaking: Facilitating Employer Search and Screening," 2012. 
+
 1. ["Employer Expectations, Peer Effects and Productivity: Evidence from a Series of Field Experiments,"](http://john-joseph-horton/papers/peer_effects.pdf) 2010. Status: Draft available.
 1. ["The Wages of Pay Cuts: Evidence from a Field Experiment"](http://john-joseph-horton/papers/wages_of_paycuts.pdf) (with Daniel Chen), 2012. Status: Draft available.
 1. ["Procurement, Incentives and Bargaining Friction: Evidence from Government Contracts,"](http://john-joseph-horton/papers/procurement_incentives_and_bargaining_friction.pdf) 2009. Status: R&R at *The Journal of Law & Economics*
