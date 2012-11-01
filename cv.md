@@ -94,17 +94,6 @@ Publications in Computer Science Journals / Published Proceedings
 1. ["Task Search in a Human Computation Market"](http://john-joseph-horton.com/papers/task_search_in_a_human_computation_market.pdf) (with Lydia Chilton, Rob Miller and Shiri Azenkot), *Proceedings of the ACM Conference on Knowledge Discovery and Data Mining/Human Computation (ACM-KDD/HCOMP)*, 2010.
 1. ["The Labor Economics of Paid Crowdsourcing"](http://john-joseph-horton.com/papers/labor_economics_of_paid_crowdsourcing.pdf) (with Lydia Chilton), *Proceedings of the 11th ACM Conference on Electronic Commerce (ACM-EC)*, 2010.
 
-<!-- Work in Progress -->
-<!-- ---------------- -->
-<!-- 1. Returns to Skills (with Peter Coles)  -->
-<!-- 1. The Optimal Allocation of Visibility on Two-Sided Platforms  -->
-<!-- 1. Reducing Marketplace Congestion Through Costly Applications: Evidence from a Field Experiment  -->
-<!-- 1. The Effects of Extreme Temperatures on White-Collar Productivity (with Tal Gross)  -->
-<!-- 1. Virtual Migration: the Effect of Outsourcing through Online Platforms on Workers in Developing  -->
-<!-- Countries (joint with [Dina Pomeranz](http://hbs.edu/faculty/Pages/profile.aspx?facId=603214) and Dana Chandler) -->
-<!-- 1. Contract Markets (NBER Chapter) (with Nico Lactera)  -->
-<!-- 1. Kelsey Jack and Richard Zeckhauser   -->
-
 Resting Papers
 --------------
 1. ["The Dot Guessing Game: A Fruit Fly For Human Computation,"](http://john-joseph-horton.com/papers/dot_guessing_game.pdf) 2010. Status: Draft available. 
@@ -126,7 +115,8 @@ Research Papers in Progress
 Select Invited Academic Presentations & Panels
 ----------------------------------------------
 
-1. Technology and Labor Markets Conference, Johns Hopkins University SAIS, October 2012 
+1. MIT Roundtable Discussion on Work and Value in the Digital Economics, December 2012
+1. Technology and Labor Markets Conference, Johns Hopkins University SAIS, November 2012 
 1. Networked Business Seminar, "The Applied Economics of an Online Labor Market: The Case of oDesk," Harvard Business School, November 2011
 1. Experimental Economics Lunch Seminar, University of Chicago, April 2011
 1. Neural Information Processing Systems (NIPS) 24th Annual Conference, Vancouver, British Columbia, Invited Speaker on "Social Science and the Wisdom of Crowds," December 2010
@@ -156,12 +146,19 @@ Media Appearances
 
 Professional Service
 --------------------
-1. Reviewer for ACM-Electronic Commerce
-1. Reviewer for ACM-Computer Human Interaction
-1. Reviewer for The Quarterly Journal of Economics
-1. Reviewer for Clinical Psychological Science
-1. Program committee for NIPS Workshop on Computation Social Science and the Wisdom of Crowds, 2011
-1. Program Committee for ACM-Electronic Commerce 2012
+
+### Reviewer for: 
+
+1. *The Quarterly Journal of Economics*
+1. *Judgement & Decision Making* 
+1. *Clinical Psychological Science*
+1. *ACM-Electronic Commerce*
+1. *ACM-Computer Human Interaction*
+
+### Program Committee for: 
+
+1. NIPS Workshop on Computation Social Science and the Wisdom of Crowds, 2011
+1. Program Committee for ACM-Electronic Commerce, 2012
 
 Military Awards & Decorations
 ----------------------------- 
