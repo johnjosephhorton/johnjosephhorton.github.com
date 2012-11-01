@@ -89,7 +89,7 @@ Publications in Computer Science Journals / Published Proceedings
 
 1. ["Labor Allocation in Paid Crowdsourcing: Experimental Evidence on Positioning, Nudges and Prices"](http://john-joseph-horton/papers/labor_allocation_in_paid_crowdsourcing_nudges_prices.pdf) (with Dana Chandler), *Proceedings of the 25th Conference on Artificial Intelligence (AAAI), Human Computation Workshop (HCOMP)*, August 2011.
 1. ["Designing Incentives for Inexpert Human Raters"](http://john-joseph-horton/papers/designing_incentives_for_inexpert_human_raters.pdf)  (with Aaron Shaw and Daniel Chen), *Proceedings of the ACM Conference of Computer Supported Cooperative Work (ACM-CSCW)*, Best Paper Nominee, March 2011.
-1. ["Online Labor Markets,"](./papers/online_labor_markets.pdf) *Proceedings of the 6th Workshop on Internet and Network Economics (WINE)*, December 2010
+1. ["Online Labor Markets,"](http://john-joseph-horton/papers/online_labor_markets.pdf) *Proceedings of the 6th Workshop on Internet and Network Economics (WINE)*, December 2010
 1. ["Algorithmic Wage Negotiations: Applications to Paid Crowdsourcing"](http://john-joseph-horton/papers/algorithmic_wage_negotiations.pdf) (with Richard Zeckhauser), *Proceedings of CrowdConf*, 2010
 1. ["Task Search in a Human Computation Market"](http://john-joseph-horton/papers/task_search_in_a_human_computation_market.pdf) (with Lydia Chilton, Rob Miller and Shiri Azenkot), *Proceedings of the ACM Conference on Knowledge Discovery and Data Mining/Human Computation (ACM-KDD/HCOMP)*, 2010.
 1. ["The Labor Economics of Paid Crowdsourcing"](http://john-joseph-horton/papers/labor_economics_of_paid_crowdsourcing.pdf) (with Lydia Chilton), *Proceedings of the 11th ACM Conference on Electronic Commerce (ACM-EC)*, 2010.
