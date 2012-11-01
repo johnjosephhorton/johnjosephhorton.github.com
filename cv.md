@@ -7,7 +7,7 @@ Contact Information
 -------------------
 address: 443 Birch Street, Redwood City, CA 94062  
 phone: (617) 595-2437  
-website: [www.john-joseph-horton.com](http://www.john-joseph-horton.com/)  
+website: [john-joseph-horton.com](http://john-joseph-horton.com/)  
 email: john.joseph.horton@gmail.com  
 twitter: [@johnjhorton](https://twitter.com/johnjhorton)  
 google scholar profile: [http://goo.gl/buQYm](http://goo.gl/buQYm)  
@@ -16,7 +16,7 @@ Graduate Studies
 ----------------
 Ph.D. Public Policy, Harvard University, 2011  
 Thesis: "Online Labor Markets"   
-Committee: [Richard Zeckhauser](http://www.hks.harvard.edu/fs/rzeckhau/) (chair), [Lawrence Katz](http://scholar.harvard.edu/lkatz) and [Jeffrey Liebman](http://www.hks.harvard.edu/jeffreyliebman/)
+Committee: [Richard Zeckhauser](http://hks.harvard.edu/fs/rzeckhau/) (chair), [Lawrence Katz](http://scholar.harvard.edu/lkatz) and [Jeffrey Liebman](http://www.hks.harvard.edu/jeffreyliebman/)
     
 Undergraduate Studies
 ---------------------
@@ -66,33 +66,33 @@ Grants
 
 Job Market Paper
 ----------------
-1. ["Computer-mediated Matchmaking: Facilitating Employer Search and Screening,"](http://www.john-joseph-horton/papers/employer_search.pdf) 2012. Status: Draft available.  
+1. ["Computer-mediated Matchmaking: Facilitating Employer Search and Screening,"](http://john-joseph-horton.com/papers/employer_search.pdf) 2012. Status: Draft available.  
 
 Working Papers
 --------------
 
-1. ["Employer Expectations, Peer Effects and Productivity: Evidence from a Series of Field Experiments,"](http://www.john-joseph-horton/papers/peer_effects.pdf) 2010. Status: Draft available.
-1. ["The Wages of Pay Cuts: Evidence from a Field Experiment"](http://www.john-joseph-horton/papers/wages_of_paycuts.pdf) (with Daniel Chen), 2012. Status: Draft available.
-1. ["Procurement, Incentives and Bargaining Friction: Evidence from Government Contracts,"](http://www.john-joseph-horton/papers/procurement_incentives_and_bargaining_friction.pdf) 2009. Status: R&R at *The Journal of Law & Economics*
+1. ["Employer Expectations, Peer Effects and Productivity: Evidence from a Series of Field Experiments,"](http://john-joseph-horton.com/papers/peer_effects.pdf) 2010. Status: Draft available.
+1. ["The Wages of Pay Cuts: Evidence from a Field Experiment"](http://john-joseph-horton.com/papers/wages_of_paycuts.pdf) (with Daniel Chen), 2012. Status: Draft available.
+1. ["Procurement, Incentives and Bargaining Friction: Evidence from Government Contracts,"](http://john-joseph-horton.com/papers/procurement_incentives_and_bargaining_friction.pdf) 2009. Status: R&R at *The Journal of Law & Economics*
 
 Publications in Economics Journals 
 ----------------------------------
 
-1. ["The Online Laboratory: Conducting Experiments in a Real Labor Market"](http://www.john-joseph-horton/papers/the_online_laboratory.pdf) (with David Rand and Richard Zeckhauser) 
+1. ["The Online Laboratory: Conducting Experiments in a Real Labor Market"](http://john-joseph-horton.com/papers/the_online_laboratory.pdf) (with David Rand and Richard Zeckhauser) 
 *Experimental Economics*, 14:3 (2011), 399-425. 
-1. ["The Condition of the Turking Class: Are Online Employers Fair and Honest?"](http://www.john-joseph-horton/papers/condition_of_the_turking_class.pdf)
+1. ["The Condition of the Turking Class: Are Online Employers Fair and Honest?"](http://john-joseph-horton.com/papers/condition_of_the_turking_class.pdf)
 *Economics Letters*, 111:1 (April 2011), 10-12.
 
 
 Publications in Computer Science Journals / Published Proceedings
 -----------------------------------------------------------------
 
-1. ["Labor Allocation in Paid Crowdsourcing: Experimental Evidence on Positioning, Nudges and Prices"](http://www.john-joseph-horton/papers/labor_allocation_in_paid_crowdsourcing_nudges_prices.pdf) (with Dana Chandler), *Proceedings of the 25th Conference on Artificial Intelligence (AAAI), Human Computation Workshop (HCOMP)*, August 2011.
-1. ["Designing Incentives for Inexpert Human Raters"](http://www.john-joseph-horton/papers/designing_incentives_for_inexpert_human_raters.pdf)  (with Aaron Shaw and Daniel Chen), *Proceedings of the ACM Conference of Computer Supported Cooperative Work (ACM-CSCW)*, Best Paper Nominee, March 2011.
-1. ["Online Labor Markets,"](http://www.john-joseph-horton/papers/online_labor_markets.pdf) *Proceedings of the 6th Workshop on Internet and Network Economics (WINE)*, December 2010
-1. ["Algorithmic Wage Negotiations: Applications to Paid Crowdsourcing"](http://www.john-joseph-horton/papers/algorithmic_wage_negotiations.pdf) (with Richard Zeckhauser), *Proceedings of CrowdConf*, 2010
-1. ["Task Search in a Human Computation Market"](http://www.john-joseph-horton/papers/task_search_in_a_human_computation_market.pdf) (with Lydia Chilton, Rob Miller and Shiri Azenkot), *Proceedings of the ACM Conference on Knowledge Discovery and Data Mining/Human Computation (ACM-KDD/HCOMP)*, 2010.
-1. ["The Labor Economics of Paid Crowdsourcing"](http://www.john-joseph-horton/papers/labor_economics_of_paid_crowdsourcing.pdf) (with Lydia Chilton), *Proceedings of the 11th ACM Conference on Electronic Commerce (ACM-EC)*, 2010.
+1. ["Labor Allocation in Paid Crowdsourcing: Experimental Evidence on Positioning, Nudges and Prices"](http://john-joseph-horton.com/papers/labor_allocation_in_paid_crowdsourcing_nudges_prices.pdf) (with Dana Chandler), *Proceedings of the 25th Conference on Artificial Intelligence (AAAI), Human Computation Workshop (HCOMP)*, August 2011.
+1. ["Designing Incentives for Inexpert Human Raters"](http://john-joseph-horton.com/papers/designing_incentives_for_inexpert_human_raters.pdf)  (with Aaron Shaw and Daniel Chen), *Proceedings of the ACM Conference of Computer Supported Cooperative Work (ACM-CSCW)*, Best Paper Nominee, March 2011.
+1. ["Online Labor Markets,"](http://john-joseph-horton.com/papers/online_labor_markets.pdf) *Proceedings of the 6th Workshop on Internet and Network Economics (WINE)*, December 2010
+1. ["Algorithmic Wage Negotiations: Applications to Paid Crowdsourcing"](http://john-joseph-horton.com/papers/algorithmic_wage_negotiations.pdf) (with Richard Zeckhauser), *Proceedings of CrowdConf*, 2010
+1. ["Task Search in a Human Computation Market"](http://john-joseph-horton.com/papers/task_search_in_a_human_computation_market.pdf) (with Lydia Chilton, Rob Miller and Shiri Azenkot), *Proceedings of the ACM Conference on Knowledge Discovery and Data Mining/Human Computation (ACM-KDD/HCOMP)*, 2010.
+1. ["The Labor Economics of Paid Crowdsourcing"](http://john-joseph-horton.com/papers/labor_economics_of_paid_crowdsourcing.pdf) (with Lydia Chilton), *Proceedings of the 11th ACM Conference on Electronic Commerce (ACM-EC)*, 2010.
 
 <!-- Work in Progress -->
 <!-- ---------------- -->
@@ -101,19 +101,19 @@ Publications in Computer Science Journals / Published Proceedings
 <!-- 1. Reducing Marketplace Congestion Through Costly Applications: Evidence from a Field Experiment  -->
 <!-- 1. The Effects of Extreme Temperatures on White-Collar Productivity (with Tal Gross)  -->
 <!-- 1. Virtual Migration: the Effect of Outsourcing through Online Platforms on Workers in Developing  -->
-<!-- Countries (joint with [Dina Pomeranz](http://www.hbs.edu/faculty/Pages/profile.aspx?facId=603214) and Dana Chandler) -->
+<!-- Countries (joint with [Dina Pomeranz](http://hbs.edu/faculty/Pages/profile.aspx?facId=603214) and Dana Chandler) -->
 <!-- 1. Contract Markets (NBER Chapter) (with Nico Lactera)  -->
 <!-- 1. Kelsey Jack and Richard Zeckhauser   -->
 
 Resting Papers
 --------------
-1. ["The Dot Guessing Game: A Fruit Fly For Human Computation,"](http://www.john-joseph-horton/papers/dot_guessing_game.pdf) 2010. Status: Draft available. 
+1. ["The Dot Guessing Game: A Fruit Fly For Human Computation,"](http://john-joseph-horton.com/papers/dot_guessing_game.pdf) 2010. Status: Draft available. 
 
 Non-refereed Publications 
 -------------------------
 
-1. ["The Need for Standardization in Crowdsourcing"](http://www.john-joseph-horton/papers/the_need_for_standardization_in_crowdsourcing.pdf) (with Panagiotis Ipeirotis), presented at the Crowdsourcing Workshop, ACM-CHI 2011 (Vancouver, BC), May 2011.
-1. ["Heads in the Cloud: Challenges and Opportunities in Human Computation"](http://www.john-joseph-horton/papers/head_in_the_clouds.pdf) (with Robert C. Miller, Greg Little, Michael Bernstein, Jeffrey P. Bigham, Lydia B. Chilton, Max Goldman and Rajeev Nayak), *XRDS: Crossroads, the ACM Magazine for Students*, December 2010.
+1. ["The Need for Standardization in Crowdsourcing"](http://john-joseph-horton.com/papers/the_need_for_standardization_in_crowdsourcing.pdf) (with Panagiotis Ipeirotis), presented at the Crowdsourcing Workshop, ACM-CHI 2011 (Vancouver, BC), May 2011.
+1. ["Heads in the Cloud: Challenges and Opportunities in Human Computation"](http://john-joseph-horton.com/papers/head_in_the_clouds.pdf) (with Robert C. Miller, Greg Little, Michael Bernstein, Jeffrey P. Bigham, Lydia B. Chilton, Max Goldman and Rajeev Nayak), *XRDS: Crossroads, the ACM Magazine for Students*, December 2010.
 
 Research Papers in Progress
 ---------------------------
