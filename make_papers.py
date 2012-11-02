@@ -8,12 +8,16 @@ import os
 PAPER_START_LINE = "Job Market Paper"
 PAPER_END_LINE = "Select Invited Academic Presentations & Panels"
 
+def refresh_index(index_md_file_name): 
+    os.system("pandoc %s -o index.html" % index_md_file_name)
+    
 def refresh_CV(cv_md_file_name): 
     os.system("pandoc %s -o cv.html" % cv_md_file_name)
     os.system("pandoc %s -o cv.pdf"  % cv_md_file_name)
 
 
 refresh_CV("cv.md") 
+refresh_index("index.md") 
 
 papers = open("papers.md", "w")
 cv = open("cv.md", "r")
@@ -35,6 +39,7 @@ papers.close()
 os.system("pandoc papers.md -o papers.html")
 os.system("rm papers.md") # this is not the source for papers - CV is. 
 
-print("Run git status in the johnjosephhorton.github.com directory") 
+os.system("git add cv.*; git add index.* ; git add papers.html; git commit -m 'Update CV'; git push origin master")
+#print("Run git status in the johnjosephhorton.github.com directory") 
 
 
