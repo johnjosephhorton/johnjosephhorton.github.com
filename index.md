@@ -26,7 +26,7 @@ My practical work at oDesk centers on analyzing data and conducting experiments 
 My academic research is primarily focused on issues in labor economics, organizational economics and market design, particularly in the context of online labor markets.
 
 I received my PhD from Harvard in 2011 and I am currently on the academic job market. 
-My [CV](HORTON_CV.pdf), [job market paper](http://john-joseph-horton.com/papers/employer_search.pdf) and [research packet](http://john-joseph-horton.com/papers/combined_paper_packet.pdf) are availble for download. 
+My [CV](HORTON_CV.pdf), [job market paper](http://john-joseph-horton.com/papers/employer_search.pdf) and [research packet](http://john-joseph-horton.com/papers/combined_paper_packet.pdf) are available for download. 
 I will be at the January 2013 ASSA meeting in San Diego and available for interviews.
 
 Contact
