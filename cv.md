@@ -51,6 +51,7 @@ Academic Affiliations
 
 Honors, Scholarships & Fellowships
 ----------------------------------
+1. Invited Participant, Dagstuhl Seminar "Cloud-based Software Crowdsourcing", Leibniz Center for Informatics 
 1. Becker Center on Price Theory, Summer Camp, University of Chicago, 2010
 1. NSF-IGERT Multidisciplinary Fellowship in Inequality and Social Policy, 2008 - 2010
 1. Institute for Humane Studies Graduate Fellowship, 2009
@@ -115,8 +116,8 @@ Research Papers in Progress
 Select Invited Academic Presentations & Panels
 ----------------------------------------------
 
-1. MIT Roundtable Discussion on Work and Value in the Digital Economics, December 2012
-1. Technology and Labor Markets Conference, Johns Hopkins University SAIS, November 2012 
+1. MIT Roundtable Discussion on Work and Value in the Digital Economy, December 2012
+1. The Bernard L. Schwartz Globalization Initiative at SAIS Distinguished Lecture Series, "Technological Disruption in Educationa and Labor Markets," Johns Hopkins University, November 2012 
 1. Networked Business Seminar, "The Applied Economics of an Online Labor Market: The Case of oDesk," Harvard Business School, November 2011
 1. Experimental Economics Lunch Seminar, University of Chicago, April 2011
 1. Neural Information Processing Systems (NIPS) 24th Annual Conference, Vancouver, British Columbia, Invited Speaker on "Social Science and the Wisdom of Crowds," December 2010
@@ -158,7 +159,7 @@ Professional Service
 ### Program Committee for: 
 
 1. NIPS Workshop on Computation Social Science and the Wisdom of Crowds, 2011
-1. Program Committee for ACM-Electronic Commerce, 2012
+1. Program Committee for ACM-Electronic Commerce, 2012 - 2013 
 
 Military Awards & Decorations
 ----------------------------- 
