@@ -117,7 +117,7 @@ Select Invited Academic Presentations & Panels
 ----------------------------------------------
 
 1. MIT Roundtable Discussion on Work and Value in the Digital Economy, December 2012
-1. The Bernard L. Schwartz Globalization Initiative at SAIS Distinguished Lecture Series, "Technological Disruption in Educationa and Labor Markets," Johns Hopkins University, November 2012 
+1. The Bernard L. Schwartz Globalization Initiative at SAIS Distinguished Lecture Series, ["Technological Disruption in Educationa and Labor Markets,"](http://john-joseph-horton.com/media/sais_flyer.pdf) Johns Hopkins University, November 2012 
 1. Networked Business Seminar, "The Applied Economics of an Online Labor Market: The Case of oDesk," Harvard Business School, November 2011
 1. Experimental Economics Lunch Seminar, University of Chicago, April 2011
 1. Neural Information Processing Systems (NIPS) 24th Annual Conference, Vancouver, British Columbia, Invited Speaker on "Social Science and the Wisdom of Crowds," December 2010
