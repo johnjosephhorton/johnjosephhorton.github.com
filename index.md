@@ -39,7 +39,7 @@ Contact
 Links
 -----
 * [Research Papers](papers.html)
-* CV in Harvard Economics Department Format [(pdf)](HORTON_CV.pdf) [(ms-word)](HORTON_CV.docx)
+* CV in Harvard Economics Department Format [(pdf)](HORTON_CV.pdf)
 * [CV](cv.html) [(pdf)](cv.pdf) 
 * [Google Scholar Profile](http://scholar.google.com/citations?user=L_O2kH0AAAAJ&hl=en)
 * [Online Labor Blog](http://www.onlinelabor.blogspot.com)
