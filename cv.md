@@ -87,7 +87,7 @@ Publications in Economics Journals
 
 Publications in Computer Science Journals / Published Proceedings
 -----------------------------------------------------------------
-
+1. ["The Future of Crowd Work"](http://john-joseph-horton.com/papers/futureofcrowdwork-cscw2013.pdf) (with Aniket Kittur, Jeffrey V. Nickerson, Michael S. Bernstein, Elizabeth M. Gerber, Aaron Shaw, John Zimmerman and Matthew Lease), *Conference on Computer-Supported Cooperative Work (ACM-CSCW)*, February 2013.
 1. ["Labor Allocation in Paid Crowdsourcing: Experimental Evidence on Positioning, Nudges and Prices"](http://john-joseph-horton.com/papers/labor_allocation_in_paid_crowdsourcing_nudges_prices.pdf) (with Dana Chandler), *Proceedings of the 25th Conference on Artificial Intelligence (AAAI), Human Computation Workshop (HCOMP)*, August 2011.
 1. ["Designing Incentives for Inexpert Human Raters"](http://john-joseph-horton.com/papers/designing_incentives_for_inexpert_human_raters.pdf)  (with Aaron Shaw and Daniel Chen), *Proceedings of the ACM Conference of Computer Supported Cooperative Work (ACM-CSCW)*, Best Paper Nominee, March 2011.
 1. ["Online Labor Markets,"](http://john-joseph-horton.com/papers/online_labor_markets.pdf) *Proceedings of the 6th Workshop on Internet and Network Economics (WINE)*, December 2010
