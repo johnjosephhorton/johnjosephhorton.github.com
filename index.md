@@ -44,3 +44,4 @@ Links
 * [Google Scholar Profile](http://scholar.google.com/citations?user=L_O2kH0AAAAJ&hl=en)
 * [Online Labor Blog](http://www.onlinelabor.blogspot.com)
 
+<div id="tripit-badge"><script type="text/javascript" src="https://www.tripit.com/account/badge/id/500E1DC212AB4FC07AABE4E44B7D1AA4/div_id/tripit-badge/badge.js"></script><noscript><a href="/">TripIt - Organize your travel</a></noscript></div>
