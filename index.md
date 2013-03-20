@@ -28,16 +28,19 @@ My academic research is primarily focused on issues in market design, labor econ
 I received my PhD from Harvard in 2011 and I am currently on the academic job market. 
 My [CV](HORTON_CV.pdf), [job market paper](http://john-joseph-horton.com/papers/employer_search.pdf) and [research packet](http://john-joseph-horton.com/papers/combined_paper_packet.pdf) are available for download. 
 
-Links
------
-* [Research Papers](papers.html)
+Research
+--------
+* [Papers](papers.html)
 * [Google Scholar Profile](http://scholar.google.com/citations?user=L_O2kH0AAAAJ&hl=en)
 * [CV](cv.html) [(pdf)](cv.pdf) 
-* CV in Harvard Economics Department Format [(pdf)](HORTON_CV.pdf)
 
-Blogs
+Links
 -----
 * [Online Labor Blog](http://www.onlinelabor.blogspot.com)
+* [Github](https://github.com/johnjosephhorton)
+* [LinkedIn](http://www.linkedin.com/pub/john-horton/19/758/48a)
+* [Quora](http://www.quora.com/John-Horton)
+* [StackOverflow](http://stackoverflow.com/users/271844/john-horton)
 
 Contact
 -------
