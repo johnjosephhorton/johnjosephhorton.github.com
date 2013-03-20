@@ -11,7 +11,6 @@
   })();
 
 </script>
-
 <link href="markdown.css" rel="stylesheet"></link> 
 
 John J. Horton
