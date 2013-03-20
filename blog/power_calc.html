@@ -197,19 +197,21 @@ hljs.initHighlightingOnLoad();
 
 <hr/>
 
-<p>&ldquo;How long should I run my experiment for?&rdquo; is a very common statistical question within companies.
-This question can be answered with a well-understood process: conduct a <a href="http://en.wikipedia.org/wiki/Statistical_power">power calculation</a>.<br/>
-Although this &ldquo;works,&rdquo; I haven&#39;t found it to be very effective as a business practice.<br/>
+<p>&ldquo;How long should I run my experiment for?&rdquo; is a common statistical question within companies.
+This question can be answered with a well-understood process: conduct a <a href="http://en.wikipedia.org/wiki/Statistical_power">power calculation</a>. </p>
+
+<p>Although this &ldquo;works,&rdquo; I haven&#39;t found it to be very effective as a business practice.
 The problem is that the key concepts for a conventional power calculation are difficult to grasp. 
 Even very smart people&mdash;researcher, science journalists etc.&mdash;have trouble understanding the proper interpretion of <a href="http://andrewgelman.com/2013/03/12/misunderstanding-the-p-value/">p-values</a>. 
-The main risks&mdash;Type I and Type II errors&mdash;might be the least descriptively-named concepts in history. 
-Even the name &ldquo;power calculation&rdquo; suggests something obscure but at the same time something rote that does not require much thinking beyond plugging the right things into a fomula.
+The main risks&mdash;Type I and Type II errors&mdash;might be the least descriptively-named concepts in history.</p>
+
+<p>Even the name &ldquo;power calculation&rdquo; suggests something obscure but at the same time something rote that does not require much thinking beyond plugging the right things into a fomula.
 This is unfortunate, because a well done power analysis can be like a dry rehearsal for the experiment, exposing problems in plan beyond just a too-small proposed sample size. </p>
 
 <p>So what&#39;s my solution? 
-I just simulate data from the experiment many times and then plot the empirical distribution of the effect size, using the same code that we will use to analyze the experiment.
-Modern computers are so fast that I can, interactively, work with the person desiging an experiment and how them how different assumptions about effects sizes and choices of sample size affect likely outcomes. 
-Doing this can help users of experiments get a more more intuitive sense of the relationship between sample size and sampling variance in the quantity they estimate. </p>
+It&#39;s still a work-in-progess, but my emerging best practice is to simulate data from the experiment many times and then plot the empirical distribution of the effect size, using the same code that we will use to analyze the experiment.
+I then show the would-be experimenter the distribution, explain what it means and get a sense of they &ldquo;feel&rdquo; about it. 
+Doing this seems to help would-be experimenters get a more more intuitive sense of the relationship between sample size and sampling variance. </p>
 
 <p>Below, I describe my basic strategy for helping someone conduct a power calculation. 
 At the end, I work through a full example. </p>
