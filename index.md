@@ -23,10 +23,9 @@ About
 I'm an economist and the staff economist at [oDesk](https://www.odesk.com/info/l/research/), an online labor market.
 My practical work at oDesk centers on analyzing data and conducting experiments with the goal of creating features and formulating policies that promote efficient matching in the marketplace.
 
-My academic research is primarily focused on issues in market design, labor economics and organizational economics, particularly in the context of online labor markets.
+This coming year, I will join the [Information Systems Group](http://www.stern.nyu.edu/experience-stern/about/departments-centers-initiatives/academic-departments/ioms/faculty-staff/information-systems/index.htm) at [NYU Stern](http://www.stern.nyu.edu/). 
 
-I received my PhD from Harvard in 2011 and I am currently on the academic job market. 
-My [CV](HORTON_CV.pdf), [job market paper](http://john-joseph-horton.com/papers/employer_search.pdf) and [research packet](http://john-joseph-horton.com/papers/combined_paper_packet.pdf) are available for download. 
+My academic research is primarily focused on issues in market design, labor economics and organizational economics, particularly in the context of online labor markets.
 
 Research
 --------
