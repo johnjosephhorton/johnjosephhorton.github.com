@@ -25,6 +25,8 @@ My practical work at oDesk centers on analyzing data and conducting experiments 
 
 My academic research is primarily focused on issues in market design, labor economics and organizational economics, particularly in the context of online labor markets.
 
+In the Fall of 2013, I will be joining the Information Systems group at New York University's Stern School of Business as an Assistant Professor of Information Systems. 
+
 Research
 --------
 * [Papers](papers.html)
