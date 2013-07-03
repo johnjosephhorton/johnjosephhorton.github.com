@@ -18,7 +18,7 @@ John J. Horton
 
 Contact Information
 -------------------
-address: 443 Birch Street, Redwood City, CA 94062  
+address: 740 Bair Island Road, Apartment 105, Redwood City, CA 94063  
 phone: (617) 595-2437  
 website: [john-joseph-horton.com](http://john-joseph-horton.com/)  
 email: john.joseph.horton@gmail.com  
@@ -78,6 +78,10 @@ Grants
 1. Amazon Research Grant, Web Services, 2010
 1. Berkman Center for Internet and Society, Harvard Law School, Research Grant, 2009
 
+Replication Materials (Data and Code)
+-------------------------------------
+1. ["The Online Laboratory: Conducting Experiments in a Real Labor Market"](https://bitbucket.org/johnjosephhorton/online_laboratory/wiki/Home)
+
 Job Market Paper
 ----------------
 1. ["Computer-mediated Matchmaking: Facilitating Employer Search and Screening,"](http://john-joseph-horton.com/papers/employer_search.pdf) 2012. Status: Draft available.  
@@ -94,7 +98,6 @@ Publications in Economics Journals
 
 1. ["The Online Laboratory: Conducting Experiments in a Real Labor Market"](http://john-joseph-horton.com/papers/the_online_laboratory.pdf) (with David Rand and Richard Zeckhauser) 
 *Experimental Economics*, 14:3 (2011), 399-425. 
-[Repository with Data and Code](https://bitbucket.org/johnjosephhorton/online_laboratory/wiki/Home)
 1. ["The Condition of the Turking Class: Are Online Employers Fair and Honest?"](http://john-joseph-horton.com/papers/condition_of_the_turking_class.pdf)
 *Economics Letters*, 111:1 (April 2011), 10-12.
 
