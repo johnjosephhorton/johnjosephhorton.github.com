@@ -18,7 +18,7 @@ John J. Horton
 
 Current Position 
 ----------------
-1. Assistant Professor of Information Systems, Stern School of Business, New York University, 2013 - Present. 
+Assistant Professor of Information Systems, Stern School of Business, New York University, 2013 - Present. 
 
 Contact Information
 -------------------
@@ -83,7 +83,7 @@ Economics Journals
 ------------------
 1. ["The Online Laboratory: Conducting Experiments in a Real Labor Market"](http://john-joseph-horton.com/papers/the_online_laboratory.pdf) (with David Rand and Richard Zeckhauser) 
 *Experimental Economics*, 14:3 (2011), 399-425. 
-	- **Editor's Award Winner for 2011 (selected as the best paper published in the 2011 volumes of *Experimental Economics*)**
+	- **Editor's Award Winner for 2011 (selected as the best paper published in the 2011 volumes of *Experimental Economics.*)**
 1. ["The Condition of the Turking Class: Are Online Employers Fair and Honest?"](http://john-joseph-horton.com/papers/condition_of_the_turking_class.pdf) 
 *Economics Letters*, 111:1 (April 2011), 10-12.
 
@@ -96,7 +96,7 @@ Computer Science Journals & Proceedings
 1. ["Algorithmic Wage Negotiations: Applications to Paid Crowdsourcing"](http://john-joseph-horton.com/papers/algorithmic_wage_negotiations.pdf) (with Richard Zeckhauser), *Proceedings of CrowdConf*, 2010
 1. ["Task Search in a Human Computation Market"](http://john-joseph-horton.com/papers/task_search_in_a_human_computation_market.pdf) (with Lydia Chilton, Rob Miller and Shiri Azenkot), *Proceedings of the ACM Conference on Knowledge Discovery and Data Mining/Human Computation (ACM-KDD/HCOMP)*, 2010.
 1. ["The Labor Economics of Paid Crowdsourcing"](http://john-joseph-horton.com/papers/labor_economics_of_paid_crowdsourcing.pdf) (with Lydia Chilton), *Proceedings of the 11th ACM Conference on Electronic Commerce (ACM-EC)*, 2010.
-	- **The most heavily-cited paper in the last 5 years of ACM-EC proceedings (as of August 10th, 2013), according to [Google Scholar](http://scholar.google.com/citations?hl=en&vq=eng_gametheorydecisionscience&view_op=list_hcore&venue=qXGJz_LQdQkJ.2013)**
+	- **The most heavily-cited paper in the last 5 years of ACM-EC proceedings (as of August 10th, 2013), according to [Google Scholar](http://scholar.google.com/citations?hl=en&vq=eng_gametheorydecisionscience&view_op=list_hcore&venue=qXGJz_LQdQkJ.2013).**
 
 Working Papers
 --------------
