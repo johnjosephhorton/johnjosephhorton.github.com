@@ -83,7 +83,7 @@ Economics Journals
 ------------------
 1. ["The Online Laboratory: Conducting Experiments in a Real Labor Market"](http://john-joseph-horton.com/papers/the_online_laboratory.pdf) (with David Rand and Richard Zeckhauser) 
 *Experimental Economics*, 14:3 (2011), 399-425. 
-	- **Editor's Award Winner for 2011 (selected as the best paper published in the 2011 volumes of *Experimental Economics.*)**
+	- **Editor's Award Winner for 2011 (selected as the best paper published in the 2011 volumes of *Experimental Economics*).**
 1. ["The Condition of the Turking Class: Are Online Employers Fair and Honest?"](http://john-joseph-horton.com/papers/condition_of_the_turking_class.pdf) 
 *Economics Letters*, 111:1 (April 2011), 10-12.
 
