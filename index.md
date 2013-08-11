@@ -39,12 +39,12 @@ Writing
 
 Code and Data for Completed Research
 ------------------------------------
-* [The Online Laboratory](https://bitbucket.org/johnjosephhorton/online_laboratory)
-* [The Labor Economics of Paid Crowdsourcing](https://bitbucket.org/johnjosephhorton/labor_economics_paid_crowdsourcing/wiki/Home)
-* [Online Labor Markets](https://bitbucket.org/johnjosephhorton/olm_wine)
-* [Guessing Game: A Fruit fly for Human Computation](https://bitbucket.org/johnjosephhorton/olm_wine)
-* [Task Search in a Human Computation Market](https://bitbucket.org/johnjosephhorton/mturk_search_behavior)
-* [The Condition of the Turking Class](https://bitbucket.org/johnjosephhorton/condition_of_turking_class)
+* [The Online Laboratory](http://bitbucket.org/johnjosephhorton/online_laboratory)
+* [The Labor Economics of Paid Crowdsourcing](http://bitbucket.org/johnjosephhorton/labor_economics_paid_crowdsourcing/wiki/Home)
+* [Online Labor Markets](http://bitbucket.org/johnjosephhorton/olm_wine)
+* [Guessing Game: A Fruit fly for Human Computation](http://bitbucket.org/johnjosephhorton/olm_wine)
+* [Task Search in a Human Computation Market](http://bitbucket.org/johnjosephhorton/mturk_search_behavior)
+* [The Condition of the Turking Class](http://bitbucket.org/johnjosephhorton/condition_of_turking_class)
 
 Software Utilities
 ------------------
