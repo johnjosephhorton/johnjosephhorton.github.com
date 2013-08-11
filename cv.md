@@ -22,7 +22,6 @@ Assistant Professor of Information Systems, Stern School of Business, New York U
 
 Contact Information
 -------------------
-address: 740 Bair Island Road, Apartment 105, Redwood City, CA 94063  
 phone: (617) 595-2437  
 website: [john-joseph-horton.com](http://john-joseph-horton.com/)  
 email: john.joseph.horton@gmail.com  
@@ -111,13 +110,11 @@ Resting Papers
 
 Non-refereed Publications 
 -------------------------
-
 1. ["The Need for Standardization in Crowdsourcing"](http://john-joseph-horton.com/papers/the_need_for_standardization_in_crowdsourcing.pdf) (with Panagiotis Ipeirotis), presented at the Crowdsourcing Workshop, ACM-CHI 2011 (Vancouver, BC), May 2011.
 1. ["Heads in the Cloud: Challenges and Opportunities in Human Computation"](http://john-joseph-horton.com/papers/head_in_the_clouds.pdf) (with Robert C. Miller, Greg Little, Michael Bernstein, Jeffrey P. Bigham, Lydia B. Chilton, Max Goldman and Rajeev Nayak), *XRDS: Crossroads, the ACM Magazine for Students*, December 2010.
 
 Research Papers in Progress
 ---------------------------
-
 1. "Overcoming Congestion in a Matching Market by Making Applications Costly" (with R. Johari and D. Chandler).
 1. "Virtual Migration: the Effect of Outsourcing through Online Platforms on Workers in Developing Countries" (with D. Pomeranz).
 1. "Digitization of Information and the Market for Contract Labor" (with A. Agrawal, N. Lacetera and E. Lyons). To appear in the NBER Economics of Digitization volume.
@@ -126,7 +123,6 @@ Research Papers in Progress
 
 Select Invited Academic Presentations & Panels
 ----------------------------------------------
-
 1. Society of Labor Economists (SOLE) Annual Meeting, "Computer-Mediated Matchmaking: Facilitating Employer Search an Screening," May 2013  
 1. MIT Roundtable Discussion on Work and Value in the Digital Economy, December 2012
 1. The Bernard L. Schwartz Globalization Initiative at SAIS Distinguished Lecture Series, ["Technological Disruption in Educationa and Labor Markets,"](http://john-joseph-horton.com/media/sais_flyer.pdf) Johns Hopkins University, November 2012 
@@ -145,7 +141,6 @@ Select Invited Academic Presentations & Panels
 
 Select Invited Industry Presentations & Panels
 ----------------------------------------------
-
 1. BPO/ITO World Forum, Invited Panelist "The Social and Economic Impact of Global Sourcing: Getting the Complete Picture," New York City, June 2012
 1. Founders and Funders Event, "Winning the Talent War," Redwood City, March 2012 
 1. Intuit, Big Data and Analytics Workshop, Mountain View, December 2011
@@ -159,7 +154,6 @@ Media Appearances
 
 Professional Service
 --------------------
-
 ### Reviewer for: 
 
 1. *The Quarterly Journal of Economics*
@@ -175,7 +169,6 @@ Professional Service
 
 Military Awards & Decorations
 ----------------------------- 
-
 Combat Action Badge, Bronze Star Medal, Army Commendation Medal with
 Oak Leaf Cluster, Army Service Ribbon, Overseas Service Ribbon, Iraq
 Campaign Medal, Global War on Terrorism Service Medal, Basic

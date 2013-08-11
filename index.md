@@ -20,7 +20,7 @@ John J. Horton
 
 About
 -----
-I'm an economist and the staff economist at [oDesk](https://www.odesk.com/info/l/research/), an online labor market.
+I am an economist and the staff economist at [oDesk](https://www.odesk.com/info/l/research/), an online labor market.
 My practical work at oDesk centers on analyzing data and conducting experiments with the goal of creating features and formulating policies that promote efficient matching in the marketplace.
 
 My academic research is primarily focused on issues in market design, labor economics and organizational economics, particularly in the context of online labor markets.
@@ -30,22 +30,34 @@ In the Fall of 2013, I will be joining the Information Systems group at New York
 Research
 --------
 * [Papers](papers.html)
-* [Google Scholar Profile](http://scholar.google.com/citations?user=L_O2kH0AAAAJ&hl=en)
 * [CV](cv.html) [(pdf)](cv.pdf) 
+* [Google Scholar Profile](http://scholar.google.com/citations?user=L_O2kH0AAAAJ&hl=en)
 
-Links
------
+Writing
+-------
 * [Online Labor Blog](http://www.onlinelabor.blogspot.com)
-* [Github](https://github.com/johnjosephhorton)
-* [LinkedIn](http://www.linkedin.com/pub/john-horton/19/758/48a)
-* [Quora](http://www.quora.com/John-Horton)
-* [StackOverflow](http://stackoverflow.com/users/271844/john-horton)
+
+Code and Data for Completed Research Projects 
+---------------------------------------------
+* [Labor Economics of Paid Crowdsourcing](https://bitbucket.org/johnjosephhorton/labor_economics_paid_crowdsourcing/wiki/Home)
+
+Software Utilities
+------------------
+* [gitcheck](https://github.com/johnjosephhorton/gitcheck): Commnad line tool (CLT) for finding repositories with untracked/uncommitted changes. 
+* [gawande](https://github.com/johnjosephhorton/gawande): CLT for working with checklists. 
+* [flatex](https://github.com/johnjosephhorton/flatex): CLT for "flattening" nested LaTeX files. 
+* [JJHmisc](https://github.com/johnjosephhorton/JJHmisc): R package with assorted tools I have found useful.
+* [create_project](https://github.com/johnjosephhorton/create_project): CLT for generating directory structure and files for a new academic project. 
+* [texscrap](https://github.com/johnjosephhorton/texscrap): CLT for creating tightly bound PDF/PNG images from passed TeX snippets. 
+* [latexlog2html](https://github.com/johnjosephhorton/latexlog2html): CLT for "pretty printing" LaTeX log files. 
+* [runSQL](https://github.com/johnjosephhorton/runSQL): CLT for running queries against a database and writing results to a CSV file. 
 
 Contact
 -------
-* email: john.joseph.horton@gmail.com
-* twitter: [@johnjhorton](https://twitter.com/johnjhorton)
-* website: [john-joseph-horton.com](http://www.john-joseph-horton.com/)
-* phone: (617) 595-2437
+* john.joseph.horton@gmail.com
+* [@johnjhorton](https://twitter.com/johnjhorton)
+* [john-joseph-horton.com](http://www.john-joseph-horton.com/)
+* [LinkedIn](http://www.linkedin.com/pub/john-horton/19/758/48a)
+* (617) 595-2437
 
 
