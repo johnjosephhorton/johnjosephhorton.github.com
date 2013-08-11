@@ -155,7 +155,6 @@ Media Appearances
 Professional Service
 --------------------
 ### Reviewer for: 
-
 1. *The Quarterly Journal of Economics*
 1. *Judgement & Decision Making* 
 1. *Clinical Psychological Science*
@@ -163,7 +162,6 @@ Professional Service
 1. *ACM-Computer Human Interaction*
 
 ### Program Committee for: 
-
 1. NIPS Workshop on Computation Social Science and the Wisdom of Crowds, 2011
 1. Program Committee for ACM-Electronic Commerce, 2012 - 2013 
 

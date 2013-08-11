@@ -37,18 +37,18 @@ Writing
 -------
 * [Online Labor Blog](http://www.onlinelabor.blogspot.com)
 
-Code and Data for Completed Research Projects 
----------------------------------------------
+Code and Data for Completed Research
+------------------------------------
 * [The Online Laboratory](https://bitbucket.org/johnjosephhorton/online_laboratory)
 * [The Labor Economics of Paid Crowdsourcing](https://bitbucket.org/johnjosephhorton/labor_economics_paid_crowdsourcing/wiki/Home)
 * [Online Labor Markets](https://bitbucket.org/johnjosephhorton/olm_wine)
-* [Guessing Game: A Fruitfly for Human Computation](https://bitbucket.org/johnjosephhorton/olm_wine)
+* [Guessing Game: A Fruit fly for Human Computation](https://bitbucket.org/johnjosephhorton/olm_wine)
 * [Task Search in a Human Computation Market](https://bitbucket.org/johnjosephhorton/mturk_search_behavior)
 * [The Condition of the Turking Class](https://bitbucket.org/johnjosephhorton/condition_of_turking_class)
 
 Software Utilities
 ------------------
-* [gitcheck](https://github.com/johnjosephhorton/gitcheck): Commnad line tool (CLT) for finding repositories with untracked/uncommitted changes. 
+* [gitcheck](https://github.com/johnjosephhorton/gitcheck): Command line tool (CLT) for finding repositories with untracked/uncommitted changes. 
 * [gawande](https://github.com/johnjosephhorton/gawande): CLT for working with checklists. 
 * [flatex](https://github.com/johnjosephhorton/flatex): CLT for "flattening" nested LaTeX files. 
 * [JJHmisc](https://github.com/johnjosephhorton/JJHmisc): R package with assorted tools I have found useful.
@@ -63,6 +63,3 @@ Contact
 * [@johnjhorton](https://twitter.com/johnjhorton)
 * [john-joseph-horton.com](http://www.john-joseph-horton.com/)
 * [LinkedIn](http://www.linkedin.com/pub/john-horton/19/758/48a)
-* (617) 595-2437
-
-
