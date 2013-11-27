@@ -20,12 +20,10 @@ John J. Horton
 
 About
 -----
-I am an economist and the staff economist at [oDesk](https://www.odesk.com/info/l/research/), an online labor market.
-My practical work at oDesk centers on analyzing data and conducting experiments with the goal of creating features and formulating policies that promote efficient matching in the marketplace.
 
+I am an economist and an Assistant Professor in the Information Systems group at New York University's Stern School of Business. 
+Prior to joining Stern, I was the staff economist at [oDesk](https://www.odesk.com/info/l/research/), an online labor market.
 My academic research is primarily focused on issues in market design, labor economics and organizational economics, particularly in the context of online labor markets.
-
-In the Fall of 2013, I will be joining the Information Systems group at New York University's Stern School of Business as an Assistant Professor of Information Systems. 
 
 Research
 --------
@@ -46,16 +44,16 @@ Code and Data for Completed Research
 * [Task Search in a Human Computation Market](http://bitbucket.org/johnjosephhorton/mturk_search_behavior)
 * [The Condition of the Turking Class](http://bitbucket.org/johnjosephhorton/condition_of_turking_class)
 
-Software Utilities
-------------------
-* [gitcheck](https://github.com/johnjosephhorton/gitcheck): Command line tool (CLT) for finding repositories with untracked/uncommitted changes. 
-* [gawande](https://github.com/johnjosephhorton/gawande): CLT for working with checklists. 
-* [flatex](https://github.com/johnjosephhorton/flatex): CLT for "flattening" nested LaTeX files. 
-* [JJHmisc](https://github.com/johnjosephhorton/JJHmisc): R package with assorted tools I have found useful.
-* [create_project](https://github.com/johnjosephhorton/create_project): CLT for generating directory structure and files for a new academic project. 
-* [texscrap](https://github.com/johnjosephhorton/texscrap): CLT for creating tightly bound PDF/PNG images from passed TeX snippets. 
-* [latexlog2html](https://github.com/johnjosephhorton/latexlog2html): CLT for "pretty printing" LaTeX log files. 
-* [runSQL](https://github.com/johnjosephhorton/runSQL): CLT for running queries against a database and writing results to a CSV file. 
+<!-- Software Utilities -->
+<!-- ------------------ -->
+<!-- * [gitcheck](https://github.com/johnjosephhorton/gitcheck): Command line tool (CLT) for finding repositories with untracked/uncommitted changes.  -->
+<!-- * [gawande](https://github.com/johnjosephhorton/gawande): CLT for working with checklists.  -->
+<!-- * [flatex](https://github.com/johnjosephhorton/flatex): CLT for "flattening" nested LaTeX files.  -->
+<!-- * [JJHmisc](https://github.com/johnjosephhorton/JJHmisc): R package with assorted tools I have found useful. -->
+<!-- * [create_project](https://github.com/johnjosephhorton/create_project): CLT for generating directory structure and files for a new academic project.  -->
+<!-- * [texscrap](https://github.com/johnjosephhorton/texscrap): CLT for creating tightly bound PDF/PNG images from passed TeX snippets.  -->
+<!-- * [latexlog2html](https://github.com/johnjosephhorton/latexlog2html): CLT for "pretty printing" LaTeX log files.  -->
+<!-- * [runSQL](https://github.com/johnjosephhorton/runSQL): CLT for running queries against a database and writing results to a CSV file.  -->
 
 Contact
 -------
