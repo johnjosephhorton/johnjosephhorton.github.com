@@ -91,6 +91,7 @@ Computer Science Journals & Proceedings
 1. ["The Future of Crowd Work"](http://john-joseph-horton.com/papers/futureofcrowdwork-cscw2013.pdf) (with Aniket Kittur, Jeffrey V. Nickerson, Michael S. Bernstein, Elizabeth M. Gerber, Aaron Shaw, John Zimmerman and Matthew Lease), *Conference on Computer-Supported Cooperative Work (ACM-CSCW)*, February 2013.
 1. ["Labor Allocation in Paid Crowdsourcing: Experimental Evidence on Positioning, Nudges and Prices"](http://john-joseph-horton.com/papers/labor_allocation_in_paid_crowdsourcing_nudges_prices.pdf) (with Dana Chandler), *Proceedings of the 25th Conference on Artificial Intelligence (AAAI), Human Computation Workshop (HCOMP)*, August 2011.
 1. ["Designing Incentives for Inexpert Human Raters"](http://john-joseph-horton.com/papers/designing_incentives_for_inexpert_human_raters.pdf)  (with Aaron Shaw and Daniel Chen), *Proceedings of the ACM Conference of Computer Supported Cooperative Work (ACM-CSCW)*, Best Paper Nominee, March 2011.
+	- **The most heavily-cited paper from the 2011 ACM-CSCW proceedings (as of November 27th, 2013), according to [Google Scholar](http://scholar.google.com/citations?hl=en&view_op=list_hcore&venue=_7JQKZzfUIcJ.2013)**
 1. ["Online Labor Markets,"](http://john-joseph-horton.com/papers/online_labor_markets.pdf) *Proceedings of the 6th Workshop on Internet and Network Economics (WINE)*, December 2010
 1. ["Algorithmic Wage Negotiations: Applications to Paid Crowdsourcing"](http://john-joseph-horton.com/papers/algorithmic_wage_negotiations.pdf) (with Richard Zeckhauser), *Proceedings of CrowdConf*, 2010
 1. ["Task Search in a Human Computation Market"](http://john-joseph-horton.com/papers/task_search_in_a_human_computation_market.pdf) (with Lydia Chilton, Rob Miller and Shiri Azenkot), *Proceedings of the ACM Conference on Knowledge Discovery and Data Mining/Human Computation (ACM-KDD/HCOMP)*, 2010.
@@ -99,7 +100,7 @@ Computer Science Journals & Proceedings
 
 Working Papers
 --------------
-1. ["Computer-mediated Matchmaking: Facilitating Employer Search and Screening,"](http://john-joseph-horton.com/papers/employer_search.pdf) 2012. Status: Draft available.  
+1. ["The Effects of Subsidizing Employer Search,"](http://john-joseph-horton.com/papers/employer_search.pdf) 2012. Status: Draft available.  
 1. ["Employer Expectations, Peer Effects and Productivity: Evidence from a Series of Field Experiments,"](http://john-joseph-horton.com/papers/peer_effects.pdf) 2010. Status: Draft available.
 1. ["The Wages of Pay Cuts: Evidence from a Field Experiment"](http://john-joseph-horton.com/papers/wages_of_paycuts.pdf) (with Daniel Chen), 2012. Status: Draft available.
 1. ["Procurement, Incentives and Bargaining Friction: Evidence from Government Contracts,"](http://john-joseph-horton.com/papers/procurement_incentives_and_bargaining_friction.pdf) 2009. Status: R&R at *The Journal of Law & Economics*
